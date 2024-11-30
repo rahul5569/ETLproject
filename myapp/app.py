@@ -1,7 +1,6 @@
 # myapp/app.py
 
-from fastapi import FastAPI, HTTPException, UploadFile, File, Form
-from pydantic import BaseModel
+from fastapi import FastAPI, HTTPException, UploadFile, File
 from minio import Minio
 from kafka import KafkaProducer
 import json
@@ -81,10 +80,7 @@ def startup_event():
 
 @app.post("/upload/")
 async def upload_file(
-    file: UploadFile = File(...),
-    id: int = Form(...),
-    name: str = Form(...),
-    value: float = Form(...)
+    file: UploadFile = File(...)
 ):
     if not producer:
         logger.error("Kafka producer not initialized.")
@@ -108,10 +104,7 @@ async def upload_file(
 
         # Create the JSON payload for Kafka, including 'object_name'
         json_payload = {
-            "id": id,
-            "name": name,
-            "value": value,
-            "object_name": object_name  # Include object_name
+            "object_name": object_name  # Only include object_name
         }
 
         # Send data to Kafka
