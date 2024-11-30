@@ -1,0 +1,95 @@
+# docker-compose.yml
+
+version: '3.9'  # Updated to the latest schema version
+
+networks:
+  app-tier:
+    driver: bridge
+
+services:
+  zookeeper:
+    image: confluentinc/cp-zookeeper:latest
+    networks:
+      - app-tier
+    environment:
+      ZOOKEEPER_CLIENT_PORT: 2181
+      ZOOKEEPER_TICK_TIME: 2000
+      ZOOKEEPER_SYNC_LIMIT: 2
+    ports:
+      - "2181:2181"
+    # Removed healthchecks as per your preference
+
+  kafka:
+    image: confluentinc/cp-kafka:latest
+    networks:
+      - app-tier
+    depends_on:
+      zookeeper:
+        condition: service_started
+    environment:
+      KAFKA_BROKER_ID: 1
+      KAFKA_ZOOKEEPER_CONNECT: zookeeper:2181
+      KAFKA_ADVERTISED_LISTENERS: PLAINTEXT://kafka:9092
+      KAFKA_OFFSETS_TOPIC_REPLICATION_FACTOR: 1
+      KAFKA_AUTO_CREATE_TOPICS_ENABLE: 'true'
+    ports:
+      - "9092:9092"
+    volumes:
+      - kafka_data:/var/lib/kafka/data
+    # Removed healthchecks as per your preference
+
+  minio:
+    image: minio/minio:latest
+    networks:
+      - app-tier
+    environment:
+      - MINIO_ROOT_USER=minioadmin
+      - MINIO_ROOT_PASSWORD=minioadmin
+    command: server /data --console-address ":9001"
+    ports:
+      - "9000:9000"  # API access
+      - "9001:9001"  # Web Console
+    volumes:
+      - minio_data:/data
+    # Removed healthchecks as per your preference
+
+  myapp:
+    build: ./myapp
+    networks:
+      - app-tier
+    environment:
+      - MINIO_ENDPOINT=minio:9000
+      - MINIO_ACCESS_KEY=minioadmin
+      - MINIO_SECRET_KEY=minioadmin
+      - MINIO_BUCKET=mybucket
+      - KAFKA_BOOTSTRAP_SERVERS=kafka:9092
+      - KAFKA_TOPIC=test-topic  # Ensure FastAPI sends to the correct topic
+    ports:
+      - "8000:8000"
+    depends_on:
+      - kafka
+      - minio
+
+  processor:
+    build: ./processor
+    networks:
+      - app-tier
+    environment:
+      - MINIO_ENDPOINT=minio:9000
+      - MINIO_ACCESS_KEY=minioadmin
+      - MINIO_SECRET_KEY=minioadmin
+      - SOURCE_BUCKET=mybucket
+      - TARGET_BUCKET=processed-bucket
+      - KAFKA_BOOTSTRAP_SERVERS=kafka:9092
+      - KAFKA_TOPIC=test-topic
+      - CHUNK_SIZE=1000  # Adjust based on your requirements
+    depends_on:
+      - kafka
+      - minio
+    restart: unless-stopped
+
+volumes:
+  minio_data:
+    driver: local
+  kafka_data:
+    driver: local
