@@ -8,6 +8,7 @@ from minio import Minio
 from kafka import KafkaConsumer
 from kafka.errors import KafkaError
 from minio.error import S3Error
+from prometheus_client import start_http_server, Summary, Counter  # Added for Prometheus
 
 # Configure Logging
 logging.basicConfig(
@@ -15,6 +16,10 @@ logging.basicConfig(
     format="%(asctime)s - %(name)s - %(levelname)s - %(message)s",
 )
 logger = logging.getLogger("processor")
+
+# Define Prometheus metrics
+PROCESS_TIME = Summary('process_time_seconds', 'Time spent processing files') #process_time_seconds_count, process_time_seconds_sum
+FILES_PROCESSED = Counter('files_processed_total', 'Total number of files processed')
 
 # Environment Variables
 MINIO_ENDPOINT = os.getenv("MINIO_ENDPOINT", "minio:9000")
@@ -53,6 +58,7 @@ def split_content(content, chunk_size=CHUNK_SIZE):
     for i in range(0, len(lines), chunk_size):
         yield "\n".join(lines[i:i + chunk_size])
 
+@PROCESS_TIME.time()
 def process_file(client, object_name):
     """
     Downloads a file from MinIO, splits its content, and uploads the chunks.
@@ -84,12 +90,17 @@ def process_file(client, object_name):
             )
             logger.info(f"Uploaded chunk '{chunk_object_name}' to bucket '{TARGET_BUCKET}'.")
 
+        FILES_PROCESSED.inc()
+
     except S3Error as e:
         logger.error(f"MinIO S3Error while processing '{object_name}': {e}")
     except Exception as e:
         logger.error(f"Error processing file '{object_name}': {e}")
 
 def main():
+    # Start Prometheus metrics server
+    start_http_server(8001)  # Expose metrics on port 8001
+
     # Initialize MinIO client
     client = init_minio_client()
 

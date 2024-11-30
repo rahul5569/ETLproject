@@ -1,45 +1,40 @@
 # docker-compose.yml
 
-version: '3.9'  # Updated to the latest schema version
+# Removed the 'version' key as it is obsolete in newer Docker Compose versions.
 
 networks:
   app-tier:
     driver: bridge
 
 services:
-  zookeeper:
-    image: confluentinc/cp-zookeeper:latest
-    networks:
-      - app-tier
-    environment:
-      ZOOKEEPER_CLIENT_PORT: 2181
-      ZOOKEEPER_TICK_TIME: 2000
-      ZOOKEEPER_SYNC_LIMIT: 2
-    ports:
-      - "2181:2181"
-    # Removed healthchecks as per your preference
-
   kafka:
-    image: confluentinc/cp-kafka:latest
+    image: 'bitnami/kafka:latest'
+    container_name: kafka
     networks:
       - app-tier
-    depends_on:
-      zookeeper:
-        condition: service_started
     environment:
-      KAFKA_BROKER_ID: 1
-      KAFKA_ZOOKEEPER_CONNECT: zookeeper:2181
-      KAFKA_ADVERTISED_LISTENERS: PLAINTEXT://kafka:9092
-      KAFKA_OFFSETS_TOPIC_REPLICATION_FACTOR: 1
-      KAFKA_AUTO_CREATE_TOPICS_ENABLE: 'true'
+      # Kafka KRaft Mode Configuration
+      - KAFKA_CFG_NODE_ID=0
+      - KAFKA_CFG_PROCESS_ROLES=controller,broker
+      - KAFKA_CFG_CONTROLLER_QUORUM_VOTERS=0@kafka:9093
+      - KAFKA_CFG_LISTENERS=PLAINTEXT://:9092,CONTROLLER://:9093,EXTERNAL://:9094
+      - KAFKA_CFG_ADVERTISED_LISTENERS=PLAINTEXT://kafka:9092,EXTERNAL://localhost:9094
+      - KAFKA_CFG_LISTENER_SECURITY_PROTOCOL_MAP=CONTROLLER:PLAINTEXT,EXTERNAL:PLAINTEXT,PLAINTEXT:PLAINTEXT
+      - KAFKA_CFG_CONTROLLER_LISTENER_NAMES=CONTROLLER
+      - ALLOW_PLAINTEXT_LISTENER=yes
+      - KAFKA_CFG_NUM_PARTITIONS=1
+      - KAFKA_CFG_AUTO_CREATE_TOPICS_ENABLE=true
+      - KAFKA_CFG_OFFSETS_TOPIC_REPLICATION_FACTOR=1
     ports:
-      - "9092:9092"
+      - "9092:9092"  # Expose only the PLAINTEXT listener externally
+      # Note: CONTROLLER listener (9093) is not exposed externally
     volumes:
-      - kafka_data:/var/lib/kafka/data
-    # Removed healthchecks as per your preference
+      - kafka_data:/bitnami/kafka
+    restart: unless-stopped
 
   minio:
     image: minio/minio:latest
+    container_name: minio
     networks:
       - app-tier
     environment:
@@ -51,10 +46,11 @@ services:
       - "9001:9001"  # Web Console
     volumes:
       - minio_data:/data
-    # Removed healthchecks as per your preference
+    restart: unless-stopped
 
   myapp:
     build: ./myapp
+    container_name: myapp
     networks:
       - app-tier
     environment:
@@ -63,15 +59,17 @@ services:
       - MINIO_SECRET_KEY=minioadmin
       - MINIO_BUCKET=mybucket
       - KAFKA_BOOTSTRAP_SERVERS=kafka:9092
-      - KAFKA_TOPIC=test-topic  # Ensure FastAPI sends to the correct topic
+      - KAFKA_TOPIC=test-topic
     ports:
       - "8000:8000"
     depends_on:
       - kafka
       - minio
+    restart: unless-stopped
 
   processor:
     build: ./processor
+    container_name: processor
     networks:
       - app-tier
     environment:
@@ -83,13 +81,49 @@ services:
       - KAFKA_BOOTSTRAP_SERVERS=kafka:9092
       - KAFKA_TOPIC=test-topic
       - CHUNK_SIZE=1000  # Adjust based on your requirements
+    ports:
+      - "8001:8001"  # Expose metrics endpoint
     depends_on:
       - kafka
       - minio
+    restart: unless-stopped
+
+  prometheus:
+    image: prom/prometheus:latest
+    container_name: prometheus
+    networks:
+      - app-tier
+    ports:
+      - "9090:9090"  # Prometheus web UI
+    volumes:
+      - ./prometheus.yml:/etc/prometheus/prometheus.yml
+      - prometheus_data:/prometheus
+    depends_on:
+      - myapp
+      - processor
+    restart: unless-stopped
+
+  grafana:
+    image: grafana/grafana:latest
+    container_name: grafana
+    networks:
+      - app-tier
+    ports:
+      - "3000:3000"  # Grafana web UI
+    environment:
+      - GF_SECURITY_ADMIN_PASSWORD=admin  # Change this to a strong password in production
+    volumes:
+      - grafana_data:/var/lib/grafana
+    depends_on:
+      - prometheus
     restart: unless-stopped
 
 volumes:
   minio_data:
     driver: local
   kafka_data:
+    driver: local
+  prometheus_data:
+    driver: local
+  grafana_data:
     driver: local

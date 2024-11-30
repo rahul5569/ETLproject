@@ -4,3 +4,4 @@
 4. the data is stored in minio and the minio bucket details are sent to processor service to divide it in chunks.
 5. the processor service divides the text into chunk and stored in the bucket.
 6. minio can be accessed via link http://127.0.0.1:9001/browser with username and password - minioadmin
+7. use http://host.docker.internal:9090 for grafana data source

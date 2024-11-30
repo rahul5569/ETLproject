@@ -11,6 +11,7 @@ import time
 import logging
 from minio.error import S3Error
 from kafka.errors import KafkaError
+from prometheus_fastapi_instrumentator import Instrumentator  # Added for Prometheus
 
 # Configure Logging
 logging.basicConfig(
@@ -20,6 +21,10 @@ logging.basicConfig(
 logger = logging.getLogger("myapp")
 
 app = FastAPI()
+
+# Initialize Prometheus Instrumentator
+instrumentator = Instrumentator()
+instrumentator.instrument(app).expose(app)
 
 # Environment Variables
 MINIO_ENDPOINT = os.getenv("MINIO_ENDPOINT", "minio:9000")
