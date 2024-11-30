@@ -5,3 +5,22 @@
 5. the processor service divides the text into chunk and stored in the bucket.
 6. minio can be accessed via link http://127.0.0.1:9001/browser with username and password - minioadmin
 7. use http://host.docker.internal:9090 for grafana data source
+
+Explanation of Changes
+app.py:
+
+Simplified to focus on application setup and event handling.
+Imports init_kafka_producer from config.py and includes routes from routes.py.
+config.py:
+
+Consolidates environment variables, configurations, logging setup, and client initializations.
+Defines init_minio() and init_kafka_producer() functions.
+Initializes minio_client and producer at the module level.
+routes.py:
+
+Contains the /upload/ endpoint logic.
+Imports necessary configurations and clients from config.py.
+Minimal Changes to Other Files:
+
+Only updated the Dockerfile to ensure all files are copied into the Docker image.
+No changes to processor.py, its Dockerfile, or docker-compose.yml.
