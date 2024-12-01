@@ -45,9 +45,9 @@ services:
       - minio_data:/data
     restart: unless-stopped
 
-  myapp:
-    build: ./myapp
-    container_name: myapp
+  ingestion:
+    build: ./ingestion
+    container_name: ingestion_service
     networks:
       - app-tier
     environment:
@@ -57,7 +57,7 @@ services:
       - MINIO_BUCKET=mybucket
       - KAFKA_BOOTSTRAP_SERVERS=kafka:9092
       - KAFKA_TOPIC=test-topic
-      - LOG_FILE_PATH=/logs/myapp.log
+      - LOG_FILE_PATH=/logs/data_ingestion.log
     ports:
       - "8000:8000"
     volumes:
@@ -67,9 +67,9 @@ services:
       - minio
     restart: unless-stopped
 
-  processor:
-    build: ./processor
-    container_name: processor
+  processing:
+    build: ./processing
+    container_name: processing_service
     networks:
       - app-tier
     environment:
@@ -81,8 +81,8 @@ services:
       - KAFKA_BOOTSTRAP_SERVERS=kafka:9092
       - KAFKA_TOPIC=test-topic
       - CHUNK_TOPIC=chunk-topic
-      - CHUNK_SIZE=1000
-      - LOG_FILE_PATH=/logs/processor.log
+      - CHUNK_SIZE=100000
+      - LOG_FILE_PATH=/logs/data_processing.log
     ports:
       - "8001:8001"
     volumes:
@@ -92,9 +92,9 @@ services:
       - minio
     restart: unless-stopped
 
-  retriever:
-    build: ./retriever
-    container_name: retriever
+  retrieval:
+    build: ./retrieval
+    container_name: retrieval_service
     networks:
       - app-tier
     environment:
@@ -103,7 +103,7 @@ services:
       - MINIO_SECRET_KEY=minioadmin
       - KAFKA_BOOTSTRAP_SERVERS=kafka:9092
       - CHUNK_TOPIC=chunk-topic
-      - LOG_FILE_PATH=/logs/retriever.log
+      - LOG_FILE_PATH=/logs/data_retrieval.log
     volumes:
       - logs:/logs
     depends_on:
@@ -122,8 +122,8 @@ services:
       - ./prometheus.yml:/etc/prometheus/prometheus.yml
       - prometheus_data:/prometheus
     depends_on:
-      - myapp
-      - processor
+      - ingestion
+      - processing
     restart: unless-stopped
 
   grafana:

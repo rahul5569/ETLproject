@@ -4,12 +4,12 @@ global:
   scrape_interval: 15s  # How frequently to scrape metrics
 
 scrape_configs:
-  - job_name: 'myapp'
+  - job_name: 'ingestion'
     metrics_path: /metrics
     static_configs:
-      - targets: ['myapp:8000']
+      - targets: ['ingestion:8000']
 
-  - job_name: 'processor'
+  - job_name: 'processing'
     metrics_path: /metrics
     static_configs:
-      - targets: ['processor:8001']
+      - targets: ['processing:8001']

@@ -1,0 +1,65 @@
+2024-12-01 11:58:19,412 - ingestion - INFO - Bucket 'mybucket' created.
+2024-12-01 11:58:22,210 - ingestion - INFO - Bucket 'mybucket' already exists.
+2024-12-01 11:58:24,108 - ingestion - INFO - Bucket 'mybucket' already exists.
+2024-12-01 11:58:25,646 - ingestion - INFO - Bucket 'mybucket' already exists.
+2024-12-01 11:58:27,569 - ingestion - INFO - Bucket 'mybucket' already exists.
+2024-12-01 11:58:30,287 - ingestion - INFO - Bucket 'mybucket' already exists.
+2024-12-01 11:58:34,723 - ingestion - INFO - Bucket 'mybucket' already exists.
+2024-12-01 11:59:01,097 - ingestion - INFO - Bucket 'mybucket' already exists.
+2024-12-01 11:59:01,103 - ingestion - INFO - Connected to Kafka successfully.
+2024-12-01 11:59:06,036 - ingestion - INFO - Stored 'content/alice-in-wonderland.txt' in MinIO.
+2024-12-01 11:59:06,054 - ingestion - INFO - Sent data to Kafka topic 'test-topic' with offset 0.
+2024-12-01 11:59:10,740 - ingestion - INFO - Stored 'content/romeo-and-juliet.txt' in MinIO.
+2024-12-01 11:59:10,743 - ingestion - INFO - Sent data to Kafka topic 'test-topic' with offset 1.
+2024-12-01 11:59:13,218 - ingestion - INFO - Stored 'content/the-great-gatsby.txt' in MinIO.
+2024-12-01 11:59:13,222 - ingestion - INFO - Sent data to Kafka topic 'test-topic' with offset 2.
+2024-12-01 11:59:19,685 - ingestion - INFO - Stored 'content/the-great-gatsby.txt' in MinIO.
+2024-12-01 11:59:19,686 - ingestion - INFO - Sent data to Kafka topic 'test-topic' with offset 3.
+2024-12-01 11:59:20,897 - ingestion - INFO - Stored 'content/the-great-gatsby.txt' in MinIO.
+2024-12-01 11:59:20,899 - ingestion - INFO - Sent data to Kafka topic 'test-topic' with offset 4.
+2024-12-01 11:59:25,202 - ingestion - INFO - Stored 'content/romeo-and-juliet.txt' in MinIO.
+2024-12-01 11:59:25,204 - ingestion - INFO - Sent data to Kafka topic 'test-topic' with offset 5.
+2024-12-01 11:59:28,022 - ingestion - INFO - Stored 'content/alice-in-wonderland.txt' in MinIO.
+2024-12-01 11:59:28,023 - ingestion - INFO - Sent data to Kafka topic 'test-topic' with offset 6.
+2024-12-01 11:59:30,392 - ingestion - INFO - Stored 'content/the-great-gatsby.txt' in MinIO.
+2024-12-01 11:59:30,393 - ingestion - INFO - Sent data to Kafka topic 'test-topic' with offset 7.
+2024-12-01 11:59:34,214 - ingestion - INFO - Stored 'content/the-great-gatsby.txt' in MinIO.
+2024-12-01 11:59:34,216 - ingestion - INFO - Sent data to Kafka topic 'test-topic' with offset 8.
+2024-12-01 11:59:35,539 - ingestion - INFO - Stored 'content/alice-in-wonderland.txt' in MinIO.
+2024-12-01 11:59:35,541 - ingestion - INFO - Sent data to Kafka topic 'test-topic' with offset 9.
+2024-12-01 12:00:04,394 - ingestion - INFO - Bucket 'mybucket' already exists.
+2024-12-01 12:00:04,400 - ingestion - INFO - Connected to Kafka successfully.
+2024-12-01 12:00:04,482 - ingestion - INFO - Stored 'content/alice-in-wonderland.txt' in MinIO.
+2024-12-01 12:00:07,542 - ingestion - INFO - Sent data to Kafka topic 'test-topic' with offset 10.
+2024-12-01 12:00:12,112 - ingestion - INFO - Stored 'content/alice-in-wonderland.txt' in MinIO.
+2024-12-01 12:00:12,115 - ingestion - INFO - Sent data to Kafka topic 'test-topic' with offset 11.
+2024-12-01 12:00:13,709 - ingestion - INFO - Stored 'content/romeo-and-juliet.txt' in MinIO.
+2024-12-01 12:00:13,713 - ingestion - INFO - Sent data to Kafka topic 'test-topic' with offset 12.
+2024-12-01 12:00:18,658 - ingestion - INFO - Stored 'content/romeo-and-juliet.txt' in MinIO.
+2024-12-01 12:00:18,660 - ingestion - INFO - Sent data to Kafka topic 'test-topic' with offset 13.
+2024-12-01 12:00:23,973 - ingestion - INFO - Stored 'content/alice-in-wonderland.txt' in MinIO.
+2024-12-01 12:00:23,976 - ingestion - INFO - Sent data to Kafka topic 'test-topic' with offset 14.
+2024-12-01 12:00:27,552 - ingestion - INFO - Stored 'content/the-great-gatsby.txt' in MinIO.
+2024-12-01 12:00:27,556 - ingestion - INFO - Sent data to Kafka topic 'test-topic' with offset 15.
+2024-12-01 12:00:30,169 - ingestion - INFO - Stored 'content/the-great-gatsby.txt' in MinIO.
+2024-12-01 12:00:30,172 - ingestion - INFO - Sent data to Kafka topic 'test-topic' with offset 16.
+2024-12-01 12:00:32,230 - ingestion - INFO - Stored 'content/alice-in-wonderland.txt' in MinIO.
+2024-12-01 12:00:32,234 - ingestion - INFO - Sent data to Kafka topic 'test-topic' with offset 17.
+2024-12-01 12:00:35,518 - ingestion - INFO - Stored 'content/alice-in-wonderland.txt' in MinIO.
+2024-12-01 12:00:35,520 - ingestion - INFO - Sent data to Kafka topic 'test-topic' with offset 18.
+2024-12-01 12:00:39,174 - ingestion - INFO - Stored 'content/the-great-gatsby.txt' in MinIO.
+2024-12-01 12:00:39,178 - ingestion - INFO - Sent data to Kafka topic 'test-topic' with offset 19.
+2024-12-01 12:00:43,202 - ingestion - INFO - Stored 'content/romeo-and-juliet.txt' in MinIO.
+2024-12-01 12:00:43,204 - ingestion - INFO - Sent data to Kafka topic 'test-topic' with offset 20.
+2024-12-01 12:00:47,337 - ingestion - INFO - Stored 'content/the-great-gatsby.txt' in MinIO.
+2024-12-01 12:00:47,340 - ingestion - INFO - Sent data to Kafka topic 'test-topic' with offset 21.
+2024-12-01 12:00:49,365 - ingestion - INFO - Stored 'content/romeo-and-juliet.txt' in MinIO.
+2024-12-01 12:00:49,368 - ingestion - INFO - Sent data to Kafka topic 'test-topic' with offset 22.
+2024-12-01 12:00:51,542 - ingestion - INFO - Stored 'content/alice-in-wonderland.txt' in MinIO.
+2024-12-01 12:00:51,545 - ingestion - INFO - Sent data to Kafka topic 'test-topic' with offset 23.
+2024-12-01 12:00:58,182 - ingestion - INFO - Stored 'content/the-great-gatsby.txt' in MinIO.
+2024-12-01 12:00:58,186 - ingestion - INFO - Sent data to Kafka topic 'test-topic' with offset 24.
+2024-12-01 12:01:00,731 - ingestion - INFO - Stored 'content/romeo-and-juliet.txt' in MinIO.
+2024-12-01 12:01:00,734 - ingestion - INFO - Sent data to Kafka topic 'test-topic' with offset 25.
+2024-12-01 12:01:03,253 - ingestion - INFO - Stored 'content/romeo-and-juliet.txt' in MinIO.
+2024-12-01 12:01:03,255 - ingestion - INFO - Sent data to Kafka topic 'test-topic' with offset 26.

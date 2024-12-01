@@ -1,3 +1,0 @@
-minio
-kafka-python
-prometheus-client
