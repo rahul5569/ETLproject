@@ -57,11 +57,11 @@ services:
       - MINIO_BUCKET=mybucket
       - KAFKA_BOOTSTRAP_SERVERS=kafka:9092
       - KAFKA_TOPIC=test-topic
-      - LOG_FILE_PATH=/logs/myapp.log    # Unique log file for myapp
+      - LOG_FILE_PATH=/logs/myapp.log
     ports:
       - "8000:8000"
     volumes:
-      - logs:/logs                      # Mount the shared logs volume
+      - logs:/logs
     depends_on:
       - kafka
       - minio
@@ -80,12 +80,32 @@ services:
       - TARGET_BUCKET=processed-bucket
       - KAFKA_BOOTSTRAP_SERVERS=kafka:9092
       - KAFKA_TOPIC=test-topic
+      - CHUNK_TOPIC=chunk-topic
       - CHUNK_SIZE=1000
-      - LOG_FILE_PATH=/logs/processor.log  # Unique log file for processor
+      - LOG_FILE_PATH=/logs/processor.log
     ports:
       - "8001:8001"
     volumes:
-      - logs:/logs                         # Mount the shared logs volume
+      - logs:/logs
+    depends_on:
+      - kafka
+      - minio
+    restart: unless-stopped
+
+  retriever:
+    build: ./retriever
+    container_name: retriever
+    networks:
+      - app-tier
+    environment:
+      - MINIO_ENDPOINT=minio:9000
+      - MINIO_ACCESS_KEY=minioadmin
+      - MINIO_SECRET_KEY=minioadmin
+      - KAFKA_BOOTSTRAP_SERVERS=kafka:9092
+      - CHUNK_TOPIC=chunk-topic
+      - LOG_FILE_PATH=/logs/retriever.log
+    volumes:
+      - logs:/logs
     depends_on:
       - kafka
       - minio
@@ -132,3 +152,4 @@ volumes:
       o: bind
       type: none
       device: ${PWD}/logs  # Map the logs volume to the 'logs' directory in your project
+

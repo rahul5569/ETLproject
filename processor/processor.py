@@ -5,8 +5,9 @@ import json
 import io
 import logging
 import logging.handlers
+import time
 from minio import Minio
-from kafka import KafkaConsumer
+from kafka import KafkaConsumer, KafkaProducer
 from kafka.errors import KafkaError
 from minio.error import S3Error
 from prometheus_client import start_http_server, Summary, Counter
@@ -18,8 +19,9 @@ MINIO_SECRET_KEY = os.getenv("MINIO_SECRET_KEY", "minioadmin")
 SOURCE_BUCKET = os.getenv("SOURCE_BUCKET", "mybucket")
 TARGET_BUCKET = os.getenv("TARGET_BUCKET", "processed-bucket")
 KAFKA_BOOTSTRAP_SERVERS = os.getenv("KAFKA_BOOTSTRAP_SERVERS", "kafka:9092")
-KAFKA_TOPIC = os.getenv("KAFKA_TOPIC", "test-topic")
-CHUNK_SIZE = int(os.getenv("CHUNK_SIZE", 1000))  # Number of characters per chunk
+KAFKA_TOPIC = os.getenv("KAFKA_TOPIC", "test-topic")        # Topic to consume original files
+CHUNK_TOPIC = os.getenv("CHUNK_TOPIC", "chunk-topic")       # Topic to send chunk metadata
+CHUNK_SIZE = int(os.getenv("CHUNK_SIZE", 1000))             # Number of characters per chunk
 LOG_FILE_PATH = os.getenv("LOG_FILE_PATH", "/logs/processor.log")
 
 # Configure Logging
@@ -66,6 +68,22 @@ def init_minio_client():
         logger.critical(f"Failed to initialize MinIO client: {e}")
         raise
 
+def init_kafka_producer():
+    for attempt in range(5):
+        try:
+            producer = KafkaProducer(
+                bootstrap_servers=KAFKA_BOOTSTRAP_SERVERS,
+                api_version=(0, 11, 5),
+                value_serializer=lambda v: json.dumps(v).encode('utf-8')
+            )
+            logger.info("Connected to Kafka producer successfully.")
+            return producer
+        except KafkaError as e:
+            logger.error(f"Kafka producer connection failed: {e}. Retrying in 5 seconds...")
+            time.sleep(5)
+    logger.critical("Failed to connect to Kafka producer after multiple attempts.")
+    raise Exception("Failed to connect to Kafka producer after multiple attempts.")
+
 def recursive_text_splitter(text, max_chunk_size):
     """
     Recursively splits text into chunks of up to 'max_chunk_size' characters.
@@ -92,9 +110,10 @@ def recursive_text_splitter(text, max_chunk_size):
     return chunks
 
 @PROCESS_TIME.time()
-def process_file(client, object_name):
+def process_file(client, producer, object_name):
     """
-    Downloads a file from MinIO, splits its content recursively, and uploads the chunks.
+    Downloads a file from MinIO, splits its content recursively, uploads the chunks,
+    and sends metadata to Kafka.
     """
     try:
         # Download the file from MinIO
@@ -108,7 +127,7 @@ def process_file(client, object_name):
         chunks = recursive_text_splitter(file_content, CHUNK_SIZE)
         logger.info(f"Split '{object_name}' into {len(chunks)} chunks.")
 
-        # Upload each chunk to the target bucket
+        # Upload each chunk to the target bucket and send metadata to Kafka
         for idx, chunk in enumerate(chunks, start=1):
             # Generate a unique name for each chunk
             sanitized_object_name = object_name.replace('/', '_')  # Replace '/' to avoid nested paths
@@ -121,6 +140,18 @@ def process_file(client, object_name):
                 content_type="text/plain"
             )
             logger.info(f"Uploaded chunk '{chunk_object_name}' to bucket '{TARGET_BUCKET}'.")
+
+            # Send metadata to Kafka
+            metadata = {
+                "bucket_name": TARGET_BUCKET,
+                "object_name": chunk_object_name,
+                "original_file": object_name,
+                "chunk_index": idx,
+                "total_chunks": len(chunks)
+            }
+            producer.send(CHUNK_TOPIC, metadata)
+            producer.flush()
+            logger.info(f"Sent metadata for chunk '{chunk_object_name}' to Kafka topic '{CHUNK_TOPIC}'.")
 
         FILES_PROCESSED.inc()
 
@@ -146,10 +177,13 @@ def main():
             group_id='processor-group',
             value_deserializer=lambda m: json.loads(m.decode('utf-8'))
         )
-        logger.info(f"Connected to Kafka topic '{KAFKA_TOPIC}'.")
+        logger.info(f"Connected to Kafka topic '{KAFKA_TOPIC}' as consumer.")
     except KafkaError as e:
-        logger.critical(f"Failed to connect to Kafka: {e}")
+        logger.critical(f"Failed to connect to Kafka as consumer: {e}")
         raise
+
+    # Initialize Kafka producer
+    producer = init_kafka_producer()
 
     # Consume messages
     for message in consumer:
@@ -164,7 +198,7 @@ def main():
                 continue
 
             # Process the file
-            process_file(client, object_name)
+            process_file(client, producer, object_name)
 
         except Exception as e:
             logger.error(f"Error consuming message: {e}")
