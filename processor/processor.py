@@ -19,7 +19,7 @@ SOURCE_BUCKET = os.getenv("SOURCE_BUCKET", "mybucket")
 TARGET_BUCKET = os.getenv("TARGET_BUCKET", "processed-bucket")
 KAFKA_BOOTSTRAP_SERVERS = os.getenv("KAFKA_BOOTSTRAP_SERVERS", "kafka:9092")
 KAFKA_TOPIC = os.getenv("KAFKA_TOPIC", "test-topic")
-CHUNK_SIZE = int(os.getenv("CHUNK_SIZE", 1000))  # Number of lines per chunk
+CHUNK_SIZE = int(os.getenv("CHUNK_SIZE", 1000))  # Number of characters per chunk
 LOG_FILE_PATH = os.getenv("LOG_FILE_PATH", "/logs/processor.log")
 
 # Configure Logging
@@ -66,18 +66,35 @@ def init_minio_client():
         logger.critical(f"Failed to initialize MinIO client: {e}")
         raise
 
-def split_content(content, chunk_size=CHUNK_SIZE):
+def recursive_text_splitter(text, max_chunk_size):
     """
-    Splits the content into chunks of 'chunk_size' lines each.
+    Recursively splits text into chunks of up to 'max_chunk_size' characters.
     """
-    lines = content.splitlines()
-    for i in range(0, len(lines), chunk_size):
-        yield "\n".join(lines[i:i + chunk_size])
+    chunks = []
+
+    def split_recursively(subtext):
+        if len(subtext) <= max_chunk_size:
+            chunks.append(subtext)
+            return
+        else:
+            # Find the last space character within the max_chunk_size
+            split_point = max_chunk_size
+            while split_point > 0 and subtext[split_point - 1] != ' ':
+                split_point -= 1
+            if split_point == 0:
+                # If no space is found, split at max_chunk_size
+                split_point = max_chunk_size
+            # Recursively split the remaining text
+            chunks.append(subtext[:split_point].rstrip())
+            split_recursively(subtext[split_point:].lstrip())
+
+    split_recursively(text)
+    return chunks
 
 @PROCESS_TIME.time()
 def process_file(client, object_name):
     """
-    Downloads a file from MinIO, splits its content, and uploads the chunks.
+    Downloads a file from MinIO, splits its content recursively, and uploads the chunks.
     """
     try:
         # Download the file from MinIO
@@ -87,14 +104,13 @@ def process_file(client, object_name):
         response.close()
         response.release_conn()
 
-        # Split the content into chunks
-        chunks = list(split_content(file_content))
-        logger.info(f"Splitting '{object_name}' into {len(chunks)} chunks.")
+        # Split the content into chunks using recursive text splitter
+        chunks = recursive_text_splitter(file_content, CHUNK_SIZE)
+        logger.info(f"Split '{object_name}' into {len(chunks)} chunks.")
 
         # Upload each chunk to the target bucket
         for idx, chunk in enumerate(chunks, start=1):
             # Generate a unique name for each chunk
-            # For example: chunks/content_the-great-gatsby.txt_chunk_1.txt
             sanitized_object_name = object_name.replace('/', '_')  # Replace '/' to avoid nested paths
             chunk_object_name = f"chunks/{sanitized_object_name}_chunk_{idx}.txt"
             client.put_object(
