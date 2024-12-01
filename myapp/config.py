@@ -4,17 +4,11 @@ import os
 import time
 import json
 import logging
+import logging.handlers
 from minio import Minio
 from minio.error import S3Error
 from kafka import KafkaProducer
 from kafka.errors import KafkaError
-
-# Configure Logging
-logging.basicConfig(
-    level=logging.INFO,  # Set to DEBUG for more verbose output
-    format="%(asctime)s - %(name)s - %(levelname)s - %(message)s",
-)
-logger = logging.getLogger("myapp")
 
 # Environment Variables
 MINIO_ENDPOINT = os.getenv("MINIO_ENDPOINT", "minio:9000")
@@ -23,6 +17,28 @@ MINIO_SECRET_KEY = os.getenv("MINIO_SECRET_KEY", "minioadmin")
 MINIO_BUCKET = os.getenv("MINIO_BUCKET", "mybucket")
 KAFKA_BOOTSTRAP_SERVERS = os.getenv("KAFKA_BOOTSTRAP_SERVERS", "kafka:9092")
 KAFKA_TOPIC = os.getenv("KAFKA_TOPIC", "test-topic")
+LOG_FILE_PATH = os.getenv("LOG_FILE_PATH", "/logs/myapp.log")
+
+# Configure Logging
+logger = logging.getLogger("myapp")
+logger.setLevel(logging.INFO)
+
+# Create a handler to write logs to the shared file
+file_handler = logging.handlers.WatchedFileHandler(LOG_FILE_PATH)
+file_handler.setLevel(logging.INFO)
+
+# Create formatter and add it to the handler
+formatter = logging.Formatter("%(asctime)s - %(name)s - %(levelname)s - %(message)s")
+file_handler.setFormatter(formatter)
+
+# Add the handler to the logger
+logger.addHandler(file_handler)
+
+# Optionally, add a console handler
+console_handler = logging.StreamHandler()
+console_handler.setLevel(logging.INFO)
+console_handler.setFormatter(formatter)
+logger.addHandler(console_handler)
 
 # Initialize MinIO client
 def init_minio():

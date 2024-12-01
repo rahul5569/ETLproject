@@ -1,0 +1,866 @@
+2024-12-01 02:42:40,198 - processor - INFO - Bucket 'processed-bucket' already exists.
+2024-12-01 02:42:40,250 - processor - CRITICAL - Failed to connect to Kafka: NoBrokersAvailable
+2024-12-01 02:42:41,546 - processor - INFO - Bucket 'processed-bucket' already exists.
+2024-12-01 02:42:41,598 - processor - CRITICAL - Failed to connect to Kafka: NoBrokersAvailable
+2024-12-01 02:42:43,049 - processor - INFO - Bucket 'processed-bucket' already exists.
+2024-12-01 02:42:43,101 - processor - CRITICAL - Failed to connect to Kafka: NoBrokersAvailable
+2024-12-01 02:42:44,588 - processor - INFO - Bucket 'processed-bucket' already exists.
+2024-12-01 02:42:44,696 - processor - INFO - Connected to Kafka topic 'test-topic'.
+2024-12-01 02:43:08,085 - processor - INFO - Received message: {'object_name': 'content/the-great-gatsby.txt'}
+2024-12-01 02:43:08,085 - processor - INFO - Downloading 'content/the-great-gatsby.txt' from bucket 'mybucket'.
+2024-12-01 02:43:08,091 - processor - INFO - Splitting 'content/the-great-gatsby.txt' into 7 chunks.
+2024-12-01 02:43:08,099 - processor - INFO - Uploaded chunk 'chunks/content_the-great-gatsby.txt_chunk_1.txt' to bucket 'processed-bucket'.
+2024-12-01 02:43:08,106 - processor - INFO - Uploaded chunk 'chunks/content_the-great-gatsby.txt_chunk_2.txt' to bucket 'processed-bucket'.
+2024-12-01 02:43:08,113 - processor - INFO - Uploaded chunk 'chunks/content_the-great-gatsby.txt_chunk_3.txt' to bucket 'processed-bucket'.
+2024-12-01 02:43:08,121 - processor - INFO - Uploaded chunk 'chunks/content_the-great-gatsby.txt_chunk_4.txt' to bucket 'processed-bucket'.
+2024-12-01 02:43:08,127 - processor - INFO - Uploaded chunk 'chunks/content_the-great-gatsby.txt_chunk_5.txt' to bucket 'processed-bucket'.
+2024-12-01 02:43:08,134 - processor - INFO - Uploaded chunk 'chunks/content_the-great-gatsby.txt_chunk_6.txt' to bucket 'processed-bucket'.
+2024-12-01 02:43:08,142 - processor - INFO - Uploaded chunk 'chunks/content_the-great-gatsby.txt_chunk_7.txt' to bucket 'processed-bucket'.
+2024-12-01 02:43:10,818 - processor - INFO - Received message: {'object_name': 'content/the-great-gatsby.txt'}
+2024-12-01 02:43:10,818 - processor - INFO - Downloading 'content/the-great-gatsby.txt' from bucket 'mybucket'.
+2024-12-01 02:43:10,823 - processor - INFO - Splitting 'content/the-great-gatsby.txt' into 7 chunks.
+2024-12-01 02:43:10,829 - processor - INFO - Uploaded chunk 'chunks/content_the-great-gatsby.txt_chunk_1.txt' to bucket 'processed-bucket'.
+2024-12-01 02:43:10,836 - processor - INFO - Uploaded chunk 'chunks/content_the-great-gatsby.txt_chunk_2.txt' to bucket 'processed-bucket'.
+2024-12-01 02:43:10,843 - processor - INFO - Uploaded chunk 'chunks/content_the-great-gatsby.txt_chunk_3.txt' to bucket 'processed-bucket'.
+2024-12-01 02:43:10,849 - processor - INFO - Uploaded chunk 'chunks/content_the-great-gatsby.txt_chunk_4.txt' to bucket 'processed-bucket'.
+2024-12-01 02:43:10,855 - processor - INFO - Uploaded chunk 'chunks/content_the-great-gatsby.txt_chunk_5.txt' to bucket 'processed-bucket'.
+2024-12-01 02:43:10,862 - processor - INFO - Uploaded chunk 'chunks/content_the-great-gatsby.txt_chunk_6.txt' to bucket 'processed-bucket'.
+2024-12-01 02:43:10,869 - processor - INFO - Uploaded chunk 'chunks/content_the-great-gatsby.txt_chunk_7.txt' to bucket 'processed-bucket'.
+2024-12-01 02:43:15,213 - processor - INFO - Received message: {'object_name': 'content/alice-in-wonderland.txt'}
+2024-12-01 02:43:15,213 - processor - INFO - Downloading 'content/alice-in-wonderland.txt' from bucket 'mybucket'.
+2024-12-01 02:43:15,216 - processor - INFO - Splitting 'content/alice-in-wonderland.txt' into 4 chunks.
+2024-12-01 02:43:15,224 - processor - INFO - Uploaded chunk 'chunks/content_alice-in-wonderland.txt_chunk_1.txt' to bucket 'processed-bucket'.
+2024-12-01 02:43:15,231 - processor - INFO - Uploaded chunk 'chunks/content_alice-in-wonderland.txt_chunk_2.txt' to bucket 'processed-bucket'.
+2024-12-01 02:43:15,238 - processor - INFO - Uploaded chunk 'chunks/content_alice-in-wonderland.txt_chunk_3.txt' to bucket 'processed-bucket'.
+2024-12-01 02:43:15,245 - processor - INFO - Uploaded chunk 'chunks/content_alice-in-wonderland.txt_chunk_4.txt' to bucket 'processed-bucket'.
+2024-12-01 02:43:16,591 - processor - INFO - Received message: {'object_name': 'content/alice-in-wonderland.txt'}
+2024-12-01 02:43:16,592 - processor - INFO - Downloading 'content/alice-in-wonderland.txt' from bucket 'mybucket'.
+2024-12-01 02:43:16,595 - processor - INFO - Splitting 'content/alice-in-wonderland.txt' into 4 chunks.
+2024-12-01 02:43:16,601 - processor - INFO - Uploaded chunk 'chunks/content_alice-in-wonderland.txt_chunk_1.txt' to bucket 'processed-bucket'.
+2024-12-01 02:43:16,608 - processor - INFO - Uploaded chunk 'chunks/content_alice-in-wonderland.txt_chunk_2.txt' to bucket 'processed-bucket'.
+2024-12-01 02:43:16,615 - processor - INFO - Uploaded chunk 'chunks/content_alice-in-wonderland.txt_chunk_3.txt' to bucket 'processed-bucket'.
+2024-12-01 02:43:16,622 - processor - INFO - Uploaded chunk 'chunks/content_alice-in-wonderland.txt_chunk_4.txt' to bucket 'processed-bucket'.
+2024-12-01 02:43:17,751 - processor - INFO - Received message: {'object_name': 'content/alice-in-wonderland.txt'}
+2024-12-01 02:43:17,752 - processor - INFO - Downloading 'content/alice-in-wonderland.txt' from bucket 'mybucket'.
+2024-12-01 02:43:17,754 - processor - INFO - Splitting 'content/alice-in-wonderland.txt' into 4 chunks.
+2024-12-01 02:43:17,761 - processor - INFO - Uploaded chunk 'chunks/content_alice-in-wonderland.txt_chunk_1.txt' to bucket 'processed-bucket'.
+2024-12-01 02:43:17,767 - processor - INFO - Uploaded chunk 'chunks/content_alice-in-wonderland.txt_chunk_2.txt' to bucket 'processed-bucket'.
+2024-12-01 02:43:17,775 - processor - INFO - Uploaded chunk 'chunks/content_alice-in-wonderland.txt_chunk_3.txt' to bucket 'processed-bucket'.
+2024-12-01 02:43:17,781 - processor - INFO - Uploaded chunk 'chunks/content_alice-in-wonderland.txt_chunk_4.txt' to bucket 'processed-bucket'.
+2024-12-01 02:43:22,669 - processor - INFO - Received message: {'object_name': 'content/the-great-gatsby.txt'}
+2024-12-01 02:43:22,670 - processor - INFO - Downloading 'content/the-great-gatsby.txt' from bucket 'mybucket'.
+2024-12-01 02:43:22,674 - processor - INFO - Splitting 'content/the-great-gatsby.txt' into 7 chunks.
+2024-12-01 02:43:22,682 - processor - INFO - Uploaded chunk 'chunks/content_the-great-gatsby.txt_chunk_1.txt' to bucket 'processed-bucket'.
+2024-12-01 02:43:22,688 - processor - INFO - Uploaded chunk 'chunks/content_the-great-gatsby.txt_chunk_2.txt' to bucket 'processed-bucket'.
+2024-12-01 02:43:22,696 - processor - INFO - Uploaded chunk 'chunks/content_the-great-gatsby.txt_chunk_3.txt' to bucket 'processed-bucket'.
+2024-12-01 02:43:22,702 - processor - INFO - Uploaded chunk 'chunks/content_the-great-gatsby.txt_chunk_4.txt' to bucket 'processed-bucket'.
+2024-12-01 02:43:22,708 - processor - INFO - Uploaded chunk 'chunks/content_the-great-gatsby.txt_chunk_5.txt' to bucket 'processed-bucket'.
+2024-12-01 02:43:22,714 - processor - INFO - Uploaded chunk 'chunks/content_the-great-gatsby.txt_chunk_6.txt' to bucket 'processed-bucket'.
+2024-12-01 02:43:22,721 - processor - INFO - Uploaded chunk 'chunks/content_the-great-gatsby.txt_chunk_7.txt' to bucket 'processed-bucket'.
+2024-12-01 02:43:25,240 - processor - INFO - Received message: {'object_name': 'content/romeo-and-juliet.txt'}
+2024-12-01 02:43:25,241 - processor - INFO - Downloading 'content/romeo-and-juliet.txt' from bucket 'mybucket'.
+2024-12-01 02:43:25,245 - processor - INFO - Splitting 'content/romeo-and-juliet.txt' into 6 chunks.
+2024-12-01 02:43:25,254 - processor - INFO - Uploaded chunk 'chunks/content_romeo-and-juliet.txt_chunk_1.txt' to bucket 'processed-bucket'.
+2024-12-01 02:43:25,260 - processor - INFO - Uploaded chunk 'chunks/content_romeo-and-juliet.txt_chunk_2.txt' to bucket 'processed-bucket'.
+2024-12-01 02:43:25,267 - processor - INFO - Uploaded chunk 'chunks/content_romeo-and-juliet.txt_chunk_3.txt' to bucket 'processed-bucket'.
+2024-12-01 02:43:25,273 - processor - INFO - Uploaded chunk 'chunks/content_romeo-and-juliet.txt_chunk_4.txt' to bucket 'processed-bucket'.
+2024-12-01 02:43:25,280 - processor - INFO - Uploaded chunk 'chunks/content_romeo-and-juliet.txt_chunk_5.txt' to bucket 'processed-bucket'.
+2024-12-01 02:43:25,285 - processor - INFO - Uploaded chunk 'chunks/content_romeo-and-juliet.txt_chunk_6.txt' to bucket 'processed-bucket'.
+2024-12-01 02:43:30,249 - processor - INFO - Received message: {'object_name': 'content/the-great-gatsby.txt'}
+2024-12-01 02:43:30,250 - processor - INFO - Downloading 'content/the-great-gatsby.txt' from bucket 'mybucket'.
+2024-12-01 02:43:30,255 - processor - INFO - Splitting 'content/the-great-gatsby.txt' into 7 chunks.
+2024-12-01 02:43:30,262 - processor - INFO - Uploaded chunk 'chunks/content_the-great-gatsby.txt_chunk_1.txt' to bucket 'processed-bucket'.
+2024-12-01 02:43:30,267 - processor - INFO - Uploaded chunk 'chunks/content_the-great-gatsby.txt_chunk_2.txt' to bucket 'processed-bucket'.
+2024-12-01 02:43:30,275 - processor - INFO - Uploaded chunk 'chunks/content_the-great-gatsby.txt_chunk_3.txt' to bucket 'processed-bucket'.
+2024-12-01 02:43:30,282 - processor - INFO - Uploaded chunk 'chunks/content_the-great-gatsby.txt_chunk_4.txt' to bucket 'processed-bucket'.
+2024-12-01 02:43:30,288 - processor - INFO - Uploaded chunk 'chunks/content_the-great-gatsby.txt_chunk_5.txt' to bucket 'processed-bucket'.
+2024-12-01 02:43:30,295 - processor - INFO - Uploaded chunk 'chunks/content_the-great-gatsby.txt_chunk_6.txt' to bucket 'processed-bucket'.
+2024-12-01 02:43:30,301 - processor - INFO - Uploaded chunk 'chunks/content_the-great-gatsby.txt_chunk_7.txt' to bucket 'processed-bucket'.
+2024-12-01 02:43:33,327 - processor - INFO - Received message: {'object_name': 'content/alice-in-wonderland.txt'}
+2024-12-01 02:43:33,327 - processor - INFO - Downloading 'content/alice-in-wonderland.txt' from bucket 'mybucket'.
+2024-12-01 02:43:33,331 - processor - INFO - Splitting 'content/alice-in-wonderland.txt' into 4 chunks.
+2024-12-01 02:43:33,339 - processor - INFO - Uploaded chunk 'chunks/content_alice-in-wonderland.txt_chunk_1.txt' to bucket 'processed-bucket'.
+2024-12-01 02:43:33,345 - processor - INFO - Uploaded chunk 'chunks/content_alice-in-wonderland.txt_chunk_2.txt' to bucket 'processed-bucket'.
+2024-12-01 02:43:33,353 - processor - INFO - Uploaded chunk 'chunks/content_alice-in-wonderland.txt_chunk_3.txt' to bucket 'processed-bucket'.
+2024-12-01 02:43:33,359 - processor - INFO - Uploaded chunk 'chunks/content_alice-in-wonderland.txt_chunk_4.txt' to bucket 'processed-bucket'.
+2024-12-01 02:43:35,646 - processor - INFO - Received message: {'object_name': 'content/alice-in-wonderland.txt'}
+2024-12-01 02:43:35,646 - processor - INFO - Downloading 'content/alice-in-wonderland.txt' from bucket 'mybucket'.
+2024-12-01 02:43:35,649 - processor - INFO - Splitting 'content/alice-in-wonderland.txt' into 4 chunks.
+2024-12-01 02:43:35,655 - processor - INFO - Uploaded chunk 'chunks/content_alice-in-wonderland.txt_chunk_1.txt' to bucket 'processed-bucket'.
+2024-12-01 02:43:35,661 - processor - INFO - Uploaded chunk 'chunks/content_alice-in-wonderland.txt_chunk_2.txt' to bucket 'processed-bucket'.
+2024-12-01 02:43:35,667 - processor - INFO - Uploaded chunk 'chunks/content_alice-in-wonderland.txt_chunk_3.txt' to bucket 'processed-bucket'.
+2024-12-01 02:43:35,675 - processor - INFO - Uploaded chunk 'chunks/content_alice-in-wonderland.txt_chunk_4.txt' to bucket 'processed-bucket'.
+2024-12-01 02:43:39,980 - processor - INFO - Received message: {'object_name': 'content/romeo-and-juliet.txt'}
+2024-12-01 02:43:39,981 - processor - INFO - Downloading 'content/romeo-and-juliet.txt' from bucket 'mybucket'.
+2024-12-01 02:43:39,983 - processor - INFO - Splitting 'content/romeo-and-juliet.txt' into 6 chunks.
+2024-12-01 02:43:39,989 - processor - INFO - Uploaded chunk 'chunks/content_romeo-and-juliet.txt_chunk_1.txt' to bucket 'processed-bucket'.
+2024-12-01 02:43:39,995 - processor - INFO - Uploaded chunk 'chunks/content_romeo-and-juliet.txt_chunk_2.txt' to bucket 'processed-bucket'.
+2024-12-01 02:43:40,003 - processor - INFO - Uploaded chunk 'chunks/content_romeo-and-juliet.txt_chunk_3.txt' to bucket 'processed-bucket'.
+2024-12-01 02:43:40,010 - processor - INFO - Uploaded chunk 'chunks/content_romeo-and-juliet.txt_chunk_4.txt' to bucket 'processed-bucket'.
+2024-12-01 02:43:40,017 - processor - INFO - Uploaded chunk 'chunks/content_romeo-and-juliet.txt_chunk_5.txt' to bucket 'processed-bucket'.
+2024-12-01 02:43:40,025 - processor - INFO - Uploaded chunk 'chunks/content_romeo-and-juliet.txt_chunk_6.txt' to bucket 'processed-bucket'.
+2024-12-01 02:43:44,466 - processor - INFO - Received message: {'object_name': 'content/the-great-gatsby.txt'}
+2024-12-01 02:43:44,467 - processor - INFO - Downloading 'content/the-great-gatsby.txt' from bucket 'mybucket'.
+2024-12-01 02:43:44,472 - processor - INFO - Splitting 'content/the-great-gatsby.txt' into 7 chunks.
+2024-12-01 02:43:44,479 - processor - INFO - Uploaded chunk 'chunks/content_the-great-gatsby.txt_chunk_1.txt' to bucket 'processed-bucket'.
+2024-12-01 02:43:44,486 - processor - INFO - Uploaded chunk 'chunks/content_the-great-gatsby.txt_chunk_2.txt' to bucket 'processed-bucket'.
+2024-12-01 02:43:44,493 - processor - INFO - Uploaded chunk 'chunks/content_the-great-gatsby.txt_chunk_3.txt' to bucket 'processed-bucket'.
+2024-12-01 02:43:44,499 - processor - INFO - Uploaded chunk 'chunks/content_the-great-gatsby.txt_chunk_4.txt' to bucket 'processed-bucket'.
+2024-12-01 02:43:44,505 - processor - INFO - Uploaded chunk 'chunks/content_the-great-gatsby.txt_chunk_5.txt' to bucket 'processed-bucket'.
+2024-12-01 02:43:44,511 - processor - INFO - Uploaded chunk 'chunks/content_the-great-gatsby.txt_chunk_6.txt' to bucket 'processed-bucket'.
+2024-12-01 02:43:44,518 - processor - INFO - Uploaded chunk 'chunks/content_the-great-gatsby.txt_chunk_7.txt' to bucket 'processed-bucket'.
+2024-12-01 02:43:49,261 - processor - INFO - Received message: {'object_name': 'content/romeo-and-juliet.txt'}
+2024-12-01 02:43:49,262 - processor - INFO - Downloading 'content/romeo-and-juliet.txt' from bucket 'mybucket'.
+2024-12-01 02:43:49,264 - processor - INFO - Splitting 'content/romeo-and-juliet.txt' into 6 chunks.
+2024-12-01 02:43:49,271 - processor - INFO - Uploaded chunk 'chunks/content_romeo-and-juliet.txt_chunk_1.txt' to bucket 'processed-bucket'.
+2024-12-01 02:43:49,277 - processor - INFO - Uploaded chunk 'chunks/content_romeo-and-juliet.txt_chunk_2.txt' to bucket 'processed-bucket'.
+2024-12-01 02:43:49,283 - processor - INFO - Uploaded chunk 'chunks/content_romeo-and-juliet.txt_chunk_3.txt' to bucket 'processed-bucket'.
+2024-12-01 02:43:49,288 - processor - INFO - Uploaded chunk 'chunks/content_romeo-and-juliet.txt_chunk_4.txt' to bucket 'processed-bucket'.
+2024-12-01 02:43:49,295 - processor - INFO - Uploaded chunk 'chunks/content_romeo-and-juliet.txt_chunk_5.txt' to bucket 'processed-bucket'.
+2024-12-01 02:43:49,301 - processor - INFO - Uploaded chunk 'chunks/content_romeo-and-juliet.txt_chunk_6.txt' to bucket 'processed-bucket'.
+2024-12-01 02:43:50,836 - processor - INFO - Received message: {'object_name': 'content/alice-in-wonderland.txt'}
+2024-12-01 02:43:50,836 - processor - INFO - Downloading 'content/alice-in-wonderland.txt' from bucket 'mybucket'.
+2024-12-01 02:43:50,839 - processor - INFO - Splitting 'content/alice-in-wonderland.txt' into 4 chunks.
+2024-12-01 02:43:50,844 - processor - INFO - Uploaded chunk 'chunks/content_alice-in-wonderland.txt_chunk_1.txt' to bucket 'processed-bucket'.
+2024-12-01 02:43:50,851 - processor - INFO - Uploaded chunk 'chunks/content_alice-in-wonderland.txt_chunk_2.txt' to bucket 'processed-bucket'.
+2024-12-01 02:43:50,858 - processor - INFO - Uploaded chunk 'chunks/content_alice-in-wonderland.txt_chunk_3.txt' to bucket 'processed-bucket'.
+2024-12-01 02:43:50,864 - processor - INFO - Uploaded chunk 'chunks/content_alice-in-wonderland.txt_chunk_4.txt' to bucket 'processed-bucket'.
+2024-12-01 02:43:54,471 - processor - INFO - Received message: {'object_name': 'content/the-great-gatsby.txt'}
+2024-12-01 02:43:54,471 - processor - INFO - Downloading 'content/the-great-gatsby.txt' from bucket 'mybucket'.
+2024-12-01 02:43:54,476 - processor - INFO - Splitting 'content/the-great-gatsby.txt' into 7 chunks.
+2024-12-01 02:43:54,483 - processor - INFO - Uploaded chunk 'chunks/content_the-great-gatsby.txt_chunk_1.txt' to bucket 'processed-bucket'.
+2024-12-01 02:43:54,489 - processor - INFO - Uploaded chunk 'chunks/content_the-great-gatsby.txt_chunk_2.txt' to bucket 'processed-bucket'.
+2024-12-01 02:43:54,496 - processor - INFO - Uploaded chunk 'chunks/content_the-great-gatsby.txt_chunk_3.txt' to bucket 'processed-bucket'.
+2024-12-01 02:43:54,503 - processor - INFO - Uploaded chunk 'chunks/content_the-great-gatsby.txt_chunk_4.txt' to bucket 'processed-bucket'.
+2024-12-01 02:43:54,509 - processor - INFO - Uploaded chunk 'chunks/content_the-great-gatsby.txt_chunk_5.txt' to bucket 'processed-bucket'.
+2024-12-01 02:43:54,515 - processor - INFO - Uploaded chunk 'chunks/content_the-great-gatsby.txt_chunk_6.txt' to bucket 'processed-bucket'.
+2024-12-01 02:43:54,521 - processor - INFO - Uploaded chunk 'chunks/content_the-great-gatsby.txt_chunk_7.txt' to bucket 'processed-bucket'.
+2024-12-01 02:43:59,452 - processor - INFO - Received message: {'object_name': 'content/romeo-and-juliet.txt'}
+2024-12-01 02:43:59,453 - processor - INFO - Downloading 'content/romeo-and-juliet.txt' from bucket 'mybucket'.
+2024-12-01 02:43:59,457 - processor - INFO - Splitting 'content/romeo-and-juliet.txt' into 6 chunks.
+2024-12-01 02:43:59,464 - processor - INFO - Uploaded chunk 'chunks/content_romeo-and-juliet.txt_chunk_1.txt' to bucket 'processed-bucket'.
+2024-12-01 02:43:59,471 - processor - INFO - Uploaded chunk 'chunks/content_romeo-and-juliet.txt_chunk_2.txt' to bucket 'processed-bucket'.
+2024-12-01 02:43:59,478 - processor - INFO - Uploaded chunk 'chunks/content_romeo-and-juliet.txt_chunk_3.txt' to bucket 'processed-bucket'.
+2024-12-01 02:43:59,484 - processor - INFO - Uploaded chunk 'chunks/content_romeo-and-juliet.txt_chunk_4.txt' to bucket 'processed-bucket'.
+2024-12-01 02:43:59,491 - processor - INFO - Uploaded chunk 'chunks/content_romeo-and-juliet.txt_chunk_5.txt' to bucket 'processed-bucket'.
+2024-12-01 02:43:59,497 - processor - INFO - Uploaded chunk 'chunks/content_romeo-and-juliet.txt_chunk_6.txt' to bucket 'processed-bucket'.
+2024-12-01 02:44:02,634 - processor - INFO - Received message: {'object_name': 'content/the-great-gatsby.txt'}
+2024-12-01 02:44:02,634 - processor - INFO - Downloading 'content/the-great-gatsby.txt' from bucket 'mybucket'.
+2024-12-01 02:44:02,641 - processor - INFO - Splitting 'content/the-great-gatsby.txt' into 7 chunks.
+2024-12-01 02:44:02,648 - processor - INFO - Uploaded chunk 'chunks/content_the-great-gatsby.txt_chunk_1.txt' to bucket 'processed-bucket'.
+2024-12-01 02:44:02,655 - processor - INFO - Uploaded chunk 'chunks/content_the-great-gatsby.txt_chunk_2.txt' to bucket 'processed-bucket'.
+2024-12-01 02:44:02,805 - processor - INFO - Uploaded chunk 'chunks/content_the-great-gatsby.txt_chunk_3.txt' to bucket 'processed-bucket'.
+2024-12-01 02:44:02,811 - processor - INFO - Uploaded chunk 'chunks/content_the-great-gatsby.txt_chunk_4.txt' to bucket 'processed-bucket'.
+2024-12-01 02:44:02,818 - processor - INFO - Uploaded chunk 'chunks/content_the-great-gatsby.txt_chunk_5.txt' to bucket 'processed-bucket'.
+2024-12-01 02:44:02,824 - processor - INFO - Uploaded chunk 'chunks/content_the-great-gatsby.txt_chunk_6.txt' to bucket 'processed-bucket'.
+2024-12-01 02:44:02,831 - processor - INFO - Uploaded chunk 'chunks/content_the-great-gatsby.txt_chunk_7.txt' to bucket 'processed-bucket'.
+2024-12-01 02:44:07,200 - processor - INFO - Received message: {'object_name': 'content/the-great-gatsby.txt'}
+2024-12-01 02:44:07,201 - processor - INFO - Downloading 'content/the-great-gatsby.txt' from bucket 'mybucket'.
+2024-12-01 02:44:07,204 - processor - INFO - Splitting 'content/the-great-gatsby.txt' into 7 chunks.
+2024-12-01 02:44:07,213 - processor - INFO - Uploaded chunk 'chunks/content_the-great-gatsby.txt_chunk_1.txt' to bucket 'processed-bucket'.
+2024-12-01 02:44:07,221 - processor - INFO - Uploaded chunk 'chunks/content_the-great-gatsby.txt_chunk_2.txt' to bucket 'processed-bucket'.
+2024-12-01 02:44:07,228 - processor - INFO - Uploaded chunk 'chunks/content_the-great-gatsby.txt_chunk_3.txt' to bucket 'processed-bucket'.
+2024-12-01 02:44:07,235 - processor - INFO - Uploaded chunk 'chunks/content_the-great-gatsby.txt_chunk_4.txt' to bucket 'processed-bucket'.
+2024-12-01 02:44:07,242 - processor - INFO - Uploaded chunk 'chunks/content_the-great-gatsby.txt_chunk_5.txt' to bucket 'processed-bucket'.
+2024-12-01 02:44:07,250 - processor - INFO - Uploaded chunk 'chunks/content_the-great-gatsby.txt_chunk_6.txt' to bucket 'processed-bucket'.
+2024-12-01 02:44:07,256 - processor - INFO - Uploaded chunk 'chunks/content_the-great-gatsby.txt_chunk_7.txt' to bucket 'processed-bucket'.
+2024-12-01 02:44:09,653 - processor - INFO - Received message: {'object_name': 'content/alice-in-wonderland.txt'}
+2024-12-01 02:44:09,654 - processor - INFO - Downloading 'content/alice-in-wonderland.txt' from bucket 'mybucket'.
+2024-12-01 02:44:09,658 - processor - INFO - Splitting 'content/alice-in-wonderland.txt' into 4 chunks.
+2024-12-01 02:44:09,667 - processor - INFO - Uploaded chunk 'chunks/content_alice-in-wonderland.txt_chunk_1.txt' to bucket 'processed-bucket'.
+2024-12-01 02:44:09,675 - processor - INFO - Uploaded chunk 'chunks/content_alice-in-wonderland.txt_chunk_2.txt' to bucket 'processed-bucket'.
+2024-12-01 02:44:09,683 - processor - INFO - Uploaded chunk 'chunks/content_alice-in-wonderland.txt_chunk_3.txt' to bucket 'processed-bucket'.
+2024-12-01 02:44:09,691 - processor - INFO - Uploaded chunk 'chunks/content_alice-in-wonderland.txt_chunk_4.txt' to bucket 'processed-bucket'.
+2024-12-01 02:44:13,506 - processor - INFO - Received message: {'object_name': 'content/alice-in-wonderland.txt'}
+2024-12-01 02:44:13,507 - processor - INFO - Downloading 'content/alice-in-wonderland.txt' from bucket 'mybucket'.
+2024-12-01 02:44:13,509 - processor - INFO - Splitting 'content/alice-in-wonderland.txt' into 4 chunks.
+2024-12-01 02:44:13,521 - processor - INFO - Uploaded chunk 'chunks/content_alice-in-wonderland.txt_chunk_1.txt' to bucket 'processed-bucket'.
+2024-12-01 02:44:13,530 - processor - INFO - Uploaded chunk 'chunks/content_alice-in-wonderland.txt_chunk_2.txt' to bucket 'processed-bucket'.
+2024-12-01 02:44:13,540 - processor - INFO - Uploaded chunk 'chunks/content_alice-in-wonderland.txt_chunk_3.txt' to bucket 'processed-bucket'.
+2024-12-01 02:44:13,549 - processor - INFO - Uploaded chunk 'chunks/content_alice-in-wonderland.txt_chunk_4.txt' to bucket 'processed-bucket'.
+2024-12-01 02:44:17,278 - processor - INFO - Received message: {'object_name': 'content/romeo-and-juliet.txt'}
+2024-12-01 02:44:17,278 - processor - INFO - Downloading 'content/romeo-and-juliet.txt' from bucket 'mybucket'.
+2024-12-01 02:44:17,281 - processor - INFO - Splitting 'content/romeo-and-juliet.txt' into 6 chunks.
+2024-12-01 02:44:17,289 - processor - INFO - Uploaded chunk 'chunks/content_romeo-and-juliet.txt_chunk_1.txt' to bucket 'processed-bucket'.
+2024-12-01 02:44:17,296 - processor - INFO - Uploaded chunk 'chunks/content_romeo-and-juliet.txt_chunk_2.txt' to bucket 'processed-bucket'.
+2024-12-01 02:44:17,305 - processor - INFO - Uploaded chunk 'chunks/content_romeo-and-juliet.txt_chunk_3.txt' to bucket 'processed-bucket'.
+2024-12-01 02:44:17,311 - processor - INFO - Uploaded chunk 'chunks/content_romeo-and-juliet.txt_chunk_4.txt' to bucket 'processed-bucket'.
+2024-12-01 02:44:17,318 - processor - INFO - Uploaded chunk 'chunks/content_romeo-and-juliet.txt_chunk_5.txt' to bucket 'processed-bucket'.
+2024-12-01 02:44:17,325 - processor - INFO - Uploaded chunk 'chunks/content_romeo-and-juliet.txt_chunk_6.txt' to bucket 'processed-bucket'.
+2024-12-01 02:44:21,717 - processor - INFO - Received message: {'object_name': 'content/alice-in-wonderland.txt'}
+2024-12-01 02:44:21,717 - processor - INFO - Downloading 'content/alice-in-wonderland.txt' from bucket 'mybucket'.
+2024-12-01 02:44:21,720 - processor - INFO - Splitting 'content/alice-in-wonderland.txt' into 4 chunks.
+2024-12-01 02:44:21,728 - processor - INFO - Uploaded chunk 'chunks/content_alice-in-wonderland.txt_chunk_1.txt' to bucket 'processed-bucket'.
+2024-12-01 02:44:21,735 - processor - INFO - Uploaded chunk 'chunks/content_alice-in-wonderland.txt_chunk_2.txt' to bucket 'processed-bucket'.
+2024-12-01 02:44:21,743 - processor - INFO - Uploaded chunk 'chunks/content_alice-in-wonderland.txt_chunk_3.txt' to bucket 'processed-bucket'.
+2024-12-01 02:44:21,750 - processor - INFO - Uploaded chunk 'chunks/content_alice-in-wonderland.txt_chunk_4.txt' to bucket 'processed-bucket'.
+2024-12-01 02:44:26,471 - processor - INFO - Received message: {'object_name': 'content/romeo-and-juliet.txt'}
+2024-12-01 02:44:26,472 - processor - INFO - Downloading 'content/romeo-and-juliet.txt' from bucket 'mybucket'.
+2024-12-01 02:44:26,474 - processor - INFO - Splitting 'content/romeo-and-juliet.txt' into 6 chunks.
+2024-12-01 02:44:26,482 - processor - INFO - Uploaded chunk 'chunks/content_romeo-and-juliet.txt_chunk_1.txt' to bucket 'processed-bucket'.
+2024-12-01 02:44:26,490 - processor - INFO - Uploaded chunk 'chunks/content_romeo-and-juliet.txt_chunk_2.txt' to bucket 'processed-bucket'.
+2024-12-01 02:44:26,499 - processor - INFO - Uploaded chunk 'chunks/content_romeo-and-juliet.txt_chunk_3.txt' to bucket 'processed-bucket'.
+2024-12-01 02:44:26,507 - processor - INFO - Uploaded chunk 'chunks/content_romeo-and-juliet.txt_chunk_4.txt' to bucket 'processed-bucket'.
+2024-12-01 02:44:26,514 - processor - INFO - Uploaded chunk 'chunks/content_romeo-and-juliet.txt_chunk_5.txt' to bucket 'processed-bucket'.
+2024-12-01 02:44:26,521 - processor - INFO - Uploaded chunk 'chunks/content_romeo-and-juliet.txt_chunk_6.txt' to bucket 'processed-bucket'.
+2024-12-01 02:44:28,741 - processor - INFO - Received message: {'object_name': 'content/romeo-and-juliet.txt'}
+2024-12-01 02:44:28,742 - processor - INFO - Downloading 'content/romeo-and-juliet.txt' from bucket 'mybucket'.
+2024-12-01 02:44:28,744 - processor - INFO - Splitting 'content/romeo-and-juliet.txt' into 6 chunks.
+2024-12-01 02:44:28,750 - processor - INFO - Uploaded chunk 'chunks/content_romeo-and-juliet.txt_chunk_1.txt' to bucket 'processed-bucket'.
+2024-12-01 02:44:28,758 - processor - INFO - Uploaded chunk 'chunks/content_romeo-and-juliet.txt_chunk_2.txt' to bucket 'processed-bucket'.
+2024-12-01 02:44:28,765 - processor - INFO - Uploaded chunk 'chunks/content_romeo-and-juliet.txt_chunk_3.txt' to bucket 'processed-bucket'.
+2024-12-01 02:44:28,775 - processor - INFO - Uploaded chunk 'chunks/content_romeo-and-juliet.txt_chunk_4.txt' to bucket 'processed-bucket'.
+2024-12-01 02:44:28,781 - processor - INFO - Uploaded chunk 'chunks/content_romeo-and-juliet.txt_chunk_5.txt' to bucket 'processed-bucket'.
+2024-12-01 02:44:28,789 - processor - INFO - Uploaded chunk 'chunks/content_romeo-and-juliet.txt_chunk_6.txt' to bucket 'processed-bucket'.
+2024-12-01 02:44:30,162 - processor - INFO - Received message: {'object_name': 'content/the-great-gatsby.txt'}
+2024-12-01 02:44:30,163 - processor - INFO - Downloading 'content/the-great-gatsby.txt' from bucket 'mybucket'.
+2024-12-01 02:44:30,165 - processor - INFO - Splitting 'content/the-great-gatsby.txt' into 7 chunks.
+2024-12-01 02:44:30,176 - processor - INFO - Uploaded chunk 'chunks/content_the-great-gatsby.txt_chunk_1.txt' to bucket 'processed-bucket'.
+2024-12-01 02:44:30,183 - processor - INFO - Uploaded chunk 'chunks/content_the-great-gatsby.txt_chunk_2.txt' to bucket 'processed-bucket'.
+2024-12-01 02:44:30,190 - processor - INFO - Uploaded chunk 'chunks/content_the-great-gatsby.txt_chunk_3.txt' to bucket 'processed-bucket'.
+2024-12-01 02:44:30,197 - processor - INFO - Uploaded chunk 'chunks/content_the-great-gatsby.txt_chunk_4.txt' to bucket 'processed-bucket'.
+2024-12-01 02:44:30,204 - processor - INFO - Uploaded chunk 'chunks/content_the-great-gatsby.txt_chunk_5.txt' to bucket 'processed-bucket'.
+2024-12-01 02:44:30,211 - processor - INFO - Uploaded chunk 'chunks/content_the-great-gatsby.txt_chunk_6.txt' to bucket 'processed-bucket'.
+2024-12-01 02:44:30,219 - processor - INFO - Uploaded chunk 'chunks/content_the-great-gatsby.txt_chunk_7.txt' to bucket 'processed-bucket'.
+2024-12-01 02:44:32,749 - processor - INFO - Received message: {'object_name': 'content/romeo-and-juliet.txt'}
+2024-12-01 02:44:32,749 - processor - INFO - Downloading 'content/romeo-and-juliet.txt' from bucket 'mybucket'.
+2024-12-01 02:44:32,751 - processor - INFO - Splitting 'content/romeo-and-juliet.txt' into 6 chunks.
+2024-12-01 02:44:32,758 - processor - INFO - Uploaded chunk 'chunks/content_romeo-and-juliet.txt_chunk_1.txt' to bucket 'processed-bucket'.
+2024-12-01 02:44:32,766 - processor - INFO - Uploaded chunk 'chunks/content_romeo-and-juliet.txt_chunk_2.txt' to bucket 'processed-bucket'.
+2024-12-01 02:44:32,772 - processor - INFO - Uploaded chunk 'chunks/content_romeo-and-juliet.txt_chunk_3.txt' to bucket 'processed-bucket'.
+2024-12-01 02:44:32,778 - processor - INFO - Uploaded chunk 'chunks/content_romeo-and-juliet.txt_chunk_4.txt' to bucket 'processed-bucket'.
+2024-12-01 02:44:32,784 - processor - INFO - Uploaded chunk 'chunks/content_romeo-and-juliet.txt_chunk_5.txt' to bucket 'processed-bucket'.
+2024-12-01 02:44:32,789 - processor - INFO - Uploaded chunk 'chunks/content_romeo-and-juliet.txt_chunk_6.txt' to bucket 'processed-bucket'.
+2024-12-01 02:44:36,787 - processor - INFO - Received message: {'object_name': 'content/romeo-and-juliet.txt'}
+2024-12-01 02:44:36,788 - processor - INFO - Downloading 'content/romeo-and-juliet.txt' from bucket 'mybucket'.
+2024-12-01 02:44:36,790 - processor - INFO - Splitting 'content/romeo-and-juliet.txt' into 6 chunks.
+2024-12-01 02:44:36,797 - processor - INFO - Uploaded chunk 'chunks/content_romeo-and-juliet.txt_chunk_1.txt' to bucket 'processed-bucket'.
+2024-12-01 02:44:36,803 - processor - INFO - Uploaded chunk 'chunks/content_romeo-and-juliet.txt_chunk_2.txt' to bucket 'processed-bucket'.
+2024-12-01 02:44:36,811 - processor - INFO - Uploaded chunk 'chunks/content_romeo-and-juliet.txt_chunk_3.txt' to bucket 'processed-bucket'.
+2024-12-01 02:44:36,818 - processor - INFO - Uploaded chunk 'chunks/content_romeo-and-juliet.txt_chunk_4.txt' to bucket 'processed-bucket'.
+2024-12-01 02:44:36,824 - processor - INFO - Uploaded chunk 'chunks/content_romeo-and-juliet.txt_chunk_5.txt' to bucket 'processed-bucket'.
+2024-12-01 02:44:36,830 - processor - INFO - Uploaded chunk 'chunks/content_romeo-and-juliet.txt_chunk_6.txt' to bucket 'processed-bucket'.
+2024-12-01 02:44:40,537 - processor - INFO - Received message: {'object_name': 'content/the-great-gatsby.txt'}
+2024-12-01 02:44:40,537 - processor - INFO - Downloading 'content/the-great-gatsby.txt' from bucket 'mybucket'.
+2024-12-01 02:44:40,545 - processor - INFO - Splitting 'content/the-great-gatsby.txt' into 7 chunks.
+2024-12-01 02:44:40,552 - processor - INFO - Uploaded chunk 'chunks/content_the-great-gatsby.txt_chunk_1.txt' to bucket 'processed-bucket'.
+2024-12-01 02:44:40,559 - processor - INFO - Uploaded chunk 'chunks/content_the-great-gatsby.txt_chunk_2.txt' to bucket 'processed-bucket'.
+2024-12-01 02:44:40,567 - processor - INFO - Uploaded chunk 'chunks/content_the-great-gatsby.txt_chunk_3.txt' to bucket 'processed-bucket'.
+2024-12-01 02:44:40,573 - processor - INFO - Uploaded chunk 'chunks/content_the-great-gatsby.txt_chunk_4.txt' to bucket 'processed-bucket'.
+2024-12-01 02:44:40,580 - processor - INFO - Uploaded chunk 'chunks/content_the-great-gatsby.txt_chunk_5.txt' to bucket 'processed-bucket'.
+2024-12-01 02:44:40,587 - processor - INFO - Uploaded chunk 'chunks/content_the-great-gatsby.txt_chunk_6.txt' to bucket 'processed-bucket'.
+2024-12-01 02:44:40,593 - processor - INFO - Uploaded chunk 'chunks/content_the-great-gatsby.txt_chunk_7.txt' to bucket 'processed-bucket'.
+2024-12-01 02:44:43,036 - processor - INFO - Received message: {'object_name': 'content/alice-in-wonderland.txt'}
+2024-12-01 02:44:43,037 - processor - INFO - Downloading 'content/alice-in-wonderland.txt' from bucket 'mybucket'.
+2024-12-01 02:44:43,040 - processor - INFO - Splitting 'content/alice-in-wonderland.txt' into 4 chunks.
+2024-12-01 02:44:43,048 - processor - INFO - Uploaded chunk 'chunks/content_alice-in-wonderland.txt_chunk_1.txt' to bucket 'processed-bucket'.
+2024-12-01 02:44:43,056 - processor - INFO - Uploaded chunk 'chunks/content_alice-in-wonderland.txt_chunk_2.txt' to bucket 'processed-bucket'.
+2024-12-01 02:44:43,063 - processor - INFO - Uploaded chunk 'chunks/content_alice-in-wonderland.txt_chunk_3.txt' to bucket 'processed-bucket'.
+2024-12-01 02:44:43,070 - processor - INFO - Uploaded chunk 'chunks/content_alice-in-wonderland.txt_chunk_4.txt' to bucket 'processed-bucket'.
+2024-12-01 02:44:44,454 - processor - INFO - Received message: {'object_name': 'content/alice-in-wonderland.txt'}
+2024-12-01 02:44:44,454 - processor - INFO - Downloading 'content/alice-in-wonderland.txt' from bucket 'mybucket'.
+2024-12-01 02:44:44,456 - processor - INFO - Splitting 'content/alice-in-wonderland.txt' into 4 chunks.
+2024-12-01 02:44:44,462 - processor - INFO - Uploaded chunk 'chunks/content_alice-in-wonderland.txt_chunk_1.txt' to bucket 'processed-bucket'.
+2024-12-01 02:44:44,468 - processor - INFO - Uploaded chunk 'chunks/content_alice-in-wonderland.txt_chunk_2.txt' to bucket 'processed-bucket'.
+2024-12-01 02:44:44,474 - processor - INFO - Uploaded chunk 'chunks/content_alice-in-wonderland.txt_chunk_3.txt' to bucket 'processed-bucket'.
+2024-12-01 02:44:44,480 - processor - INFO - Uploaded chunk 'chunks/content_alice-in-wonderland.txt_chunk_4.txt' to bucket 'processed-bucket'.
+2024-12-01 02:44:46,674 - processor - INFO - Received message: {'object_name': 'content/the-great-gatsby.txt'}
+2024-12-01 02:44:46,675 - processor - INFO - Downloading 'content/the-great-gatsby.txt' from bucket 'mybucket'.
+2024-12-01 02:44:46,678 - processor - INFO - Splitting 'content/the-great-gatsby.txt' into 7 chunks.
+2024-12-01 02:44:46,685 - processor - INFO - Uploaded chunk 'chunks/content_the-great-gatsby.txt_chunk_1.txt' to bucket 'processed-bucket'.
+2024-12-01 02:44:46,691 - processor - INFO - Uploaded chunk 'chunks/content_the-great-gatsby.txt_chunk_2.txt' to bucket 'processed-bucket'.
+2024-12-01 02:44:46,698 - processor - INFO - Uploaded chunk 'chunks/content_the-great-gatsby.txt_chunk_3.txt' to bucket 'processed-bucket'.
+2024-12-01 02:44:46,704 - processor - INFO - Uploaded chunk 'chunks/content_the-great-gatsby.txt_chunk_4.txt' to bucket 'processed-bucket'.
+2024-12-01 02:44:46,710 - processor - INFO - Uploaded chunk 'chunks/content_the-great-gatsby.txt_chunk_5.txt' to bucket 'processed-bucket'.
+2024-12-01 02:44:46,717 - processor - INFO - Uploaded chunk 'chunks/content_the-great-gatsby.txt_chunk_6.txt' to bucket 'processed-bucket'.
+2024-12-01 02:44:46,723 - processor - INFO - Uploaded chunk 'chunks/content_the-great-gatsby.txt_chunk_7.txt' to bucket 'processed-bucket'.
+2024-12-01 02:44:51,148 - processor - INFO - Received message: {'object_name': 'content/romeo-and-juliet.txt'}
+2024-12-01 02:44:51,148 - processor - INFO - Downloading 'content/romeo-and-juliet.txt' from bucket 'mybucket'.
+2024-12-01 02:44:51,152 - processor - INFO - Splitting 'content/romeo-and-juliet.txt' into 6 chunks.
+2024-12-01 02:44:51,159 - processor - INFO - Uploaded chunk 'chunks/content_romeo-and-juliet.txt_chunk_1.txt' to bucket 'processed-bucket'.
+2024-12-01 02:44:51,166 - processor - INFO - Uploaded chunk 'chunks/content_romeo-and-juliet.txt_chunk_2.txt' to bucket 'processed-bucket'.
+2024-12-01 02:44:51,173 - processor - INFO - Uploaded chunk 'chunks/content_romeo-and-juliet.txt_chunk_3.txt' to bucket 'processed-bucket'.
+2024-12-01 02:44:51,180 - processor - INFO - Uploaded chunk 'chunks/content_romeo-and-juliet.txt_chunk_4.txt' to bucket 'processed-bucket'.
+2024-12-01 02:44:51,187 - processor - INFO - Uploaded chunk 'chunks/content_romeo-and-juliet.txt_chunk_5.txt' to bucket 'processed-bucket'.
+2024-12-01 02:44:51,194 - processor - INFO - Uploaded chunk 'chunks/content_romeo-and-juliet.txt_chunk_6.txt' to bucket 'processed-bucket'.
+2024-12-01 02:44:52,701 - processor - INFO - Received message: {'object_name': 'content/alice-in-wonderland.txt'}
+2024-12-01 02:44:52,701 - processor - INFO - Downloading 'content/alice-in-wonderland.txt' from bucket 'mybucket'.
+2024-12-01 02:44:52,704 - processor - INFO - Splitting 'content/alice-in-wonderland.txt' into 4 chunks.
+2024-12-01 02:44:52,710 - processor - INFO - Uploaded chunk 'chunks/content_alice-in-wonderland.txt_chunk_1.txt' to bucket 'processed-bucket'.
+2024-12-01 02:44:52,717 - processor - INFO - Uploaded chunk 'chunks/content_alice-in-wonderland.txt_chunk_2.txt' to bucket 'processed-bucket'.
+2024-12-01 02:44:52,724 - processor - INFO - Uploaded chunk 'chunks/content_alice-in-wonderland.txt_chunk_3.txt' to bucket 'processed-bucket'.
+2024-12-01 02:44:52,731 - processor - INFO - Uploaded chunk 'chunks/content_alice-in-wonderland.txt_chunk_4.txt' to bucket 'processed-bucket'.
+2024-12-01 02:44:57,139 - processor - INFO - Received message: {'object_name': 'content/the-great-gatsby.txt'}
+2024-12-01 02:44:57,139 - processor - INFO - Downloading 'content/the-great-gatsby.txt' from bucket 'mybucket'.
+2024-12-01 02:44:57,142 - processor - INFO - Splitting 'content/the-great-gatsby.txt' into 7 chunks.
+2024-12-01 02:44:57,149 - processor - INFO - Uploaded chunk 'chunks/content_the-great-gatsby.txt_chunk_1.txt' to bucket 'processed-bucket'.
+2024-12-01 02:44:57,155 - processor - INFO - Uploaded chunk 'chunks/content_the-great-gatsby.txt_chunk_2.txt' to bucket 'processed-bucket'.
+2024-12-01 02:44:57,162 - processor - INFO - Uploaded chunk 'chunks/content_the-great-gatsby.txt_chunk_3.txt' to bucket 'processed-bucket'.
+2024-12-01 02:44:57,169 - processor - INFO - Uploaded chunk 'chunks/content_the-great-gatsby.txt_chunk_4.txt' to bucket 'processed-bucket'.
+2024-12-01 02:44:57,175 - processor - INFO - Uploaded chunk 'chunks/content_the-great-gatsby.txt_chunk_5.txt' to bucket 'processed-bucket'.
+2024-12-01 02:44:57,182 - processor - INFO - Uploaded chunk 'chunks/content_the-great-gatsby.txt_chunk_6.txt' to bucket 'processed-bucket'.
+2024-12-01 02:44:57,188 - processor - INFO - Uploaded chunk 'chunks/content_the-great-gatsby.txt_chunk_7.txt' to bucket 'processed-bucket'.
+2024-12-01 02:45:00,951 - processor - INFO - Received message: {'object_name': 'content/the-great-gatsby.txt'}
+2024-12-01 02:45:00,951 - processor - INFO - Downloading 'content/the-great-gatsby.txt' from bucket 'mybucket'.
+2024-12-01 02:45:00,955 - processor - INFO - Splitting 'content/the-great-gatsby.txt' into 7 chunks.
+2024-12-01 02:45:00,962 - processor - INFO - Uploaded chunk 'chunks/content_the-great-gatsby.txt_chunk_1.txt' to bucket 'processed-bucket'.
+2024-12-01 02:45:00,969 - processor - INFO - Uploaded chunk 'chunks/content_the-great-gatsby.txt_chunk_2.txt' to bucket 'processed-bucket'.
+2024-12-01 02:45:00,976 - processor - INFO - Uploaded chunk 'chunks/content_the-great-gatsby.txt_chunk_3.txt' to bucket 'processed-bucket'.
+2024-12-01 02:45:00,983 - processor - INFO - Uploaded chunk 'chunks/content_the-great-gatsby.txt_chunk_4.txt' to bucket 'processed-bucket'.
+2024-12-01 02:45:00,989 - processor - INFO - Uploaded chunk 'chunks/content_the-great-gatsby.txt_chunk_5.txt' to bucket 'processed-bucket'.
+2024-12-01 02:45:00,996 - processor - INFO - Uploaded chunk 'chunks/content_the-great-gatsby.txt_chunk_6.txt' to bucket 'processed-bucket'.
+2024-12-01 02:45:01,004 - processor - INFO - Uploaded chunk 'chunks/content_the-great-gatsby.txt_chunk_7.txt' to bucket 'processed-bucket'.
+2024-12-01 02:45:02,019 - processor - INFO - Received message: {'object_name': 'content/the-great-gatsby.txt'}
+2024-12-01 02:45:02,019 - processor - INFO - Downloading 'content/the-great-gatsby.txt' from bucket 'mybucket'.
+2024-12-01 02:45:02,023 - processor - INFO - Splitting 'content/the-great-gatsby.txt' into 7 chunks.
+2024-12-01 02:45:02,030 - processor - INFO - Uploaded chunk 'chunks/content_the-great-gatsby.txt_chunk_1.txt' to bucket 'processed-bucket'.
+2024-12-01 02:45:02,037 - processor - INFO - Uploaded chunk 'chunks/content_the-great-gatsby.txt_chunk_2.txt' to bucket 'processed-bucket'.
+2024-12-01 02:45:02,045 - processor - INFO - Uploaded chunk 'chunks/content_the-great-gatsby.txt_chunk_3.txt' to bucket 'processed-bucket'.
+2024-12-01 02:45:02,052 - processor - INFO - Uploaded chunk 'chunks/content_the-great-gatsby.txt_chunk_4.txt' to bucket 'processed-bucket'.
+2024-12-01 02:45:02,060 - processor - INFO - Uploaded chunk 'chunks/content_the-great-gatsby.txt_chunk_5.txt' to bucket 'processed-bucket'.
+2024-12-01 02:45:02,067 - processor - INFO - Uploaded chunk 'chunks/content_the-great-gatsby.txt_chunk_6.txt' to bucket 'processed-bucket'.
+2024-12-01 02:45:02,074 - processor - INFO - Uploaded chunk 'chunks/content_the-great-gatsby.txt_chunk_7.txt' to bucket 'processed-bucket'.
+2024-12-01 02:45:06,802 - processor - INFO - Received message: {'object_name': 'content/alice-in-wonderland.txt'}
+2024-12-01 02:45:06,802 - processor - INFO - Downloading 'content/alice-in-wonderland.txt' from bucket 'mybucket'.
+2024-12-01 02:45:06,804 - processor - INFO - Splitting 'content/alice-in-wonderland.txt' into 4 chunks.
+2024-12-01 02:45:06,812 - processor - INFO - Uploaded chunk 'chunks/content_alice-in-wonderland.txt_chunk_1.txt' to bucket 'processed-bucket'.
+2024-12-01 02:45:06,819 - processor - INFO - Uploaded chunk 'chunks/content_alice-in-wonderland.txt_chunk_2.txt' to bucket 'processed-bucket'.
+2024-12-01 02:45:06,826 - processor - INFO - Uploaded chunk 'chunks/content_alice-in-wonderland.txt_chunk_3.txt' to bucket 'processed-bucket'.
+2024-12-01 02:45:06,833 - processor - INFO - Uploaded chunk 'chunks/content_alice-in-wonderland.txt_chunk_4.txt' to bucket 'processed-bucket'.
+2024-12-01 02:45:08,600 - processor - INFO - Received message: {'object_name': 'content/alice-in-wonderland.txt'}
+2024-12-01 02:45:08,600 - processor - INFO - Downloading 'content/alice-in-wonderland.txt' from bucket 'mybucket'.
+2024-12-01 02:45:08,604 - processor - INFO - Splitting 'content/alice-in-wonderland.txt' into 4 chunks.
+2024-12-01 02:45:08,612 - processor - INFO - Uploaded chunk 'chunks/content_alice-in-wonderland.txt_chunk_1.txt' to bucket 'processed-bucket'.
+2024-12-01 02:45:08,618 - processor - INFO - Uploaded chunk 'chunks/content_alice-in-wonderland.txt_chunk_2.txt' to bucket 'processed-bucket'.
+2024-12-01 02:45:08,625 - processor - INFO - Uploaded chunk 'chunks/content_alice-in-wonderland.txt_chunk_3.txt' to bucket 'processed-bucket'.
+2024-12-01 02:45:08,631 - processor - INFO - Uploaded chunk 'chunks/content_alice-in-wonderland.txt_chunk_4.txt' to bucket 'processed-bucket'.
+2024-12-01 02:45:11,106 - processor - INFO - Received message: {'object_name': 'content/romeo-and-juliet.txt'}
+2024-12-01 02:45:11,106 - processor - INFO - Downloading 'content/romeo-and-juliet.txt' from bucket 'mybucket'.
+2024-12-01 02:45:11,109 - processor - INFO - Splitting 'content/romeo-and-juliet.txt' into 6 chunks.
+2024-12-01 02:45:11,119 - processor - INFO - Uploaded chunk 'chunks/content_romeo-and-juliet.txt_chunk_1.txt' to bucket 'processed-bucket'.
+2024-12-01 02:45:11,126 - processor - INFO - Uploaded chunk 'chunks/content_romeo-and-juliet.txt_chunk_2.txt' to bucket 'processed-bucket'.
+2024-12-01 02:45:11,132 - processor - INFO - Uploaded chunk 'chunks/content_romeo-and-juliet.txt_chunk_3.txt' to bucket 'processed-bucket'.
+2024-12-01 02:45:11,137 - processor - INFO - Uploaded chunk 'chunks/content_romeo-and-juliet.txt_chunk_4.txt' to bucket 'processed-bucket'.
+2024-12-01 02:45:11,143 - processor - INFO - Uploaded chunk 'chunks/content_romeo-and-juliet.txt_chunk_5.txt' to bucket 'processed-bucket'.
+2024-12-01 02:45:11,149 - processor - INFO - Uploaded chunk 'chunks/content_romeo-and-juliet.txt_chunk_6.txt' to bucket 'processed-bucket'.
+2024-12-01 02:45:14,597 - processor - INFO - Received message: {'object_name': 'content/romeo-and-juliet.txt'}
+2024-12-01 02:45:14,597 - processor - INFO - Downloading 'content/romeo-and-juliet.txt' from bucket 'mybucket'.
+2024-12-01 02:45:14,601 - processor - INFO - Splitting 'content/romeo-and-juliet.txt' into 6 chunks.
+2024-12-01 02:45:14,607 - processor - INFO - Uploaded chunk 'chunks/content_romeo-and-juliet.txt_chunk_1.txt' to bucket 'processed-bucket'.
+2024-12-01 02:45:14,614 - processor - INFO - Uploaded chunk 'chunks/content_romeo-and-juliet.txt_chunk_2.txt' to bucket 'processed-bucket'.
+2024-12-01 02:45:14,620 - processor - INFO - Uploaded chunk 'chunks/content_romeo-and-juliet.txt_chunk_3.txt' to bucket 'processed-bucket'.
+2024-12-01 02:45:14,626 - processor - INFO - Uploaded chunk 'chunks/content_romeo-and-juliet.txt_chunk_4.txt' to bucket 'processed-bucket'.
+2024-12-01 02:45:14,632 - processor - INFO - Uploaded chunk 'chunks/content_romeo-and-juliet.txt_chunk_5.txt' to bucket 'processed-bucket'.
+2024-12-01 02:45:14,638 - processor - INFO - Uploaded chunk 'chunks/content_romeo-and-juliet.txt_chunk_6.txt' to bucket 'processed-bucket'.
+2024-12-01 02:45:18,915 - processor - INFO - Received message: {'object_name': 'content/alice-in-wonderland.txt'}
+2024-12-01 02:45:18,915 - processor - INFO - Downloading 'content/alice-in-wonderland.txt' from bucket 'mybucket'.
+2024-12-01 02:45:18,918 - processor - INFO - Splitting 'content/alice-in-wonderland.txt' into 4 chunks.
+2024-12-01 02:45:18,925 - processor - INFO - Uploaded chunk 'chunks/content_alice-in-wonderland.txt_chunk_1.txt' to bucket 'processed-bucket'.
+2024-12-01 02:45:18,932 - processor - INFO - Uploaded chunk 'chunks/content_alice-in-wonderland.txt_chunk_2.txt' to bucket 'processed-bucket'.
+2024-12-01 02:45:18,939 - processor - INFO - Uploaded chunk 'chunks/content_alice-in-wonderland.txt_chunk_3.txt' to bucket 'processed-bucket'.
+2024-12-01 02:45:18,945 - processor - INFO - Uploaded chunk 'chunks/content_alice-in-wonderland.txt_chunk_4.txt' to bucket 'processed-bucket'.
+2024-12-01 02:45:20,563 - processor - INFO - Received message: {'object_name': 'content/the-great-gatsby.txt'}
+2024-12-01 02:45:20,563 - processor - INFO - Downloading 'content/the-great-gatsby.txt' from bucket 'mybucket'.
+2024-12-01 02:45:20,568 - processor - INFO - Splitting 'content/the-great-gatsby.txt' into 7 chunks.
+2024-12-01 02:45:20,576 - processor - INFO - Uploaded chunk 'chunks/content_the-great-gatsby.txt_chunk_1.txt' to bucket 'processed-bucket'.
+2024-12-01 02:45:20,582 - processor - INFO - Uploaded chunk 'chunks/content_the-great-gatsby.txt_chunk_2.txt' to bucket 'processed-bucket'.
+2024-12-01 02:45:20,588 - processor - INFO - Uploaded chunk 'chunks/content_the-great-gatsby.txt_chunk_3.txt' to bucket 'processed-bucket'.
+2024-12-01 02:45:20,595 - processor - INFO - Uploaded chunk 'chunks/content_the-great-gatsby.txt_chunk_4.txt' to bucket 'processed-bucket'.
+2024-12-01 02:45:20,602 - processor - INFO - Uploaded chunk 'chunks/content_the-great-gatsby.txt_chunk_5.txt' to bucket 'processed-bucket'.
+2024-12-01 02:45:20,608 - processor - INFO - Uploaded chunk 'chunks/content_the-great-gatsby.txt_chunk_6.txt' to bucket 'processed-bucket'.
+2024-12-01 02:45:20,615 - processor - INFO - Uploaded chunk 'chunks/content_the-great-gatsby.txt_chunk_7.txt' to bucket 'processed-bucket'.
+2024-12-01 02:45:21,982 - processor - INFO - Received message: {'object_name': 'content/romeo-and-juliet.txt'}
+2024-12-01 02:45:21,982 - processor - INFO - Downloading 'content/romeo-and-juliet.txt' from bucket 'mybucket'.
+2024-12-01 02:45:21,984 - processor - INFO - Splitting 'content/romeo-and-juliet.txt' into 6 chunks.
+2024-12-01 02:45:21,991 - processor - INFO - Uploaded chunk 'chunks/content_romeo-and-juliet.txt_chunk_1.txt' to bucket 'processed-bucket'.
+2024-12-01 02:45:21,998 - processor - INFO - Uploaded chunk 'chunks/content_romeo-and-juliet.txt_chunk_2.txt' to bucket 'processed-bucket'.
+2024-12-01 02:45:22,006 - processor - INFO - Uploaded chunk 'chunks/content_romeo-and-juliet.txt_chunk_3.txt' to bucket 'processed-bucket'.
+2024-12-01 02:45:22,013 - processor - INFO - Uploaded chunk 'chunks/content_romeo-and-juliet.txt_chunk_4.txt' to bucket 'processed-bucket'.
+2024-12-01 02:45:22,020 - processor - INFO - Uploaded chunk 'chunks/content_romeo-and-juliet.txt_chunk_5.txt' to bucket 'processed-bucket'.
+2024-12-01 02:45:22,027 - processor - INFO - Uploaded chunk 'chunks/content_romeo-and-juliet.txt_chunk_6.txt' to bucket 'processed-bucket'.
+2024-12-01 02:45:24,250 - processor - INFO - Received message: {'object_name': 'content/romeo-and-juliet.txt'}
+2024-12-01 02:45:24,251 - processor - INFO - Downloading 'content/romeo-and-juliet.txt' from bucket 'mybucket'.
+2024-12-01 02:45:24,253 - processor - INFO - Splitting 'content/romeo-and-juliet.txt' into 6 chunks.
+2024-12-01 02:45:24,259 - processor - INFO - Uploaded chunk 'chunks/content_romeo-and-juliet.txt_chunk_1.txt' to bucket 'processed-bucket'.
+2024-12-01 02:45:24,266 - processor - INFO - Uploaded chunk 'chunks/content_romeo-and-juliet.txt_chunk_2.txt' to bucket 'processed-bucket'.
+2024-12-01 02:45:24,273 - processor - INFO - Uploaded chunk 'chunks/content_romeo-and-juliet.txt_chunk_3.txt' to bucket 'processed-bucket'.
+2024-12-01 02:45:24,280 - processor - INFO - Uploaded chunk 'chunks/content_romeo-and-juliet.txt_chunk_4.txt' to bucket 'processed-bucket'.
+2024-12-01 02:45:24,286 - processor - INFO - Uploaded chunk 'chunks/content_romeo-and-juliet.txt_chunk_5.txt' to bucket 'processed-bucket'.
+2024-12-01 02:45:24,293 - processor - INFO - Uploaded chunk 'chunks/content_romeo-and-juliet.txt_chunk_6.txt' to bucket 'processed-bucket'.
+2024-12-01 02:45:26,926 - processor - INFO - Received message: {'object_name': 'content/the-great-gatsby.txt'}
+2024-12-01 02:45:26,926 - processor - INFO - Downloading 'content/the-great-gatsby.txt' from bucket 'mybucket'.
+2024-12-01 02:45:26,929 - processor - INFO - Splitting 'content/the-great-gatsby.txt' into 7 chunks.
+2024-12-01 02:45:26,937 - processor - INFO - Uploaded chunk 'chunks/content_the-great-gatsby.txt_chunk_1.txt' to bucket 'processed-bucket'.
+2024-12-01 02:45:26,943 - processor - INFO - Uploaded chunk 'chunks/content_the-great-gatsby.txt_chunk_2.txt' to bucket 'processed-bucket'.
+2024-12-01 02:45:26,950 - processor - INFO - Uploaded chunk 'chunks/content_the-great-gatsby.txt_chunk_3.txt' to bucket 'processed-bucket'.
+2024-12-01 02:45:26,956 - processor - INFO - Uploaded chunk 'chunks/content_the-great-gatsby.txt_chunk_4.txt' to bucket 'processed-bucket'.
+2024-12-01 02:45:26,963 - processor - INFO - Uploaded chunk 'chunks/content_the-great-gatsby.txt_chunk_5.txt' to bucket 'processed-bucket'.
+2024-12-01 02:45:26,969 - processor - INFO - Uploaded chunk 'chunks/content_the-great-gatsby.txt_chunk_6.txt' to bucket 'processed-bucket'.
+2024-12-01 02:45:26,975 - processor - INFO - Uploaded chunk 'chunks/content_the-great-gatsby.txt_chunk_7.txt' to bucket 'processed-bucket'.
+2024-12-01 02:45:31,391 - processor - INFO - Received message: {'object_name': 'content/the-great-gatsby.txt'}
+2024-12-01 02:45:31,392 - processor - INFO - Downloading 'content/the-great-gatsby.txt' from bucket 'mybucket'.
+2024-12-01 02:45:31,394 - processor - INFO - Splitting 'content/the-great-gatsby.txt' into 7 chunks.
+2024-12-01 02:45:31,401 - processor - INFO - Uploaded chunk 'chunks/content_the-great-gatsby.txt_chunk_1.txt' to bucket 'processed-bucket'.
+2024-12-01 02:45:31,408 - processor - INFO - Uploaded chunk 'chunks/content_the-great-gatsby.txt_chunk_2.txt' to bucket 'processed-bucket'.
+2024-12-01 02:45:31,415 - processor - INFO - Uploaded chunk 'chunks/content_the-great-gatsby.txt_chunk_3.txt' to bucket 'processed-bucket'.
+2024-12-01 02:45:31,422 - processor - INFO - Uploaded chunk 'chunks/content_the-great-gatsby.txt_chunk_4.txt' to bucket 'processed-bucket'.
+2024-12-01 02:45:31,428 - processor - INFO - Uploaded chunk 'chunks/content_the-great-gatsby.txt_chunk_5.txt' to bucket 'processed-bucket'.
+2024-12-01 02:45:31,435 - processor - INFO - Uploaded chunk 'chunks/content_the-great-gatsby.txt_chunk_6.txt' to bucket 'processed-bucket'.
+2024-12-01 02:45:31,441 - processor - INFO - Uploaded chunk 'chunks/content_the-great-gatsby.txt_chunk_7.txt' to bucket 'processed-bucket'.
+2024-12-01 02:45:35,046 - processor - INFO - Received message: {'object_name': 'content/romeo-and-juliet.txt'}
+2024-12-01 02:45:35,046 - processor - INFO - Downloading 'content/romeo-and-juliet.txt' from bucket 'mybucket'.
+2024-12-01 02:45:35,049 - processor - INFO - Splitting 'content/romeo-and-juliet.txt' into 6 chunks.
+2024-12-01 02:45:35,056 - processor - INFO - Uploaded chunk 'chunks/content_romeo-and-juliet.txt_chunk_1.txt' to bucket 'processed-bucket'.
+2024-12-01 02:45:35,064 - processor - INFO - Uploaded chunk 'chunks/content_romeo-and-juliet.txt_chunk_2.txt' to bucket 'processed-bucket'.
+2024-12-01 02:45:35,070 - processor - INFO - Uploaded chunk 'chunks/content_romeo-and-juliet.txt_chunk_3.txt' to bucket 'processed-bucket'.
+2024-12-01 02:45:35,077 - processor - INFO - Uploaded chunk 'chunks/content_romeo-and-juliet.txt_chunk_4.txt' to bucket 'processed-bucket'.
+2024-12-01 02:45:35,084 - processor - INFO - Uploaded chunk 'chunks/content_romeo-and-juliet.txt_chunk_5.txt' to bucket 'processed-bucket'.
+2024-12-01 02:45:35,090 - processor - INFO - Uploaded chunk 'chunks/content_romeo-and-juliet.txt_chunk_6.txt' to bucket 'processed-bucket'.
+2024-12-01 02:45:38,987 - processor - INFO - Received message: {'object_name': 'content/romeo-and-juliet.txt'}
+2024-12-01 02:45:38,987 - processor - INFO - Downloading 'content/romeo-and-juliet.txt' from bucket 'mybucket'.
+2024-12-01 02:45:38,990 - processor - INFO - Splitting 'content/romeo-and-juliet.txt' into 6 chunks.
+2024-12-01 02:45:38,996 - processor - INFO - Uploaded chunk 'chunks/content_romeo-and-juliet.txt_chunk_1.txt' to bucket 'processed-bucket'.
+2024-12-01 02:45:39,004 - processor - INFO - Uploaded chunk 'chunks/content_romeo-and-juliet.txt_chunk_2.txt' to bucket 'processed-bucket'.
+2024-12-01 02:45:39,010 - processor - INFO - Uploaded chunk 'chunks/content_romeo-and-juliet.txt_chunk_3.txt' to bucket 'processed-bucket'.
+2024-12-01 02:45:39,017 - processor - INFO - Uploaded chunk 'chunks/content_romeo-and-juliet.txt_chunk_4.txt' to bucket 'processed-bucket'.
+2024-12-01 02:45:39,023 - processor - INFO - Uploaded chunk 'chunks/content_romeo-and-juliet.txt_chunk_5.txt' to bucket 'processed-bucket'.
+2024-12-01 02:45:39,029 - processor - INFO - Uploaded chunk 'chunks/content_romeo-and-juliet.txt_chunk_6.txt' to bucket 'processed-bucket'.
+2024-12-01 02:45:41,345 - processor - INFO - Received message: {'object_name': 'content/romeo-and-juliet.txt'}
+2024-12-01 02:45:41,346 - processor - INFO - Downloading 'content/romeo-and-juliet.txt' from bucket 'mybucket'.
+2024-12-01 02:45:41,349 - processor - INFO - Splitting 'content/romeo-and-juliet.txt' into 6 chunks.
+2024-12-01 02:45:41,356 - processor - INFO - Uploaded chunk 'chunks/content_romeo-and-juliet.txt_chunk_1.txt' to bucket 'processed-bucket'.
+2024-12-01 02:45:41,365 - processor - INFO - Uploaded chunk 'chunks/content_romeo-and-juliet.txt_chunk_2.txt' to bucket 'processed-bucket'.
+2024-12-01 02:45:41,372 - processor - INFO - Uploaded chunk 'chunks/content_romeo-and-juliet.txt_chunk_3.txt' to bucket 'processed-bucket'.
+2024-12-01 02:45:41,380 - processor - INFO - Uploaded chunk 'chunks/content_romeo-and-juliet.txt_chunk_4.txt' to bucket 'processed-bucket'.
+2024-12-01 02:45:41,386 - processor - INFO - Uploaded chunk 'chunks/content_romeo-and-juliet.txt_chunk_5.txt' to bucket 'processed-bucket'.
+2024-12-01 02:45:41,394 - processor - INFO - Uploaded chunk 'chunks/content_romeo-and-juliet.txt_chunk_6.txt' to bucket 'processed-bucket'.
+2024-12-01 02:45:43,129 - processor - INFO - Received message: {'object_name': 'content/alice-in-wonderland.txt'}
+2024-12-01 02:45:43,130 - processor - INFO - Downloading 'content/alice-in-wonderland.txt' from bucket 'mybucket'.
+2024-12-01 02:45:43,133 - processor - INFO - Splitting 'content/alice-in-wonderland.txt' into 4 chunks.
+2024-12-01 02:45:43,140 - processor - INFO - Uploaded chunk 'chunks/content_alice-in-wonderland.txt_chunk_1.txt' to bucket 'processed-bucket'.
+2024-12-01 02:45:43,149 - processor - INFO - Uploaded chunk 'chunks/content_alice-in-wonderland.txt_chunk_2.txt' to bucket 'processed-bucket'.
+2024-12-01 02:45:43,155 - processor - INFO - Uploaded chunk 'chunks/content_alice-in-wonderland.txt_chunk_3.txt' to bucket 'processed-bucket'.
+2024-12-01 02:45:43,161 - processor - INFO - Uploaded chunk 'chunks/content_alice-in-wonderland.txt_chunk_4.txt' to bucket 'processed-bucket'.
+2024-12-01 02:45:46,493 - processor - INFO - Received message: {'object_name': 'content/alice-in-wonderland.txt'}
+2024-12-01 02:45:46,494 - processor - INFO - Downloading 'content/alice-in-wonderland.txt' from bucket 'mybucket'.
+2024-12-01 02:45:46,497 - processor - INFO - Splitting 'content/alice-in-wonderland.txt' into 4 chunks.
+2024-12-01 02:45:46,505 - processor - INFO - Uploaded chunk 'chunks/content_alice-in-wonderland.txt_chunk_1.txt' to bucket 'processed-bucket'.
+2024-12-01 02:45:46,511 - processor - INFO - Uploaded chunk 'chunks/content_alice-in-wonderland.txt_chunk_2.txt' to bucket 'processed-bucket'.
+2024-12-01 02:45:46,518 - processor - INFO - Uploaded chunk 'chunks/content_alice-in-wonderland.txt_chunk_3.txt' to bucket 'processed-bucket'.
+2024-12-01 02:45:46,524 - processor - INFO - Uploaded chunk 'chunks/content_alice-in-wonderland.txt_chunk_4.txt' to bucket 'processed-bucket'.
+2024-12-01 02:45:48,844 - processor - INFO - Received message: {'object_name': 'content/alice-in-wonderland.txt'}
+2024-12-01 02:45:48,844 - processor - INFO - Downloading 'content/alice-in-wonderland.txt' from bucket 'mybucket'.
+2024-12-01 02:45:48,847 - processor - INFO - Splitting 'content/alice-in-wonderland.txt' into 4 chunks.
+2024-12-01 02:45:48,855 - processor - INFO - Uploaded chunk 'chunks/content_alice-in-wonderland.txt_chunk_1.txt' to bucket 'processed-bucket'.
+2024-12-01 02:45:48,862 - processor - INFO - Uploaded chunk 'chunks/content_alice-in-wonderland.txt_chunk_2.txt' to bucket 'processed-bucket'.
+2024-12-01 02:45:48,869 - processor - INFO - Uploaded chunk 'chunks/content_alice-in-wonderland.txt_chunk_3.txt' to bucket 'processed-bucket'.
+2024-12-01 02:45:48,875 - processor - INFO - Uploaded chunk 'chunks/content_alice-in-wonderland.txt_chunk_4.txt' to bucket 'processed-bucket'.
+2024-12-01 02:45:50,318 - processor - INFO - Received message: {'object_name': 'content/romeo-and-juliet.txt'}
+2024-12-01 02:45:50,319 - processor - INFO - Downloading 'content/romeo-and-juliet.txt' from bucket 'mybucket'.
+2024-12-01 02:45:50,322 - processor - INFO - Splitting 'content/romeo-and-juliet.txt' into 6 chunks.
+2024-12-01 02:45:50,329 - processor - INFO - Uploaded chunk 'chunks/content_romeo-and-juliet.txt_chunk_1.txt' to bucket 'processed-bucket'.
+2024-12-01 02:45:50,335 - processor - INFO - Uploaded chunk 'chunks/content_romeo-and-juliet.txt_chunk_2.txt' to bucket 'processed-bucket'.
+2024-12-01 02:45:50,341 - processor - INFO - Uploaded chunk 'chunks/content_romeo-and-juliet.txt_chunk_3.txt' to bucket 'processed-bucket'.
+2024-12-01 02:45:50,347 - processor - INFO - Uploaded chunk 'chunks/content_romeo-and-juliet.txt_chunk_4.txt' to bucket 'processed-bucket'.
+2024-12-01 02:45:50,354 - processor - INFO - Uploaded chunk 'chunks/content_romeo-and-juliet.txt_chunk_5.txt' to bucket 'processed-bucket'.
+2024-12-01 02:45:50,360 - processor - INFO - Uploaded chunk 'chunks/content_romeo-and-juliet.txt_chunk_6.txt' to bucket 'processed-bucket'.
+2024-12-01 02:45:52,126 - processor - INFO - Received message: {'object_name': 'content/alice-in-wonderland.txt'}
+2024-12-01 02:45:52,127 - processor - INFO - Downloading 'content/alice-in-wonderland.txt' from bucket 'mybucket'.
+2024-12-01 02:45:52,129 - processor - INFO - Splitting 'content/alice-in-wonderland.txt' into 4 chunks.
+2024-12-01 02:45:52,136 - processor - INFO - Uploaded chunk 'chunks/content_alice-in-wonderland.txt_chunk_1.txt' to bucket 'processed-bucket'.
+2024-12-01 02:45:52,144 - processor - INFO - Uploaded chunk 'chunks/content_alice-in-wonderland.txt_chunk_2.txt' to bucket 'processed-bucket'.
+2024-12-01 02:45:52,151 - processor - INFO - Uploaded chunk 'chunks/content_alice-in-wonderland.txt_chunk_3.txt' to bucket 'processed-bucket'.
+2024-12-01 02:45:52,158 - processor - INFO - Uploaded chunk 'chunks/content_alice-in-wonderland.txt_chunk_4.txt' to bucket 'processed-bucket'.
+2024-12-01 02:45:55,200 - processor - INFO - Received message: {'object_name': 'content/romeo-and-juliet.txt'}
+2024-12-01 02:45:55,200 - processor - INFO - Downloading 'content/romeo-and-juliet.txt' from bucket 'mybucket'.
+2024-12-01 02:45:55,203 - processor - INFO - Splitting 'content/romeo-and-juliet.txt' into 6 chunks.
+2024-12-01 02:45:55,210 - processor - INFO - Uploaded chunk 'chunks/content_romeo-and-juliet.txt_chunk_1.txt' to bucket 'processed-bucket'.
+2024-12-01 02:45:55,219 - processor - INFO - Uploaded chunk 'chunks/content_romeo-and-juliet.txt_chunk_2.txt' to bucket 'processed-bucket'.
+2024-12-01 02:45:55,226 - processor - INFO - Uploaded chunk 'chunks/content_romeo-and-juliet.txt_chunk_3.txt' to bucket 'processed-bucket'.
+2024-12-01 02:45:55,233 - processor - INFO - Uploaded chunk 'chunks/content_romeo-and-juliet.txt_chunk_4.txt' to bucket 'processed-bucket'.
+2024-12-01 02:45:55,241 - processor - INFO - Uploaded chunk 'chunks/content_romeo-and-juliet.txt_chunk_5.txt' to bucket 'processed-bucket'.
+2024-12-01 02:45:55,248 - processor - INFO - Uploaded chunk 'chunks/content_romeo-and-juliet.txt_chunk_6.txt' to bucket 'processed-bucket'.
+2024-12-01 02:45:57,680 - processor - INFO - Received message: {'object_name': 'content/romeo-and-juliet.txt'}
+2024-12-01 02:45:57,681 - processor - INFO - Downloading 'content/romeo-and-juliet.txt' from bucket 'mybucket'.
+2024-12-01 02:45:57,684 - processor - INFO - Splitting 'content/romeo-and-juliet.txt' into 6 chunks.
+2024-12-01 02:45:57,690 - processor - INFO - Uploaded chunk 'chunks/content_romeo-and-juliet.txt_chunk_1.txt' to bucket 'processed-bucket'.
+2024-12-01 02:45:57,698 - processor - INFO - Uploaded chunk 'chunks/content_romeo-and-juliet.txt_chunk_2.txt' to bucket 'processed-bucket'.
+2024-12-01 02:45:57,705 - processor - INFO - Uploaded chunk 'chunks/content_romeo-and-juliet.txt_chunk_3.txt' to bucket 'processed-bucket'.
+2024-12-01 02:45:57,712 - processor - INFO - Uploaded chunk 'chunks/content_romeo-and-juliet.txt_chunk_4.txt' to bucket 'processed-bucket'.
+2024-12-01 02:45:57,719 - processor - INFO - Uploaded chunk 'chunks/content_romeo-and-juliet.txt_chunk_5.txt' to bucket 'processed-bucket'.
+2024-12-01 02:45:57,725 - processor - INFO - Uploaded chunk 'chunks/content_romeo-and-juliet.txt_chunk_6.txt' to bucket 'processed-bucket'.
+2024-12-01 02:46:02,455 - processor - INFO - Received message: {'object_name': 'content/romeo-and-juliet.txt'}
+2024-12-01 02:46:02,456 - processor - INFO - Downloading 'content/romeo-and-juliet.txt' from bucket 'mybucket'.
+2024-12-01 02:46:02,461 - processor - INFO - Splitting 'content/romeo-and-juliet.txt' into 6 chunks.
+2024-12-01 02:46:02,468 - processor - INFO - Uploaded chunk 'chunks/content_romeo-and-juliet.txt_chunk_1.txt' to bucket 'processed-bucket'.
+2024-12-01 02:46:02,475 - processor - INFO - Uploaded chunk 'chunks/content_romeo-and-juliet.txt_chunk_2.txt' to bucket 'processed-bucket'.
+2024-12-01 02:46:02,481 - processor - INFO - Uploaded chunk 'chunks/content_romeo-and-juliet.txt_chunk_3.txt' to bucket 'processed-bucket'.
+2024-12-01 02:46:02,488 - processor - INFO - Uploaded chunk 'chunks/content_romeo-and-juliet.txt_chunk_4.txt' to bucket 'processed-bucket'.
+2024-12-01 02:46:02,495 - processor - INFO - Uploaded chunk 'chunks/content_romeo-and-juliet.txt_chunk_5.txt' to bucket 'processed-bucket'.
+2024-12-01 02:46:02,502 - processor - INFO - Uploaded chunk 'chunks/content_romeo-and-juliet.txt_chunk_6.txt' to bucket 'processed-bucket'.
+2024-12-01 02:46:05,685 - processor - INFO - Received message: {'object_name': 'content/the-great-gatsby.txt'}
+2024-12-01 02:46:05,685 - processor - INFO - Downloading 'content/the-great-gatsby.txt' from bucket 'mybucket'.
+2024-12-01 02:46:05,688 - processor - INFO - Splitting 'content/the-great-gatsby.txt' into 7 chunks.
+2024-12-01 02:46:05,695 - processor - INFO - Uploaded chunk 'chunks/content_the-great-gatsby.txt_chunk_1.txt' to bucket 'processed-bucket'.
+2024-12-01 02:46:05,703 - processor - INFO - Uploaded chunk 'chunks/content_the-great-gatsby.txt_chunk_2.txt' to bucket 'processed-bucket'.
+2024-12-01 02:46:05,712 - processor - INFO - Uploaded chunk 'chunks/content_the-great-gatsby.txt_chunk_3.txt' to bucket 'processed-bucket'.
+2024-12-01 02:46:05,719 - processor - INFO - Uploaded chunk 'chunks/content_the-great-gatsby.txt_chunk_4.txt' to bucket 'processed-bucket'.
+2024-12-01 02:46:05,727 - processor - INFO - Uploaded chunk 'chunks/content_the-great-gatsby.txt_chunk_5.txt' to bucket 'processed-bucket'.
+2024-12-01 02:46:05,734 - processor - INFO - Uploaded chunk 'chunks/content_the-great-gatsby.txt_chunk_6.txt' to bucket 'processed-bucket'.
+2024-12-01 02:46:05,741 - processor - INFO - Uploaded chunk 'chunks/content_the-great-gatsby.txt_chunk_7.txt' to bucket 'processed-bucket'.
+2024-12-01 02:46:09,233 - processor - INFO - Received message: {'object_name': 'content/romeo-and-juliet.txt'}
+2024-12-01 02:46:09,234 - processor - INFO - Downloading 'content/romeo-and-juliet.txt' from bucket 'mybucket'.
+2024-12-01 02:46:09,236 - processor - INFO - Splitting 'content/romeo-and-juliet.txt' into 6 chunks.
+2024-12-01 02:46:09,243 - processor - INFO - Uploaded chunk 'chunks/content_romeo-and-juliet.txt_chunk_1.txt' to bucket 'processed-bucket'.
+2024-12-01 02:46:09,250 - processor - INFO - Uploaded chunk 'chunks/content_romeo-and-juliet.txt_chunk_2.txt' to bucket 'processed-bucket'.
+2024-12-01 02:46:09,257 - processor - INFO - Uploaded chunk 'chunks/content_romeo-and-juliet.txt_chunk_3.txt' to bucket 'processed-bucket'.
+2024-12-01 02:46:09,265 - processor - INFO - Uploaded chunk 'chunks/content_romeo-and-juliet.txt_chunk_4.txt' to bucket 'processed-bucket'.
+2024-12-01 02:46:09,271 - processor - INFO - Uploaded chunk 'chunks/content_romeo-and-juliet.txt_chunk_5.txt' to bucket 'processed-bucket'.
+2024-12-01 02:46:09,277 - processor - INFO - Uploaded chunk 'chunks/content_romeo-and-juliet.txt_chunk_6.txt' to bucket 'processed-bucket'.
+2024-12-01 02:46:11,424 - processor - INFO - Received message: {'object_name': 'content/the-great-gatsby.txt'}
+2024-12-01 02:46:11,424 - processor - INFO - Downloading 'content/the-great-gatsby.txt' from bucket 'mybucket'.
+2024-12-01 02:46:11,429 - processor - INFO - Splitting 'content/the-great-gatsby.txt' into 7 chunks.
+2024-12-01 02:46:11,437 - processor - INFO - Uploaded chunk 'chunks/content_the-great-gatsby.txt_chunk_1.txt' to bucket 'processed-bucket'.
+2024-12-01 02:46:11,443 - processor - INFO - Uploaded chunk 'chunks/content_the-great-gatsby.txt_chunk_2.txt' to bucket 'processed-bucket'.
+2024-12-01 02:46:11,449 - processor - INFO - Uploaded chunk 'chunks/content_the-great-gatsby.txt_chunk_3.txt' to bucket 'processed-bucket'.
+2024-12-01 02:46:11,459 - processor - INFO - Uploaded chunk 'chunks/content_the-great-gatsby.txt_chunk_4.txt' to bucket 'processed-bucket'.
+2024-12-01 02:46:11,465 - processor - INFO - Uploaded chunk 'chunks/content_the-great-gatsby.txt_chunk_5.txt' to bucket 'processed-bucket'.
+2024-12-01 02:46:11,471 - processor - INFO - Uploaded chunk 'chunks/content_the-great-gatsby.txt_chunk_6.txt' to bucket 'processed-bucket'.
+2024-12-01 02:46:11,478 - processor - INFO - Uploaded chunk 'chunks/content_the-great-gatsby.txt_chunk_7.txt' to bucket 'processed-bucket'.
+2024-12-01 02:46:13,047 - processor - INFO - Received message: {'object_name': 'content/romeo-and-juliet.txt'}
+2024-12-01 02:46:13,048 - processor - INFO - Downloading 'content/romeo-and-juliet.txt' from bucket 'mybucket'.
+2024-12-01 02:46:13,053 - processor - INFO - Splitting 'content/romeo-and-juliet.txt' into 6 chunks.
+2024-12-01 02:46:13,060 - processor - INFO - Uploaded chunk 'chunks/content_romeo-and-juliet.txt_chunk_1.txt' to bucket 'processed-bucket'.
+2024-12-01 02:46:13,067 - processor - INFO - Uploaded chunk 'chunks/content_romeo-and-juliet.txt_chunk_2.txt' to bucket 'processed-bucket'.
+2024-12-01 02:46:13,074 - processor - INFO - Uploaded chunk 'chunks/content_romeo-and-juliet.txt_chunk_3.txt' to bucket 'processed-bucket'.
+2024-12-01 02:46:13,080 - processor - INFO - Uploaded chunk 'chunks/content_romeo-and-juliet.txt_chunk_4.txt' to bucket 'processed-bucket'.
+2024-12-01 02:46:13,086 - processor - INFO - Uploaded chunk 'chunks/content_romeo-and-juliet.txt_chunk_5.txt' to bucket 'processed-bucket'.
+2024-12-01 02:46:13,094 - processor - INFO - Uploaded chunk 'chunks/content_romeo-and-juliet.txt_chunk_6.txt' to bucket 'processed-bucket'.
+2024-12-01 02:46:14,350 - processor - INFO - Received message: {'object_name': 'content/the-great-gatsby.txt'}
+2024-12-01 02:46:14,351 - processor - INFO - Downloading 'content/the-great-gatsby.txt' from bucket 'mybucket'.
+2024-12-01 02:46:14,353 - processor - INFO - Splitting 'content/the-great-gatsby.txt' into 7 chunks.
+2024-12-01 02:46:14,360 - processor - INFO - Uploaded chunk 'chunks/content_the-great-gatsby.txt_chunk_1.txt' to bucket 'processed-bucket'.
+2024-12-01 02:46:14,367 - processor - INFO - Uploaded chunk 'chunks/content_the-great-gatsby.txt_chunk_2.txt' to bucket 'processed-bucket'.
+2024-12-01 02:46:14,375 - processor - INFO - Uploaded chunk 'chunks/content_the-great-gatsby.txt_chunk_3.txt' to bucket 'processed-bucket'.
+2024-12-01 02:46:14,381 - processor - INFO - Uploaded chunk 'chunks/content_the-great-gatsby.txt_chunk_4.txt' to bucket 'processed-bucket'.
+2024-12-01 02:46:14,388 - processor - INFO - Uploaded chunk 'chunks/content_the-great-gatsby.txt_chunk_5.txt' to bucket 'processed-bucket'.
+2024-12-01 02:46:14,394 - processor - INFO - Uploaded chunk 'chunks/content_the-great-gatsby.txt_chunk_6.txt' to bucket 'processed-bucket'.
+2024-12-01 02:46:14,401 - processor - INFO - Uploaded chunk 'chunks/content_the-great-gatsby.txt_chunk_7.txt' to bucket 'processed-bucket'.
+2024-12-01 02:46:16,977 - processor - INFO - Received message: {'object_name': 'content/romeo-and-juliet.txt'}
+2024-12-01 02:46:16,978 - processor - INFO - Downloading 'content/romeo-and-juliet.txt' from bucket 'mybucket'.
+2024-12-01 02:46:16,981 - processor - INFO - Splitting 'content/romeo-and-juliet.txt' into 6 chunks.
+2024-12-01 02:46:16,990 - processor - INFO - Uploaded chunk 'chunks/content_romeo-and-juliet.txt_chunk_1.txt' to bucket 'processed-bucket'.
+2024-12-01 02:46:16,997 - processor - INFO - Uploaded chunk 'chunks/content_romeo-and-juliet.txt_chunk_2.txt' to bucket 'processed-bucket'.
+2024-12-01 02:46:17,004 - processor - INFO - Uploaded chunk 'chunks/content_romeo-and-juliet.txt_chunk_3.txt' to bucket 'processed-bucket'.
+2024-12-01 02:46:17,011 - processor - INFO - Uploaded chunk 'chunks/content_romeo-and-juliet.txt_chunk_4.txt' to bucket 'processed-bucket'.
+2024-12-01 02:46:17,018 - processor - INFO - Uploaded chunk 'chunks/content_romeo-and-juliet.txt_chunk_5.txt' to bucket 'processed-bucket'.
+2024-12-01 02:46:17,025 - processor - INFO - Uploaded chunk 'chunks/content_romeo-and-juliet.txt_chunk_6.txt' to bucket 'processed-bucket'.
+2024-12-01 02:46:20,832 - processor - INFO - Received message: {'object_name': 'content/alice-in-wonderland.txt'}
+2024-12-01 02:46:20,833 - processor - INFO - Downloading 'content/alice-in-wonderland.txt' from bucket 'mybucket'.
+2024-12-01 02:46:20,836 - processor - INFO - Splitting 'content/alice-in-wonderland.txt' into 4 chunks.
+2024-12-01 02:46:20,843 - processor - INFO - Uploaded chunk 'chunks/content_alice-in-wonderland.txt_chunk_1.txt' to bucket 'processed-bucket'.
+2024-12-01 02:46:20,851 - processor - INFO - Uploaded chunk 'chunks/content_alice-in-wonderland.txt_chunk_2.txt' to bucket 'processed-bucket'.
+2024-12-01 02:46:20,857 - processor - INFO - Uploaded chunk 'chunks/content_alice-in-wonderland.txt_chunk_3.txt' to bucket 'processed-bucket'.
+2024-12-01 02:46:20,864 - processor - INFO - Uploaded chunk 'chunks/content_alice-in-wonderland.txt_chunk_4.txt' to bucket 'processed-bucket'.
+2024-12-01 02:46:25,506 - processor - INFO - Received message: {'object_name': 'content/alice-in-wonderland.txt'}
+2024-12-01 02:46:25,506 - processor - INFO - Downloading 'content/alice-in-wonderland.txt' from bucket 'mybucket'.
+2024-12-01 02:46:25,510 - processor - INFO - Splitting 'content/alice-in-wonderland.txt' into 4 chunks.
+2024-12-01 02:46:25,517 - processor - INFO - Uploaded chunk 'chunks/content_alice-in-wonderland.txt_chunk_1.txt' to bucket 'processed-bucket'.
+2024-12-01 02:46:25,524 - processor - INFO - Uploaded chunk 'chunks/content_alice-in-wonderland.txt_chunk_2.txt' to bucket 'processed-bucket'.
+2024-12-01 02:46:25,531 - processor - INFO - Uploaded chunk 'chunks/content_alice-in-wonderland.txt_chunk_3.txt' to bucket 'processed-bucket'.
+2024-12-01 02:46:25,537 - processor - INFO - Uploaded chunk 'chunks/content_alice-in-wonderland.txt_chunk_4.txt' to bucket 'processed-bucket'.
+2024-12-01 02:46:26,671 - processor - INFO - Received message: {'object_name': 'content/alice-in-wonderland.txt'}
+2024-12-01 02:46:26,672 - processor - INFO - Downloading 'content/alice-in-wonderland.txt' from bucket 'mybucket'.
+2024-12-01 02:46:26,674 - processor - INFO - Splitting 'content/alice-in-wonderland.txt' into 4 chunks.
+2024-12-01 02:46:26,681 - processor - INFO - Uploaded chunk 'chunks/content_alice-in-wonderland.txt_chunk_1.txt' to bucket 'processed-bucket'.
+2024-12-01 02:46:26,687 - processor - INFO - Uploaded chunk 'chunks/content_alice-in-wonderland.txt_chunk_2.txt' to bucket 'processed-bucket'.
+2024-12-01 02:46:26,694 - processor - INFO - Uploaded chunk 'chunks/content_alice-in-wonderland.txt_chunk_3.txt' to bucket 'processed-bucket'.
+2024-12-01 02:46:26,701 - processor - INFO - Uploaded chunk 'chunks/content_alice-in-wonderland.txt_chunk_4.txt' to bucket 'processed-bucket'.
+2024-12-01 02:46:29,031 - processor - INFO - Received message: {'object_name': 'content/alice-in-wonderland.txt'}
+2024-12-01 02:46:29,031 - processor - INFO - Downloading 'content/alice-in-wonderland.txt' from bucket 'mybucket'.
+2024-12-01 02:46:29,035 - processor - INFO - Splitting 'content/alice-in-wonderland.txt' into 4 chunks.
+2024-12-01 02:46:29,043 - processor - INFO - Uploaded chunk 'chunks/content_alice-in-wonderland.txt_chunk_1.txt' to bucket 'processed-bucket'.
+2024-12-01 02:46:29,052 - processor - INFO - Uploaded chunk 'chunks/content_alice-in-wonderland.txt_chunk_2.txt' to bucket 'processed-bucket'.
+2024-12-01 02:46:29,059 - processor - INFO - Uploaded chunk 'chunks/content_alice-in-wonderland.txt_chunk_3.txt' to bucket 'processed-bucket'.
+2024-12-01 02:46:29,067 - processor - INFO - Uploaded chunk 'chunks/content_alice-in-wonderland.txt_chunk_4.txt' to bucket 'processed-bucket'.
+2024-12-01 02:46:31,086 - processor - INFO - Received message: {'object_name': 'content/the-great-gatsby.txt'}
+2024-12-01 02:46:31,086 - processor - INFO - Downloading 'content/the-great-gatsby.txt' from bucket 'mybucket'.
+2024-12-01 02:46:31,091 - processor - INFO - Splitting 'content/the-great-gatsby.txt' into 7 chunks.
+2024-12-01 02:46:31,097 - processor - INFO - Uploaded chunk 'chunks/content_the-great-gatsby.txt_chunk_1.txt' to bucket 'processed-bucket'.
+2024-12-01 02:46:31,105 - processor - INFO - Uploaded chunk 'chunks/content_the-great-gatsby.txt_chunk_2.txt' to bucket 'processed-bucket'.
+2024-12-01 02:46:31,113 - processor - INFO - Uploaded chunk 'chunks/content_the-great-gatsby.txt_chunk_3.txt' to bucket 'processed-bucket'.
+2024-12-01 02:46:31,121 - processor - INFO - Uploaded chunk 'chunks/content_the-great-gatsby.txt_chunk_4.txt' to bucket 'processed-bucket'.
+2024-12-01 02:46:31,127 - processor - INFO - Uploaded chunk 'chunks/content_the-great-gatsby.txt_chunk_5.txt' to bucket 'processed-bucket'.
+2024-12-01 02:46:31,135 - processor - INFO - Uploaded chunk 'chunks/content_the-great-gatsby.txt_chunk_6.txt' to bucket 'processed-bucket'.
+2024-12-01 02:46:31,142 - processor - INFO - Uploaded chunk 'chunks/content_the-great-gatsby.txt_chunk_7.txt' to bucket 'processed-bucket'.
+2024-12-01 02:46:34,591 - processor - INFO - Received message: {'object_name': 'content/romeo-and-juliet.txt'}
+2024-12-01 02:46:34,591 - processor - INFO - Downloading 'content/romeo-and-juliet.txt' from bucket 'mybucket'.
+2024-12-01 02:46:34,594 - processor - INFO - Splitting 'content/romeo-and-juliet.txt' into 6 chunks.
+2024-12-01 02:46:34,600 - processor - INFO - Uploaded chunk 'chunks/content_romeo-and-juliet.txt_chunk_1.txt' to bucket 'processed-bucket'.
+2024-12-01 02:46:34,607 - processor - INFO - Uploaded chunk 'chunks/content_romeo-and-juliet.txt_chunk_2.txt' to bucket 'processed-bucket'.
+2024-12-01 02:46:34,613 - processor - INFO - Uploaded chunk 'chunks/content_romeo-and-juliet.txt_chunk_3.txt' to bucket 'processed-bucket'.
+2024-12-01 02:46:34,620 - processor - INFO - Uploaded chunk 'chunks/content_romeo-and-juliet.txt_chunk_4.txt' to bucket 'processed-bucket'.
+2024-12-01 02:46:34,627 - processor - INFO - Uploaded chunk 'chunks/content_romeo-and-juliet.txt_chunk_5.txt' to bucket 'processed-bucket'.
+2024-12-01 02:46:34,634 - processor - INFO - Uploaded chunk 'chunks/content_romeo-and-juliet.txt_chunk_6.txt' to bucket 'processed-bucket'.
+2024-12-01 02:46:37,743 - processor - INFO - Received message: {'object_name': 'content/romeo-and-juliet.txt'}
+2024-12-01 02:46:37,743 - processor - INFO - Downloading 'content/romeo-and-juliet.txt' from bucket 'mybucket'.
+2024-12-01 02:46:37,746 - processor - INFO - Splitting 'content/romeo-and-juliet.txt' into 6 chunks.
+2024-12-01 02:46:37,752 - processor - INFO - Uploaded chunk 'chunks/content_romeo-and-juliet.txt_chunk_1.txt' to bucket 'processed-bucket'.
+2024-12-01 02:46:37,759 - processor - INFO - Uploaded chunk 'chunks/content_romeo-and-juliet.txt_chunk_2.txt' to bucket 'processed-bucket'.
+2024-12-01 02:46:37,766 - processor - INFO - Uploaded chunk 'chunks/content_romeo-and-juliet.txt_chunk_3.txt' to bucket 'processed-bucket'.
+2024-12-01 02:46:37,774 - processor - INFO - Uploaded chunk 'chunks/content_romeo-and-juliet.txt_chunk_4.txt' to bucket 'processed-bucket'.
+2024-12-01 02:46:37,779 - processor - INFO - Uploaded chunk 'chunks/content_romeo-and-juliet.txt_chunk_5.txt' to bucket 'processed-bucket'.
+2024-12-01 02:46:37,787 - processor - INFO - Uploaded chunk 'chunks/content_romeo-and-juliet.txt_chunk_6.txt' to bucket 'processed-bucket'.
+2024-12-01 02:46:39,489 - processor - INFO - Received message: {'object_name': 'content/romeo-and-juliet.txt'}
+2024-12-01 02:46:39,490 - processor - INFO - Downloading 'content/romeo-and-juliet.txt' from bucket 'mybucket'.
+2024-12-01 02:46:39,494 - processor - INFO - Splitting 'content/romeo-and-juliet.txt' into 6 chunks.
+2024-12-01 02:46:39,503 - processor - INFO - Uploaded chunk 'chunks/content_romeo-and-juliet.txt_chunk_1.txt' to bucket 'processed-bucket'.
+2024-12-01 02:46:39,511 - processor - INFO - Uploaded chunk 'chunks/content_romeo-and-juliet.txt_chunk_2.txt' to bucket 'processed-bucket'.
+2024-12-01 02:46:39,518 - processor - INFO - Uploaded chunk 'chunks/content_romeo-and-juliet.txt_chunk_3.txt' to bucket 'processed-bucket'.
+2024-12-01 02:46:39,525 - processor - INFO - Uploaded chunk 'chunks/content_romeo-and-juliet.txt_chunk_4.txt' to bucket 'processed-bucket'.
+2024-12-01 02:46:39,534 - processor - INFO - Uploaded chunk 'chunks/content_romeo-and-juliet.txt_chunk_5.txt' to bucket 'processed-bucket'.
+2024-12-01 02:46:39,541 - processor - INFO - Uploaded chunk 'chunks/content_romeo-and-juliet.txt_chunk_6.txt' to bucket 'processed-bucket'.
+2024-12-01 02:46:43,861 - processor - INFO - Received message: {'object_name': 'content/alice-in-wonderland.txt'}
+2024-12-01 02:46:43,862 - processor - INFO - Downloading 'content/alice-in-wonderland.txt' from bucket 'mybucket'.
+2024-12-01 02:46:43,868 - processor - INFO - Splitting 'content/alice-in-wonderland.txt' into 4 chunks.
+2024-12-01 02:46:43,876 - processor - INFO - Uploaded chunk 'chunks/content_alice-in-wonderland.txt_chunk_1.txt' to bucket 'processed-bucket'.
+2024-12-01 02:46:43,882 - processor - INFO - Uploaded chunk 'chunks/content_alice-in-wonderland.txt_chunk_2.txt' to bucket 'processed-bucket'.
+2024-12-01 02:46:43,890 - processor - INFO - Uploaded chunk 'chunks/content_alice-in-wonderland.txt_chunk_3.txt' to bucket 'processed-bucket'.
+2024-12-01 02:46:43,897 - processor - INFO - Uploaded chunk 'chunks/content_alice-in-wonderland.txt_chunk_4.txt' to bucket 'processed-bucket'.
+2024-12-01 02:46:45,257 - processor - INFO - Received message: {'object_name': 'content/romeo-and-juliet.txt'}
+2024-12-01 02:46:45,258 - processor - INFO - Downloading 'content/romeo-and-juliet.txt' from bucket 'mybucket'.
+2024-12-01 02:46:45,260 - processor - INFO - Splitting 'content/romeo-and-juliet.txt' into 6 chunks.
+2024-12-01 02:46:45,267 - processor - INFO - Uploaded chunk 'chunks/content_romeo-and-juliet.txt_chunk_1.txt' to bucket 'processed-bucket'.
+2024-12-01 02:46:45,274 - processor - INFO - Uploaded chunk 'chunks/content_romeo-and-juliet.txt_chunk_2.txt' to bucket 'processed-bucket'.
+2024-12-01 02:46:45,281 - processor - INFO - Uploaded chunk 'chunks/content_romeo-and-juliet.txt_chunk_3.txt' to bucket 'processed-bucket'.
+2024-12-01 02:46:45,287 - processor - INFO - Uploaded chunk 'chunks/content_romeo-and-juliet.txt_chunk_4.txt' to bucket 'processed-bucket'.
+2024-12-01 02:46:45,294 - processor - INFO - Uploaded chunk 'chunks/content_romeo-and-juliet.txt_chunk_5.txt' to bucket 'processed-bucket'.
+2024-12-01 02:46:45,301 - processor - INFO - Uploaded chunk 'chunks/content_romeo-and-juliet.txt_chunk_6.txt' to bucket 'processed-bucket'.
+2024-12-01 02:46:48,472 - processor - INFO - Received message: {'object_name': 'content/the-great-gatsby.txt'}
+2024-12-01 02:46:48,472 - processor - INFO - Downloading 'content/the-great-gatsby.txt' from bucket 'mybucket'.
+2024-12-01 02:46:48,478 - processor - INFO - Splitting 'content/the-great-gatsby.txt' into 7 chunks.
+2024-12-01 02:46:48,485 - processor - INFO - Uploaded chunk 'chunks/content_the-great-gatsby.txt_chunk_1.txt' to bucket 'processed-bucket'.
+2024-12-01 02:46:48,492 - processor - INFO - Uploaded chunk 'chunks/content_the-great-gatsby.txt_chunk_2.txt' to bucket 'processed-bucket'.
+2024-12-01 02:46:48,500 - processor - INFO - Uploaded chunk 'chunks/content_the-great-gatsby.txt_chunk_3.txt' to bucket 'processed-bucket'.
+2024-12-01 02:46:48,507 - processor - INFO - Uploaded chunk 'chunks/content_the-great-gatsby.txt_chunk_4.txt' to bucket 'processed-bucket'.
+2024-12-01 02:46:48,513 - processor - INFO - Uploaded chunk 'chunks/content_the-great-gatsby.txt_chunk_5.txt' to bucket 'processed-bucket'.
+2024-12-01 02:46:48,520 - processor - INFO - Uploaded chunk 'chunks/content_the-great-gatsby.txt_chunk_6.txt' to bucket 'processed-bucket'.
+2024-12-01 02:46:48,527 - processor - INFO - Uploaded chunk 'chunks/content_the-great-gatsby.txt_chunk_7.txt' to bucket 'processed-bucket'.
+2024-12-01 02:46:53,226 - processor - INFO - Received message: {'object_name': 'content/alice-in-wonderland.txt'}
+2024-12-01 02:46:53,227 - processor - INFO - Downloading 'content/alice-in-wonderland.txt' from bucket 'mybucket'.
+2024-12-01 02:46:53,229 - processor - INFO - Splitting 'content/alice-in-wonderland.txt' into 4 chunks.
+2024-12-01 02:46:53,236 - processor - INFO - Uploaded chunk 'chunks/content_alice-in-wonderland.txt_chunk_1.txt' to bucket 'processed-bucket'.
+2024-12-01 02:46:53,243 - processor - INFO - Uploaded chunk 'chunks/content_alice-in-wonderland.txt_chunk_2.txt' to bucket 'processed-bucket'.
+2024-12-01 02:46:53,250 - processor - INFO - Uploaded chunk 'chunks/content_alice-in-wonderland.txt_chunk_3.txt' to bucket 'processed-bucket'.
+2024-12-01 02:46:53,257 - processor - INFO - Uploaded chunk 'chunks/content_alice-in-wonderland.txt_chunk_4.txt' to bucket 'processed-bucket'.
+2024-12-01 02:46:57,020 - processor - INFO - Received message: {'object_name': 'content/alice-in-wonderland.txt'}
+2024-12-01 02:46:57,021 - processor - INFO - Downloading 'content/alice-in-wonderland.txt' from bucket 'mybucket'.
+2024-12-01 02:46:57,024 - processor - INFO - Splitting 'content/alice-in-wonderland.txt' into 4 chunks.
+2024-12-01 02:46:57,033 - processor - INFO - Uploaded chunk 'chunks/content_alice-in-wonderland.txt_chunk_1.txt' to bucket 'processed-bucket'.
+2024-12-01 02:46:57,040 - processor - INFO - Uploaded chunk 'chunks/content_alice-in-wonderland.txt_chunk_2.txt' to bucket 'processed-bucket'.
+2024-12-01 02:46:57,047 - processor - INFO - Uploaded chunk 'chunks/content_alice-in-wonderland.txt_chunk_3.txt' to bucket 'processed-bucket'.
+2024-12-01 02:46:57,056 - processor - INFO - Uploaded chunk 'chunks/content_alice-in-wonderland.txt_chunk_4.txt' to bucket 'processed-bucket'.
+2024-12-01 02:46:58,561 - processor - INFO - Received message: {'object_name': 'content/romeo-and-juliet.txt'}
+2024-12-01 02:46:58,561 - processor - INFO - Downloading 'content/romeo-and-juliet.txt' from bucket 'mybucket'.
+2024-12-01 02:46:58,564 - processor - INFO - Splitting 'content/romeo-and-juliet.txt' into 6 chunks.
+2024-12-01 02:46:58,572 - processor - INFO - Uploaded chunk 'chunks/content_romeo-and-juliet.txt_chunk_1.txt' to bucket 'processed-bucket'.
+2024-12-01 02:46:58,579 - processor - INFO - Uploaded chunk 'chunks/content_romeo-and-juliet.txt_chunk_2.txt' to bucket 'processed-bucket'.
+2024-12-01 02:46:58,586 - processor - INFO - Uploaded chunk 'chunks/content_romeo-and-juliet.txt_chunk_3.txt' to bucket 'processed-bucket'.
+2024-12-01 02:46:58,592 - processor - INFO - Uploaded chunk 'chunks/content_romeo-and-juliet.txt_chunk_4.txt' to bucket 'processed-bucket'.
+2024-12-01 02:46:58,598 - processor - INFO - Uploaded chunk 'chunks/content_romeo-and-juliet.txt_chunk_5.txt' to bucket 'processed-bucket'.
+2024-12-01 02:46:58,604 - processor - INFO - Uploaded chunk 'chunks/content_romeo-and-juliet.txt_chunk_6.txt' to bucket 'processed-bucket'.
+2024-12-01 02:47:00,581 - processor - INFO - Received message: {'object_name': 'content/the-great-gatsby.txt'}
+2024-12-01 02:47:00,581 - processor - INFO - Downloading 'content/the-great-gatsby.txt' from bucket 'mybucket'.
+2024-12-01 02:47:00,586 - processor - INFO - Splitting 'content/the-great-gatsby.txt' into 7 chunks.
+2024-12-01 02:47:00,594 - processor - INFO - Uploaded chunk 'chunks/content_the-great-gatsby.txt_chunk_1.txt' to bucket 'processed-bucket'.
+2024-12-01 02:47:00,600 - processor - INFO - Uploaded chunk 'chunks/content_the-great-gatsby.txt_chunk_2.txt' to bucket 'processed-bucket'.
+2024-12-01 02:47:00,606 - processor - INFO - Uploaded chunk 'chunks/content_the-great-gatsby.txt_chunk_3.txt' to bucket 'processed-bucket'.
+2024-12-01 02:47:00,614 - processor - INFO - Uploaded chunk 'chunks/content_the-great-gatsby.txt_chunk_4.txt' to bucket 'processed-bucket'.
+2024-12-01 02:47:00,620 - processor - INFO - Uploaded chunk 'chunks/content_the-great-gatsby.txt_chunk_5.txt' to bucket 'processed-bucket'.
+2024-12-01 02:47:00,626 - processor - INFO - Uploaded chunk 'chunks/content_the-great-gatsby.txt_chunk_6.txt' to bucket 'processed-bucket'.
+2024-12-01 02:47:00,633 - processor - INFO - Uploaded chunk 'chunks/content_the-great-gatsby.txt_chunk_7.txt' to bucket 'processed-bucket'.
+2024-12-01 02:47:02,868 - processor - INFO - Received message: {'object_name': 'content/alice-in-wonderland.txt'}
+2024-12-01 02:47:02,868 - processor - INFO - Downloading 'content/alice-in-wonderland.txt' from bucket 'mybucket'.
+2024-12-01 02:47:02,871 - processor - INFO - Splitting 'content/alice-in-wonderland.txt' into 4 chunks.
+2024-12-01 02:47:02,880 - processor - INFO - Uploaded chunk 'chunks/content_alice-in-wonderland.txt_chunk_1.txt' to bucket 'processed-bucket'.
+2024-12-01 02:47:02,886 - processor - INFO - Uploaded chunk 'chunks/content_alice-in-wonderland.txt_chunk_2.txt' to bucket 'processed-bucket'.
+2024-12-01 02:47:02,893 - processor - INFO - Uploaded chunk 'chunks/content_alice-in-wonderland.txt_chunk_3.txt' to bucket 'processed-bucket'.
+2024-12-01 02:47:02,899 - processor - INFO - Uploaded chunk 'chunks/content_alice-in-wonderland.txt_chunk_4.txt' to bucket 'processed-bucket'.
+2024-12-01 02:47:04,476 - processor - INFO - Received message: {'object_name': 'content/the-great-gatsby.txt'}
+2024-12-01 02:47:04,476 - processor - INFO - Downloading 'content/the-great-gatsby.txt' from bucket 'mybucket'.
+2024-12-01 02:47:04,480 - processor - INFO - Splitting 'content/the-great-gatsby.txt' into 7 chunks.
+2024-12-01 02:47:04,488 - processor - INFO - Uploaded chunk 'chunks/content_the-great-gatsby.txt_chunk_1.txt' to bucket 'processed-bucket'.
+2024-12-01 02:47:04,494 - processor - INFO - Uploaded chunk 'chunks/content_the-great-gatsby.txt_chunk_2.txt' to bucket 'processed-bucket'.
+2024-12-01 02:47:04,502 - processor - INFO - Uploaded chunk 'chunks/content_the-great-gatsby.txt_chunk_3.txt' to bucket 'processed-bucket'.
+2024-12-01 02:47:04,509 - processor - INFO - Uploaded chunk 'chunks/content_the-great-gatsby.txt_chunk_4.txt' to bucket 'processed-bucket'.
+2024-12-01 02:47:04,516 - processor - INFO - Uploaded chunk 'chunks/content_the-great-gatsby.txt_chunk_5.txt' to bucket 'processed-bucket'.
+2024-12-01 02:47:04,523 - processor - INFO - Uploaded chunk 'chunks/content_the-great-gatsby.txt_chunk_6.txt' to bucket 'processed-bucket'.
+2024-12-01 02:47:04,529 - processor - INFO - Uploaded chunk 'chunks/content_the-great-gatsby.txt_chunk_7.txt' to bucket 'processed-bucket'.
+2024-12-01 02:47:07,253 - processor - INFO - Received message: {'object_name': 'content/the-great-gatsby.txt'}
+2024-12-01 02:47:07,254 - processor - INFO - Downloading 'content/the-great-gatsby.txt' from bucket 'mybucket'.
+2024-12-01 02:47:07,259 - processor - INFO - Splitting 'content/the-great-gatsby.txt' into 7 chunks.
+2024-12-01 02:47:07,268 - processor - INFO - Uploaded chunk 'chunks/content_the-great-gatsby.txt_chunk_1.txt' to bucket 'processed-bucket'.
+2024-12-01 02:47:07,273 - processor - INFO - Uploaded chunk 'chunks/content_the-great-gatsby.txt_chunk_2.txt' to bucket 'processed-bucket'.
+2024-12-01 02:47:07,280 - processor - INFO - Uploaded chunk 'chunks/content_the-great-gatsby.txt_chunk_3.txt' to bucket 'processed-bucket'.
+2024-12-01 02:47:07,287 - processor - INFO - Uploaded chunk 'chunks/content_the-great-gatsby.txt_chunk_4.txt' to bucket 'processed-bucket'.
+2024-12-01 02:47:07,294 - processor - INFO - Uploaded chunk 'chunks/content_the-great-gatsby.txt_chunk_5.txt' to bucket 'processed-bucket'.
+2024-12-01 02:47:07,300 - processor - INFO - Uploaded chunk 'chunks/content_the-great-gatsby.txt_chunk_6.txt' to bucket 'processed-bucket'.
+2024-12-01 02:47:07,306 - processor - INFO - Uploaded chunk 'chunks/content_the-great-gatsby.txt_chunk_7.txt' to bucket 'processed-bucket'.
+2024-12-01 02:47:12,220 - processor - INFO - Received message: {'object_name': 'content/the-great-gatsby.txt'}
+2024-12-01 02:47:12,221 - processor - INFO - Downloading 'content/the-great-gatsby.txt' from bucket 'mybucket'.
+2024-12-01 02:47:12,226 - processor - INFO - Splitting 'content/the-great-gatsby.txt' into 7 chunks.
+2024-12-01 02:47:12,234 - processor - INFO - Uploaded chunk 'chunks/content_the-great-gatsby.txt_chunk_1.txt' to bucket 'processed-bucket'.
+2024-12-01 02:47:12,240 - processor - INFO - Uploaded chunk 'chunks/content_the-great-gatsby.txt_chunk_2.txt' to bucket 'processed-bucket'.
+2024-12-01 02:47:12,247 - processor - INFO - Uploaded chunk 'chunks/content_the-great-gatsby.txt_chunk_3.txt' to bucket 'processed-bucket'.
+2024-12-01 02:47:12,254 - processor - INFO - Uploaded chunk 'chunks/content_the-great-gatsby.txt_chunk_4.txt' to bucket 'processed-bucket'.
+2024-12-01 02:47:12,262 - processor - INFO - Uploaded chunk 'chunks/content_the-great-gatsby.txt_chunk_5.txt' to bucket 'processed-bucket'.
+2024-12-01 02:47:12,269 - processor - INFO - Uploaded chunk 'chunks/content_the-great-gatsby.txt_chunk_6.txt' to bucket 'processed-bucket'.
+2024-12-01 02:47:12,275 - processor - INFO - Uploaded chunk 'chunks/content_the-great-gatsby.txt_chunk_7.txt' to bucket 'processed-bucket'.
+2024-12-01 02:47:13,456 - processor - INFO - Received message: {'object_name': 'content/romeo-and-juliet.txt'}
+2024-12-01 02:47:13,456 - processor - INFO - Downloading 'content/romeo-and-juliet.txt' from bucket 'mybucket'.
+2024-12-01 02:47:13,458 - processor - INFO - Splitting 'content/romeo-and-juliet.txt' into 6 chunks.
+2024-12-01 02:47:13,464 - processor - INFO - Uploaded chunk 'chunks/content_romeo-and-juliet.txt_chunk_1.txt' to bucket 'processed-bucket'.
+2024-12-01 02:47:13,470 - processor - INFO - Uploaded chunk 'chunks/content_romeo-and-juliet.txt_chunk_2.txt' to bucket 'processed-bucket'.
+2024-12-01 02:47:13,479 - processor - INFO - Uploaded chunk 'chunks/content_romeo-and-juliet.txt_chunk_3.txt' to bucket 'processed-bucket'.
+2024-12-01 02:47:13,487 - processor - INFO - Uploaded chunk 'chunks/content_romeo-and-juliet.txt_chunk_4.txt' to bucket 'processed-bucket'.
+2024-12-01 02:47:13,494 - processor - INFO - Uploaded chunk 'chunks/content_romeo-and-juliet.txt_chunk_5.txt' to bucket 'processed-bucket'.
+2024-12-01 02:47:13,501 - processor - INFO - Uploaded chunk 'chunks/content_romeo-and-juliet.txt_chunk_6.txt' to bucket 'processed-bucket'.
+2024-12-01 02:47:15,690 - processor - INFO - Received message: {'object_name': 'content/the-great-gatsby.txt'}
+2024-12-01 02:47:15,690 - processor - INFO - Downloading 'content/the-great-gatsby.txt' from bucket 'mybucket'.
+2024-12-01 02:47:15,694 - processor - INFO - Splitting 'content/the-great-gatsby.txt' into 7 chunks.
+2024-12-01 02:47:15,701 - processor - INFO - Uploaded chunk 'chunks/content_the-great-gatsby.txt_chunk_1.txt' to bucket 'processed-bucket'.
+2024-12-01 02:47:15,708 - processor - INFO - Uploaded chunk 'chunks/content_the-great-gatsby.txt_chunk_2.txt' to bucket 'processed-bucket'.
+2024-12-01 02:47:15,715 - processor - INFO - Uploaded chunk 'chunks/content_the-great-gatsby.txt_chunk_3.txt' to bucket 'processed-bucket'.
+2024-12-01 02:47:15,721 - processor - INFO - Uploaded chunk 'chunks/content_the-great-gatsby.txt_chunk_4.txt' to bucket 'processed-bucket'.
+2024-12-01 02:47:15,727 - processor - INFO - Uploaded chunk 'chunks/content_the-great-gatsby.txt_chunk_5.txt' to bucket 'processed-bucket'.
+2024-12-01 02:47:15,735 - processor - INFO - Uploaded chunk 'chunks/content_the-great-gatsby.txt_chunk_6.txt' to bucket 'processed-bucket'.
+2024-12-01 02:47:15,741 - processor - INFO - Uploaded chunk 'chunks/content_the-great-gatsby.txt_chunk_7.txt' to bucket 'processed-bucket'.
+2024-12-01 02:47:17,255 - processor - INFO - Received message: {'object_name': 'content/alice-in-wonderland.txt'}
+2024-12-01 02:47:17,256 - processor - INFO - Downloading 'content/alice-in-wonderland.txt' from bucket 'mybucket'.
+2024-12-01 02:47:17,260 - processor - INFO - Splitting 'content/alice-in-wonderland.txt' into 4 chunks.
+2024-12-01 02:47:17,269 - processor - INFO - Uploaded chunk 'chunks/content_alice-in-wonderland.txt_chunk_1.txt' to bucket 'processed-bucket'.
+2024-12-01 02:47:17,275 - processor - INFO - Uploaded chunk 'chunks/content_alice-in-wonderland.txt_chunk_2.txt' to bucket 'processed-bucket'.
+2024-12-01 02:47:17,283 - processor - INFO - Uploaded chunk 'chunks/content_alice-in-wonderland.txt_chunk_3.txt' to bucket 'processed-bucket'.
+2024-12-01 02:47:17,289 - processor - INFO - Uploaded chunk 'chunks/content_alice-in-wonderland.txt_chunk_4.txt' to bucket 'processed-bucket'.
+2024-12-01 02:47:22,051 - processor - INFO - Received message: {'object_name': 'content/romeo-and-juliet.txt'}
+2024-12-01 02:47:22,052 - processor - INFO - Downloading 'content/romeo-and-juliet.txt' from bucket 'mybucket'.
+2024-12-01 02:47:22,055 - processor - INFO - Splitting 'content/romeo-and-juliet.txt' into 6 chunks.
+2024-12-01 02:47:22,064 - processor - INFO - Uploaded chunk 'chunks/content_romeo-and-juliet.txt_chunk_1.txt' to bucket 'processed-bucket'.
+2024-12-01 02:47:22,070 - processor - INFO - Uploaded chunk 'chunks/content_romeo-and-juliet.txt_chunk_2.txt' to bucket 'processed-bucket'.
+2024-12-01 02:47:22,076 - processor - INFO - Uploaded chunk 'chunks/content_romeo-and-juliet.txt_chunk_3.txt' to bucket 'processed-bucket'.
+2024-12-01 02:47:22,082 - processor - INFO - Uploaded chunk 'chunks/content_romeo-and-juliet.txt_chunk_4.txt' to bucket 'processed-bucket'.
+2024-12-01 02:47:22,089 - processor - INFO - Uploaded chunk 'chunks/content_romeo-and-juliet.txt_chunk_5.txt' to bucket 'processed-bucket'.
+2024-12-01 02:47:22,095 - processor - INFO - Uploaded chunk 'chunks/content_romeo-and-juliet.txt_chunk_6.txt' to bucket 'processed-bucket'.
+2024-12-01 02:47:26,604 - processor - INFO - Received message: {'object_name': 'content/romeo-and-juliet.txt'}
+2024-12-01 02:47:26,604 - processor - INFO - Downloading 'content/romeo-and-juliet.txt' from bucket 'mybucket'.
+2024-12-01 02:47:26,607 - processor - INFO - Splitting 'content/romeo-and-juliet.txt' into 6 chunks.
+2024-12-01 02:47:26,616 - processor - INFO - Uploaded chunk 'chunks/content_romeo-and-juliet.txt_chunk_1.txt' to bucket 'processed-bucket'.
+2024-12-01 02:47:26,623 - processor - INFO - Uploaded chunk 'chunks/content_romeo-and-juliet.txt_chunk_2.txt' to bucket 'processed-bucket'.
+2024-12-01 02:47:26,629 - processor - INFO - Uploaded chunk 'chunks/content_romeo-and-juliet.txt_chunk_3.txt' to bucket 'processed-bucket'.
+2024-12-01 02:47:26,638 - processor - INFO - Uploaded chunk 'chunks/content_romeo-and-juliet.txt_chunk_4.txt' to bucket 'processed-bucket'.
+2024-12-01 02:47:26,645 - processor - INFO - Uploaded chunk 'chunks/content_romeo-and-juliet.txt_chunk_5.txt' to bucket 'processed-bucket'.
+2024-12-01 02:47:26,651 - processor - INFO - Uploaded chunk 'chunks/content_romeo-and-juliet.txt_chunk_6.txt' to bucket 'processed-bucket'.
+2024-12-01 02:47:29,669 - processor - INFO - Received message: {'object_name': 'content/alice-in-wonderland.txt'}
+2024-12-01 02:47:29,670 - processor - INFO - Downloading 'content/alice-in-wonderland.txt' from bucket 'mybucket'.
+2024-12-01 02:47:29,674 - processor - INFO - Splitting 'content/alice-in-wonderland.txt' into 4 chunks.
+2024-12-01 02:47:29,681 - processor - INFO - Uploaded chunk 'chunks/content_alice-in-wonderland.txt_chunk_1.txt' to bucket 'processed-bucket'.
+2024-12-01 02:47:29,688 - processor - INFO - Uploaded chunk 'chunks/content_alice-in-wonderland.txt_chunk_2.txt' to bucket 'processed-bucket'.
+2024-12-01 02:47:29,695 - processor - INFO - Uploaded chunk 'chunks/content_alice-in-wonderland.txt_chunk_3.txt' to bucket 'processed-bucket'.
+2024-12-01 02:47:29,702 - processor - INFO - Uploaded chunk 'chunks/content_alice-in-wonderland.txt_chunk_4.txt' to bucket 'processed-bucket'.
+2024-12-01 02:47:34,739 - processor - INFO - Received message: {'object_name': 'content/the-great-gatsby.txt'}
+2024-12-01 02:47:34,740 - processor - INFO - Downloading 'content/the-great-gatsby.txt' from bucket 'mybucket'.
+2024-12-01 02:47:34,745 - processor - INFO - Splitting 'content/the-great-gatsby.txt' into 7 chunks.
+2024-12-01 02:47:34,753 - processor - INFO - Uploaded chunk 'chunks/content_the-great-gatsby.txt_chunk_1.txt' to bucket 'processed-bucket'.
+2024-12-01 02:47:34,759 - processor - INFO - Uploaded chunk 'chunks/content_the-great-gatsby.txt_chunk_2.txt' to bucket 'processed-bucket'.
+2024-12-01 02:47:34,766 - processor - INFO - Uploaded chunk 'chunks/content_the-great-gatsby.txt_chunk_3.txt' to bucket 'processed-bucket'.
+2024-12-01 02:47:34,773 - processor - INFO - Uploaded chunk 'chunks/content_the-great-gatsby.txt_chunk_4.txt' to bucket 'processed-bucket'.
+2024-12-01 02:47:34,779 - processor - INFO - Uploaded chunk 'chunks/content_the-great-gatsby.txt_chunk_5.txt' to bucket 'processed-bucket'.
+2024-12-01 02:47:34,786 - processor - INFO - Uploaded chunk 'chunks/content_the-great-gatsby.txt_chunk_6.txt' to bucket 'processed-bucket'.
+2024-12-01 02:47:34,792 - processor - INFO - Uploaded chunk 'chunks/content_the-great-gatsby.txt_chunk_7.txt' to bucket 'processed-bucket'.
+2024-12-01 02:47:38,224 - processor - INFO - Received message: {'object_name': 'content/romeo-and-juliet.txt'}
+2024-12-01 02:47:38,225 - processor - INFO - Downloading 'content/romeo-and-juliet.txt' from bucket 'mybucket'.
+2024-12-01 02:47:38,230 - processor - INFO - Splitting 'content/romeo-and-juliet.txt' into 6 chunks.
+2024-12-01 02:47:38,237 - processor - INFO - Uploaded chunk 'chunks/content_romeo-and-juliet.txt_chunk_1.txt' to bucket 'processed-bucket'.
+2024-12-01 02:47:38,243 - processor - INFO - Uploaded chunk 'chunks/content_romeo-and-juliet.txt_chunk_2.txt' to bucket 'processed-bucket'.
+2024-12-01 02:47:38,249 - processor - INFO - Uploaded chunk 'chunks/content_romeo-and-juliet.txt_chunk_3.txt' to bucket 'processed-bucket'.
+2024-12-01 02:47:38,255 - processor - INFO - Uploaded chunk 'chunks/content_romeo-and-juliet.txt_chunk_4.txt' to bucket 'processed-bucket'.
+2024-12-01 02:47:38,262 - processor - INFO - Uploaded chunk 'chunks/content_romeo-and-juliet.txt_chunk_5.txt' to bucket 'processed-bucket'.
+2024-12-01 02:47:38,268 - processor - INFO - Uploaded chunk 'chunks/content_romeo-and-juliet.txt_chunk_6.txt' to bucket 'processed-bucket'.
+2024-12-01 02:47:41,216 - processor - INFO - Received message: {'object_name': 'content/romeo-and-juliet.txt'}
+2024-12-01 02:47:41,217 - processor - INFO - Downloading 'content/romeo-and-juliet.txt' from bucket 'mybucket'.
+2024-12-01 02:47:41,220 - processor - INFO - Splitting 'content/romeo-and-juliet.txt' into 6 chunks.
+2024-12-01 02:47:41,227 - processor - INFO - Uploaded chunk 'chunks/content_romeo-and-juliet.txt_chunk_1.txt' to bucket 'processed-bucket'.
+2024-12-01 02:47:41,233 - processor - INFO - Uploaded chunk 'chunks/content_romeo-and-juliet.txt_chunk_2.txt' to bucket 'processed-bucket'.
+2024-12-01 02:47:41,240 - processor - INFO - Uploaded chunk 'chunks/content_romeo-and-juliet.txt_chunk_3.txt' to bucket 'processed-bucket'.
+2024-12-01 02:47:41,246 - processor - INFO - Uploaded chunk 'chunks/content_romeo-and-juliet.txt_chunk_4.txt' to bucket 'processed-bucket'.
+2024-12-01 02:47:41,252 - processor - INFO - Uploaded chunk 'chunks/content_romeo-and-juliet.txt_chunk_5.txt' to bucket 'processed-bucket'.
+2024-12-01 02:47:41,258 - processor - INFO - Uploaded chunk 'chunks/content_romeo-and-juliet.txt_chunk_6.txt' to bucket 'processed-bucket'.
+2024-12-01 02:47:42,912 - processor - INFO - Received message: {'object_name': 'content/alice-in-wonderland.txt'}
+2024-12-01 02:47:42,913 - processor - INFO - Downloading 'content/alice-in-wonderland.txt' from bucket 'mybucket'.
+2024-12-01 02:47:42,918 - processor - INFO - Splitting 'content/alice-in-wonderland.txt' into 4 chunks.
+2024-12-01 02:47:42,926 - processor - INFO - Uploaded chunk 'chunks/content_alice-in-wonderland.txt_chunk_1.txt' to bucket 'processed-bucket'.
+2024-12-01 02:47:42,933 - processor - INFO - Uploaded chunk 'chunks/content_alice-in-wonderland.txt_chunk_2.txt' to bucket 'processed-bucket'.
+2024-12-01 02:47:42,938 - processor - INFO - Uploaded chunk 'chunks/content_alice-in-wonderland.txt_chunk_3.txt' to bucket 'processed-bucket'.
+2024-12-01 02:47:42,945 - processor - INFO - Uploaded chunk 'chunks/content_alice-in-wonderland.txt_chunk_4.txt' to bucket 'processed-bucket'.
+2024-12-01 02:47:47,733 - processor - INFO - Received message: {'object_name': 'content/the-great-gatsby.txt'}
+2024-12-01 02:47:47,734 - processor - INFO - Downloading 'content/the-great-gatsby.txt' from bucket 'mybucket'.
+2024-12-01 02:47:47,738 - processor - INFO - Splitting 'content/the-great-gatsby.txt' into 7 chunks.
+2024-12-01 02:47:47,746 - processor - INFO - Uploaded chunk 'chunks/content_the-great-gatsby.txt_chunk_1.txt' to bucket 'processed-bucket'.
+2024-12-01 02:47:47,754 - processor - INFO - Uploaded chunk 'chunks/content_the-great-gatsby.txt_chunk_2.txt' to bucket 'processed-bucket'.
+2024-12-01 02:47:47,760 - processor - INFO - Uploaded chunk 'chunks/content_the-great-gatsby.txt_chunk_3.txt' to bucket 'processed-bucket'.
+2024-12-01 02:47:47,767 - processor - INFO - Uploaded chunk 'chunks/content_the-great-gatsby.txt_chunk_4.txt' to bucket 'processed-bucket'.
+2024-12-01 02:47:47,773 - processor - INFO - Uploaded chunk 'chunks/content_the-great-gatsby.txt_chunk_5.txt' to bucket 'processed-bucket'.
+2024-12-01 02:47:47,779 - processor - INFO - Uploaded chunk 'chunks/content_the-great-gatsby.txt_chunk_6.txt' to bucket 'processed-bucket'.
+2024-12-01 02:47:47,786 - processor - INFO - Uploaded chunk 'chunks/content_the-great-gatsby.txt_chunk_7.txt' to bucket 'processed-bucket'.
+2024-12-01 02:47:52,418 - processor - INFO - Received message: {'object_name': 'content/alice-in-wonderland.txt'}
+2024-12-01 02:47:52,419 - processor - INFO - Downloading 'content/alice-in-wonderland.txt' from bucket 'mybucket'.
+2024-12-01 02:47:52,421 - processor - INFO - Splitting 'content/alice-in-wonderland.txt' into 4 chunks.
+2024-12-01 02:47:52,429 - processor - INFO - Uploaded chunk 'chunks/content_alice-in-wonderland.txt_chunk_1.txt' to bucket 'processed-bucket'.
+2024-12-01 02:47:52,439 - processor - INFO - Uploaded chunk 'chunks/content_alice-in-wonderland.txt_chunk_2.txt' to bucket 'processed-bucket'.
+2024-12-01 02:47:52,448 - processor - INFO - Uploaded chunk 'chunks/content_alice-in-wonderland.txt_chunk_3.txt' to bucket 'processed-bucket'.
+2024-12-01 02:47:52,456 - processor - INFO - Uploaded chunk 'chunks/content_alice-in-wonderland.txt_chunk_4.txt' to bucket 'processed-bucket'.
+2024-12-01 02:47:54,615 - processor - INFO - Received message: {'object_name': 'content/the-great-gatsby.txt'}
+2024-12-01 02:47:54,616 - processor - INFO - Downloading 'content/the-great-gatsby.txt' from bucket 'mybucket'.
+2024-12-01 02:47:54,621 - processor - INFO - Splitting 'content/the-great-gatsby.txt' into 7 chunks.
+2024-12-01 02:47:54,628 - processor - INFO - Uploaded chunk 'chunks/content_the-great-gatsby.txt_chunk_1.txt' to bucket 'processed-bucket'.
+2024-12-01 02:47:54,635 - processor - INFO - Uploaded chunk 'chunks/content_the-great-gatsby.txt_chunk_2.txt' to bucket 'processed-bucket'.
+2024-12-01 02:47:54,642 - processor - INFO - Uploaded chunk 'chunks/content_the-great-gatsby.txt_chunk_3.txt' to bucket 'processed-bucket'.
+2024-12-01 02:47:54,649 - processor - INFO - Uploaded chunk 'chunks/content_the-great-gatsby.txt_chunk_4.txt' to bucket 'processed-bucket'.
+2024-12-01 02:47:54,655 - processor - INFO - Uploaded chunk 'chunks/content_the-great-gatsby.txt_chunk_5.txt' to bucket 'processed-bucket'.
+2024-12-01 02:47:54,662 - processor - INFO - Uploaded chunk 'chunks/content_the-great-gatsby.txt_chunk_6.txt' to bucket 'processed-bucket'.
+2024-12-01 02:47:54,668 - processor - INFO - Uploaded chunk 'chunks/content_the-great-gatsby.txt_chunk_7.txt' to bucket 'processed-bucket'.
+2024-12-01 02:47:59,370 - processor - INFO - Received message: {'object_name': 'content/romeo-and-juliet.txt'}
+2024-12-01 02:47:59,371 - processor - INFO - Downloading 'content/romeo-and-juliet.txt' from bucket 'mybucket'.
+2024-12-01 02:47:59,373 - processor - INFO - Splitting 'content/romeo-and-juliet.txt' into 6 chunks.
+2024-12-01 02:47:59,383 - processor - INFO - Uploaded chunk 'chunks/content_romeo-and-juliet.txt_chunk_1.txt' to bucket 'processed-bucket'.
+2024-12-01 02:47:59,389 - processor - INFO - Uploaded chunk 'chunks/content_romeo-and-juliet.txt_chunk_2.txt' to bucket 'processed-bucket'.
+2024-12-01 02:47:59,395 - processor - INFO - Uploaded chunk 'chunks/content_romeo-and-juliet.txt_chunk_3.txt' to bucket 'processed-bucket'.
+2024-12-01 02:47:59,401 - processor - INFO - Uploaded chunk 'chunks/content_romeo-and-juliet.txt_chunk_4.txt' to bucket 'processed-bucket'.
+2024-12-01 02:47:59,408 - processor - INFO - Uploaded chunk 'chunks/content_romeo-and-juliet.txt_chunk_5.txt' to bucket 'processed-bucket'.
+2024-12-01 02:47:59,413 - processor - INFO - Uploaded chunk 'chunks/content_romeo-and-juliet.txt_chunk_6.txt' to bucket 'processed-bucket'.
+2024-12-01 02:48:02,748 - processor - INFO - Received message: {'object_name': 'content/romeo-and-juliet.txt'}
+2024-12-01 02:48:02,748 - processor - INFO - Downloading 'content/romeo-and-juliet.txt' from bucket 'mybucket'.
+2024-12-01 02:48:02,753 - processor - INFO - Splitting 'content/romeo-and-juliet.txt' into 6 chunks.
+2024-12-01 02:48:02,760 - processor - INFO - Uploaded chunk 'chunks/content_romeo-and-juliet.txt_chunk_1.txt' to bucket 'processed-bucket'.
+2024-12-01 02:48:02,766 - processor - INFO - Uploaded chunk 'chunks/content_romeo-and-juliet.txt_chunk_2.txt' to bucket 'processed-bucket'.
+2024-12-01 02:48:02,772 - processor - INFO - Uploaded chunk 'chunks/content_romeo-and-juliet.txt_chunk_3.txt' to bucket 'processed-bucket'.
+2024-12-01 02:48:02,780 - processor - INFO - Uploaded chunk 'chunks/content_romeo-and-juliet.txt_chunk_4.txt' to bucket 'processed-bucket'.
+2024-12-01 02:48:02,786 - processor - INFO - Uploaded chunk 'chunks/content_romeo-and-juliet.txt_chunk_5.txt' to bucket 'processed-bucket'.
+2024-12-01 02:48:02,792 - processor - INFO - Uploaded chunk 'chunks/content_romeo-and-juliet.txt_chunk_6.txt' to bucket 'processed-bucket'.
+2024-12-01 02:48:07,901 - processor - INFO - Received message: {'object_name': 'content/alice-in-wonderland.txt'}
+2024-12-01 02:48:07,902 - processor - INFO - Downloading 'content/alice-in-wonderland.txt' from bucket 'mybucket'.
+2024-12-01 02:48:07,904 - processor - INFO - Splitting 'content/alice-in-wonderland.txt' into 4 chunks.
+2024-12-01 02:48:07,910 - processor - INFO - Uploaded chunk 'chunks/content_alice-in-wonderland.txt_chunk_1.txt' to bucket 'processed-bucket'.
+2024-12-01 02:48:07,917 - processor - INFO - Uploaded chunk 'chunks/content_alice-in-wonderland.txt_chunk_2.txt' to bucket 'processed-bucket'.
+2024-12-01 02:48:07,924 - processor - INFO - Uploaded chunk 'chunks/content_alice-in-wonderland.txt_chunk_3.txt' to bucket 'processed-bucket'.
+2024-12-01 02:48:07,931 - processor - INFO - Uploaded chunk 'chunks/content_alice-in-wonderland.txt_chunk_4.txt' to bucket 'processed-bucket'.
+2024-12-01 02:48:11,808 - processor - INFO - Received message: {'object_name': 'content/the-great-gatsby.txt'}
+2024-12-01 02:48:11,808 - processor - INFO - Downloading 'content/the-great-gatsby.txt' from bucket 'mybucket'.
+2024-12-01 02:48:11,812 - processor - INFO - Splitting 'content/the-great-gatsby.txt' into 7 chunks.
+2024-12-01 02:48:11,820 - processor - INFO - Uploaded chunk 'chunks/content_the-great-gatsby.txt_chunk_1.txt' to bucket 'processed-bucket'.
+2024-12-01 02:48:11,826 - processor - INFO - Uploaded chunk 'chunks/content_the-great-gatsby.txt_chunk_2.txt' to bucket 'processed-bucket'.
+2024-12-01 02:48:11,834 - processor - INFO - Uploaded chunk 'chunks/content_the-great-gatsby.txt_chunk_3.txt' to bucket 'processed-bucket'.
+2024-12-01 02:48:11,841 - processor - INFO - Uploaded chunk 'chunks/content_the-great-gatsby.txt_chunk_4.txt' to bucket 'processed-bucket'.
+2024-12-01 02:48:11,849 - processor - INFO - Uploaded chunk 'chunks/content_the-great-gatsby.txt_chunk_5.txt' to bucket 'processed-bucket'.
+2024-12-01 02:48:11,856 - processor - INFO - Uploaded chunk 'chunks/content_the-great-gatsby.txt_chunk_6.txt' to bucket 'processed-bucket'.
+2024-12-01 02:48:11,862 - processor - INFO - Uploaded chunk 'chunks/content_the-great-gatsby.txt_chunk_7.txt' to bucket 'processed-bucket'.

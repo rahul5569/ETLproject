@@ -1,0 +1,200 @@
+2024-12-01 02:42:40,844 - myapp - INFO - Bucket 'mybucket' already exists.
+2024-12-01 02:42:40,851 - myapp - INFO - Connected to Kafka successfully.
+2024-12-01 02:43:08,066 - myapp - INFO - Stored 'content/the-great-gatsby.txt' in MinIO.
+2024-12-01 02:43:08,082 - myapp - INFO - Sent data to Kafka topic 'test-topic' with offset 338.
+2024-12-01 02:43:10,811 - myapp - INFO - Stored 'content/the-great-gatsby.txt' in MinIO.
+2024-12-01 02:43:10,815 - myapp - INFO - Sent data to Kafka topic 'test-topic' with offset 339.
+2024-12-01 02:43:15,209 - myapp - INFO - Stored 'content/alice-in-wonderland.txt' in MinIO.
+2024-12-01 02:43:15,212 - myapp - INFO - Sent data to Kafka topic 'test-topic' with offset 340.
+2024-12-01 02:43:16,588 - myapp - INFO - Stored 'content/alice-in-wonderland.txt' in MinIO.
+2024-12-01 02:43:16,591 - myapp - INFO - Sent data to Kafka topic 'test-topic' with offset 341.
+2024-12-01 02:43:17,748 - myapp - INFO - Stored 'content/alice-in-wonderland.txt' in MinIO.
+2024-12-01 02:43:17,751 - myapp - INFO - Sent data to Kafka topic 'test-topic' with offset 342.
+2024-12-01 02:43:22,666 - myapp - INFO - Stored 'content/the-great-gatsby.txt' in MinIO.
+2024-12-01 02:43:22,669 - myapp - INFO - Sent data to Kafka topic 'test-topic' with offset 343.
+2024-12-01 02:43:25,237 - myapp - INFO - Stored 'content/romeo-and-juliet.txt' in MinIO.
+2024-12-01 02:43:25,240 - myapp - INFO - Sent data to Kafka topic 'test-topic' with offset 344.
+2024-12-01 02:43:30,243 - myapp - INFO - Stored 'content/the-great-gatsby.txt' in MinIO.
+2024-12-01 02:43:30,248 - myapp - INFO - Sent data to Kafka topic 'test-topic' with offset 345.
+2024-12-01 02:43:33,323 - myapp - INFO - Stored 'content/alice-in-wonderland.txt' in MinIO.
+2024-12-01 02:43:33,326 - myapp - INFO - Sent data to Kafka topic 'test-topic' with offset 346.
+2024-12-01 02:43:35,641 - myapp - INFO - Stored 'content/alice-in-wonderland.txt' in MinIO.
+2024-12-01 02:43:35,646 - myapp - INFO - Sent data to Kafka topic 'test-topic' with offset 347.
+2024-12-01 02:43:39,974 - myapp - INFO - Stored 'content/romeo-and-juliet.txt' in MinIO.
+2024-12-01 02:43:39,980 - myapp - INFO - Sent data to Kafka topic 'test-topic' with offset 348.
+2024-12-01 02:43:44,463 - myapp - INFO - Stored 'content/the-great-gatsby.txt' in MinIO.
+2024-12-01 02:43:44,466 - myapp - INFO - Sent data to Kafka topic 'test-topic' with offset 349.
+2024-12-01 02:43:49,256 - myapp - INFO - Stored 'content/romeo-and-juliet.txt' in MinIO.
+2024-12-01 02:43:49,260 - myapp - INFO - Sent data to Kafka topic 'test-topic' with offset 350.
+2024-12-01 02:43:50,833 - myapp - INFO - Stored 'content/alice-in-wonderland.txt' in MinIO.
+2024-12-01 02:43:50,835 - myapp - INFO - Sent data to Kafka topic 'test-topic' with offset 351.
+2024-12-01 02:43:54,467 - myapp - INFO - Stored 'content/the-great-gatsby.txt' in MinIO.
+2024-12-01 02:43:54,470 - myapp - INFO - Sent data to Kafka topic 'test-topic' with offset 352.
+2024-12-01 02:43:59,447 - myapp - INFO - Stored 'content/romeo-and-juliet.txt' in MinIO.
+2024-12-01 02:43:59,452 - myapp - INFO - Sent data to Kafka topic 'test-topic' with offset 353.
+2024-12-01 02:44:02,631 - myapp - INFO - Stored 'content/the-great-gatsby.txt' in MinIO.
+2024-12-01 02:44:02,634 - myapp - INFO - Sent data to Kafka topic 'test-topic' with offset 354.
+2024-12-01 02:44:07,196 - myapp - INFO - Stored 'content/the-great-gatsby.txt' in MinIO.
+2024-12-01 02:44:07,200 - myapp - INFO - Sent data to Kafka topic 'test-topic' with offset 355.
+2024-12-01 02:44:09,649 - myapp - INFO - Stored 'content/alice-in-wonderland.txt' in MinIO.
+2024-12-01 02:44:09,651 - myapp - INFO - Sent data to Kafka topic 'test-topic' with offset 356.
+2024-12-01 02:44:13,502 - myapp - INFO - Stored 'content/alice-in-wonderland.txt' in MinIO.
+2024-12-01 02:44:13,505 - myapp - INFO - Sent data to Kafka topic 'test-topic' with offset 357.
+2024-12-01 02:44:17,273 - myapp - INFO - Stored 'content/romeo-and-juliet.txt' in MinIO.
+2024-12-01 02:44:17,276 - myapp - INFO - Sent data to Kafka topic 'test-topic' with offset 358.
+2024-12-01 02:44:21,714 - myapp - INFO - Stored 'content/alice-in-wonderland.txt' in MinIO.
+2024-12-01 02:44:21,716 - myapp - INFO - Sent data to Kafka topic 'test-topic' with offset 359.
+2024-12-01 02:44:26,468 - myapp - INFO - Stored 'content/romeo-and-juliet.txt' in MinIO.
+2024-12-01 02:44:26,470 - myapp - INFO - Sent data to Kafka topic 'test-topic' with offset 360.
+2024-12-01 02:44:28,738 - myapp - INFO - Stored 'content/romeo-and-juliet.txt' in MinIO.
+2024-12-01 02:44:28,741 - myapp - INFO - Sent data to Kafka topic 'test-topic' with offset 361.
+2024-12-01 02:44:30,160 - myapp - INFO - Stored 'content/the-great-gatsby.txt' in MinIO.
+2024-12-01 02:44:30,162 - myapp - INFO - Sent data to Kafka topic 'test-topic' with offset 362.
+2024-12-01 02:44:32,744 - myapp - INFO - Stored 'content/romeo-and-juliet.txt' in MinIO.
+2024-12-01 02:44:32,748 - myapp - INFO - Sent data to Kafka topic 'test-topic' with offset 363.
+2024-12-01 02:44:36,784 - myapp - INFO - Stored 'content/romeo-and-juliet.txt' in MinIO.
+2024-12-01 02:44:36,787 - myapp - INFO - Sent data to Kafka topic 'test-topic' with offset 364.
+2024-12-01 02:44:40,531 - myapp - INFO - Stored 'content/the-great-gatsby.txt' in MinIO.
+2024-12-01 02:44:40,536 - myapp - INFO - Sent data to Kafka topic 'test-topic' with offset 365.
+2024-12-01 02:44:43,032 - myapp - INFO - Stored 'content/alice-in-wonderland.txt' in MinIO.
+2024-12-01 02:44:43,034 - myapp - INFO - Sent data to Kafka topic 'test-topic' with offset 366.
+2024-12-01 02:44:44,451 - myapp - INFO - Stored 'content/alice-in-wonderland.txt' in MinIO.
+2024-12-01 02:44:44,453 - myapp - INFO - Sent data to Kafka topic 'test-topic' with offset 367.
+2024-12-01 02:44:46,671 - myapp - INFO - Stored 'content/the-great-gatsby.txt' in MinIO.
+2024-12-01 02:44:46,674 - myapp - INFO - Sent data to Kafka topic 'test-topic' with offset 368.
+2024-12-01 02:44:51,142 - myapp - INFO - Stored 'content/romeo-and-juliet.txt' in MinIO.
+2024-12-01 02:44:51,146 - myapp - INFO - Sent data to Kafka topic 'test-topic' with offset 369.
+2024-12-01 02:44:52,699 - myapp - INFO - Stored 'content/alice-in-wonderland.txt' in MinIO.
+2024-12-01 02:44:52,700 - myapp - INFO - Sent data to Kafka topic 'test-topic' with offset 370.
+2024-12-01 02:44:57,135 - myapp - INFO - Stored 'content/the-great-gatsby.txt' in MinIO.
+2024-12-01 02:44:57,137 - myapp - INFO - Sent data to Kafka topic 'test-topic' with offset 371.
+2024-12-01 02:45:00,949 - myapp - INFO - Stored 'content/the-great-gatsby.txt' in MinIO.
+2024-12-01 02:45:00,951 - myapp - INFO - Sent data to Kafka topic 'test-topic' with offset 372.
+2024-12-01 02:45:02,017 - myapp - INFO - Stored 'content/the-great-gatsby.txt' in MinIO.
+2024-12-01 02:45:02,019 - myapp - INFO - Sent data to Kafka topic 'test-topic' with offset 373.
+2024-12-01 02:45:06,799 - myapp - INFO - Stored 'content/alice-in-wonderland.txt' in MinIO.
+2024-12-01 02:45:06,802 - myapp - INFO - Sent data to Kafka topic 'test-topic' with offset 374.
+2024-12-01 02:45:08,597 - myapp - INFO - Stored 'content/alice-in-wonderland.txt' in MinIO.
+2024-12-01 02:45:08,600 - myapp - INFO - Sent data to Kafka topic 'test-topic' with offset 375.
+2024-12-01 02:45:11,103 - myapp - INFO - Stored 'content/romeo-and-juliet.txt' in MinIO.
+2024-12-01 02:45:11,105 - myapp - INFO - Sent data to Kafka topic 'test-topic' with offset 376.
+2024-12-01 02:45:14,593 - myapp - INFO - Stored 'content/romeo-and-juliet.txt' in MinIO.
+2024-12-01 02:45:14,596 - myapp - INFO - Sent data to Kafka topic 'test-topic' with offset 377.
+2024-12-01 02:45:18,912 - myapp - INFO - Stored 'content/alice-in-wonderland.txt' in MinIO.
+2024-12-01 02:45:18,914 - myapp - INFO - Sent data to Kafka topic 'test-topic' with offset 378.
+2024-12-01 02:45:20,560 - myapp - INFO - Stored 'content/the-great-gatsby.txt' in MinIO.
+2024-12-01 02:45:20,562 - myapp - INFO - Sent data to Kafka topic 'test-topic' with offset 379.
+2024-12-01 02:45:21,979 - myapp - INFO - Stored 'content/romeo-and-juliet.txt' in MinIO.
+2024-12-01 02:45:21,981 - myapp - INFO - Sent data to Kafka topic 'test-topic' with offset 380.
+2024-12-01 02:45:24,247 - myapp - INFO - Stored 'content/romeo-and-juliet.txt' in MinIO.
+2024-12-01 02:45:24,250 - myapp - INFO - Sent data to Kafka topic 'test-topic' with offset 381.
+2024-12-01 02:45:26,922 - myapp - INFO - Stored 'content/the-great-gatsby.txt' in MinIO.
+2024-12-01 02:45:26,926 - myapp - INFO - Sent data to Kafka topic 'test-topic' with offset 382.
+2024-12-01 02:45:31,388 - myapp - INFO - Stored 'content/the-great-gatsby.txt' in MinIO.
+2024-12-01 02:45:31,391 - myapp - INFO - Sent data to Kafka topic 'test-topic' with offset 383.
+2024-12-01 02:45:35,042 - myapp - INFO - Stored 'content/romeo-and-juliet.txt' in MinIO.
+2024-12-01 02:45:35,046 - myapp - INFO - Sent data to Kafka topic 'test-topic' with offset 384.
+2024-12-01 02:45:38,984 - myapp - INFO - Stored 'content/romeo-and-juliet.txt' in MinIO.
+2024-12-01 02:45:38,986 - myapp - INFO - Sent data to Kafka topic 'test-topic' with offset 385.
+2024-12-01 02:45:41,343 - myapp - INFO - Stored 'content/romeo-and-juliet.txt' in MinIO.
+2024-12-01 02:45:41,345 - myapp - INFO - Sent data to Kafka topic 'test-topic' with offset 386.
+2024-12-01 02:45:43,127 - myapp - INFO - Stored 'content/alice-in-wonderland.txt' in MinIO.
+2024-12-01 02:45:43,129 - myapp - INFO - Sent data to Kafka topic 'test-topic' with offset 387.
+2024-12-01 02:45:46,490 - myapp - INFO - Stored 'content/alice-in-wonderland.txt' in MinIO.
+2024-12-01 02:45:46,492 - myapp - INFO - Sent data to Kafka topic 'test-topic' with offset 388.
+2024-12-01 02:45:48,841 - myapp - INFO - Stored 'content/alice-in-wonderland.txt' in MinIO.
+2024-12-01 02:45:48,843 - myapp - INFO - Sent data to Kafka topic 'test-topic' with offset 389.
+2024-12-01 02:45:50,313 - myapp - INFO - Stored 'content/romeo-and-juliet.txt' in MinIO.
+2024-12-01 02:45:50,317 - myapp - INFO - Sent data to Kafka topic 'test-topic' with offset 390.
+2024-12-01 02:45:52,124 - myapp - INFO - Stored 'content/alice-in-wonderland.txt' in MinIO.
+2024-12-01 02:45:52,126 - myapp - INFO - Sent data to Kafka topic 'test-topic' with offset 391.
+2024-12-01 02:45:55,197 - myapp - INFO - Stored 'content/romeo-and-juliet.txt' in MinIO.
+2024-12-01 02:45:55,199 - myapp - INFO - Sent data to Kafka topic 'test-topic' with offset 392.
+2024-12-01 02:45:57,675 - myapp - INFO - Stored 'content/romeo-and-juliet.txt' in MinIO.
+2024-12-01 02:45:57,679 - myapp - INFO - Sent data to Kafka topic 'test-topic' with offset 393.
+2024-12-01 02:46:02,452 - myapp - INFO - Stored 'content/romeo-and-juliet.txt' in MinIO.
+2024-12-01 02:46:02,455 - myapp - INFO - Sent data to Kafka topic 'test-topic' with offset 394.
+2024-12-01 02:46:05,679 - myapp - INFO - Stored 'content/the-great-gatsby.txt' in MinIO.
+2024-12-01 02:46:05,684 - myapp - INFO - Sent data to Kafka topic 'test-topic' with offset 395.
+2024-12-01 02:46:09,231 - myapp - INFO - Stored 'content/romeo-and-juliet.txt' in MinIO.
+2024-12-01 02:46:09,233 - myapp - INFO - Sent data to Kafka topic 'test-topic' with offset 396.
+2024-12-01 02:46:11,421 - myapp - INFO - Stored 'content/the-great-gatsby.txt' in MinIO.
+2024-12-01 02:46:11,423 - myapp - INFO - Sent data to Kafka topic 'test-topic' with offset 397.
+2024-12-01 02:46:13,043 - myapp - INFO - Stored 'content/romeo-and-juliet.txt' in MinIO.
+2024-12-01 02:46:13,046 - myapp - INFO - Sent data to Kafka topic 'test-topic' with offset 398.
+2024-12-01 02:46:14,348 - myapp - INFO - Stored 'content/the-great-gatsby.txt' in MinIO.
+2024-12-01 02:46:14,350 - myapp - INFO - Sent data to Kafka topic 'test-topic' with offset 399.
+2024-12-01 02:46:16,974 - myapp - INFO - Stored 'content/romeo-and-juliet.txt' in MinIO.
+2024-12-01 02:46:16,977 - myapp - INFO - Sent data to Kafka topic 'test-topic' with offset 400.
+2024-12-01 02:46:20,830 - myapp - INFO - Stored 'content/alice-in-wonderland.txt' in MinIO.
+2024-12-01 02:46:20,832 - myapp - INFO - Sent data to Kafka topic 'test-topic' with offset 401.
+2024-12-01 02:46:25,503 - myapp - INFO - Stored 'content/alice-in-wonderland.txt' in MinIO.
+2024-12-01 02:46:25,506 - myapp - INFO - Sent data to Kafka topic 'test-topic' with offset 402.
+2024-12-01 02:46:26,669 - myapp - INFO - Stored 'content/alice-in-wonderland.txt' in MinIO.
+2024-12-01 02:46:26,671 - myapp - INFO - Sent data to Kafka topic 'test-topic' with offset 403.
+2024-12-01 02:46:29,028 - myapp - INFO - Stored 'content/alice-in-wonderland.txt' in MinIO.
+2024-12-01 02:46:29,031 - myapp - INFO - Sent data to Kafka topic 'test-topic' with offset 404.
+2024-12-01 02:46:31,081 - myapp - INFO - Stored 'content/the-great-gatsby.txt' in MinIO.
+2024-12-01 02:46:31,085 - myapp - INFO - Sent data to Kafka topic 'test-topic' with offset 405.
+2024-12-01 02:46:34,587 - myapp - INFO - Stored 'content/romeo-and-juliet.txt' in MinIO.
+2024-12-01 02:46:34,590 - myapp - INFO - Sent data to Kafka topic 'test-topic' with offset 406.
+2024-12-01 02:46:37,738 - myapp - INFO - Stored 'content/romeo-and-juliet.txt' in MinIO.
+2024-12-01 02:46:37,742 - myapp - INFO - Sent data to Kafka topic 'test-topic' with offset 407.
+2024-12-01 02:46:39,487 - myapp - INFO - Stored 'content/romeo-and-juliet.txt' in MinIO.
+2024-12-01 02:46:39,489 - myapp - INFO - Sent data to Kafka topic 'test-topic' with offset 408.
+2024-12-01 02:46:43,756 - myapp - INFO - Stored 'content/alice-in-wonderland.txt' in MinIO.
+2024-12-01 02:46:43,760 - myapp - INFO - Sent data to Kafka topic 'test-topic' with offset 409.
+2024-12-01 02:46:45,255 - myapp - INFO - Stored 'content/romeo-and-juliet.txt' in MinIO.
+2024-12-01 02:46:45,257 - myapp - INFO - Sent data to Kafka topic 'test-topic' with offset 410.
+2024-12-01 02:46:48,469 - myapp - INFO - Stored 'content/the-great-gatsby.txt' in MinIO.
+2024-12-01 02:46:48,471 - myapp - INFO - Sent data to Kafka topic 'test-topic' with offset 411.
+2024-12-01 02:46:53,221 - myapp - INFO - Stored 'content/alice-in-wonderland.txt' in MinIO.
+2024-12-01 02:46:53,226 - myapp - INFO - Sent data to Kafka topic 'test-topic' with offset 412.
+2024-12-01 02:46:57,011 - myapp - INFO - Stored 'content/alice-in-wonderland.txt' in MinIO.
+2024-12-01 02:46:57,015 - myapp - INFO - Sent data to Kafka topic 'test-topic' with offset 413.
+2024-12-01 02:46:58,557 - myapp - INFO - Stored 'content/romeo-and-juliet.txt' in MinIO.
+2024-12-01 02:46:58,560 - myapp - INFO - Sent data to Kafka topic 'test-topic' with offset 414.
+2024-12-01 02:47:00,579 - myapp - INFO - Stored 'content/the-great-gatsby.txt' in MinIO.
+2024-12-01 02:47:00,581 - myapp - INFO - Sent data to Kafka topic 'test-topic' with offset 415.
+2024-12-01 02:47:02,865 - myapp - INFO - Stored 'content/alice-in-wonderland.txt' in MinIO.
+2024-12-01 02:47:02,867 - myapp - INFO - Sent data to Kafka topic 'test-topic' with offset 416.
+2024-12-01 02:47:04,471 - myapp - INFO - Stored 'content/the-great-gatsby.txt' in MinIO.
+2024-12-01 02:47:04,475 - myapp - INFO - Sent data to Kafka topic 'test-topic' with offset 417.
+2024-12-01 02:47:07,251 - myapp - INFO - Stored 'content/the-great-gatsby.txt' in MinIO.
+2024-12-01 02:47:07,253 - myapp - INFO - Sent data to Kafka topic 'test-topic' with offset 418.
+2024-12-01 02:47:12,218 - myapp - INFO - Stored 'content/the-great-gatsby.txt' in MinIO.
+2024-12-01 02:47:12,220 - myapp - INFO - Sent data to Kafka topic 'test-topic' with offset 419.
+2024-12-01 02:47:13,453 - myapp - INFO - Stored 'content/romeo-and-juliet.txt' in MinIO.
+2024-12-01 02:47:13,455 - myapp - INFO - Sent data to Kafka topic 'test-topic' with offset 420.
+2024-12-01 02:47:15,685 - myapp - INFO - Stored 'content/the-great-gatsby.txt' in MinIO.
+2024-12-01 02:47:15,689 - myapp - INFO - Sent data to Kafka topic 'test-topic' with offset 421.
+2024-12-01 02:47:17,253 - myapp - INFO - Stored 'content/alice-in-wonderland.txt' in MinIO.
+2024-12-01 02:47:17,255 - myapp - INFO - Sent data to Kafka topic 'test-topic' with offset 422.
+2024-12-01 02:47:22,049 - myapp - INFO - Stored 'content/romeo-and-juliet.txt' in MinIO.
+2024-12-01 02:47:22,051 - myapp - INFO - Sent data to Kafka topic 'test-topic' with offset 423.
+2024-12-01 02:47:26,602 - myapp - INFO - Stored 'content/romeo-and-juliet.txt' in MinIO.
+2024-12-01 02:47:26,604 - myapp - INFO - Sent data to Kafka topic 'test-topic' with offset 424.
+2024-12-01 02:47:29,666 - myapp - INFO - Stored 'content/alice-in-wonderland.txt' in MinIO.
+2024-12-01 02:47:29,668 - myapp - INFO - Sent data to Kafka topic 'test-topic' with offset 425.
+2024-12-01 02:47:34,737 - myapp - INFO - Stored 'content/the-great-gatsby.txt' in MinIO.
+2024-12-01 02:47:34,739 - myapp - INFO - Sent data to Kafka topic 'test-topic' with offset 426.
+2024-12-01 02:47:38,222 - myapp - INFO - Stored 'content/romeo-and-juliet.txt' in MinIO.
+2024-12-01 02:47:38,224 - myapp - INFO - Sent data to Kafka topic 'test-topic' with offset 427.
+2024-12-01 02:47:41,211 - myapp - INFO - Stored 'content/romeo-and-juliet.txt' in MinIO.
+2024-12-01 02:47:41,216 - myapp - INFO - Sent data to Kafka topic 'test-topic' with offset 428.
+2024-12-01 02:47:42,910 - myapp - INFO - Stored 'content/alice-in-wonderland.txt' in MinIO.
+2024-12-01 02:47:42,912 - myapp - INFO - Sent data to Kafka topic 'test-topic' with offset 429.
+2024-12-01 02:47:47,731 - myapp - INFO - Stored 'content/the-great-gatsby.txt' in MinIO.
+2024-12-01 02:47:47,733 - myapp - INFO - Sent data to Kafka topic 'test-topic' with offset 430.
+2024-12-01 02:47:52,416 - myapp - INFO - Stored 'content/alice-in-wonderland.txt' in MinIO.
+2024-12-01 02:47:52,418 - myapp - INFO - Sent data to Kafka topic 'test-topic' with offset 431.
+2024-12-01 02:47:54,613 - myapp - INFO - Stored 'content/the-great-gatsby.txt' in MinIO.
+2024-12-01 02:47:54,615 - myapp - INFO - Sent data to Kafka topic 'test-topic' with offset 432.
+2024-12-01 02:47:59,368 - myapp - INFO - Stored 'content/romeo-and-juliet.txt' in MinIO.
+2024-12-01 02:47:59,370 - myapp - INFO - Sent data to Kafka topic 'test-topic' with offset 433.
+2024-12-01 02:48:02,745 - myapp - INFO - Stored 'content/romeo-and-juliet.txt' in MinIO.
+2024-12-01 02:48:02,747 - myapp - INFO - Sent data to Kafka topic 'test-topic' with offset 434.
+2024-12-01 02:48:07,898 - myapp - INFO - Stored 'content/alice-in-wonderland.txt' in MinIO.
+2024-12-01 02:48:07,901 - myapp - INFO - Sent data to Kafka topic 'test-topic' with offset 435.
+2024-12-01 02:48:11,805 - myapp - INFO - Stored 'content/the-great-gatsby.txt' in MinIO.
+2024-12-01 02:48:11,807 - myapp - INFO - Sent data to Kafka topic 'test-topic' with offset 436.

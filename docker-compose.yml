@@ -1,7 +1,5 @@
 # docker-compose.yml
 
-# Removed the 'version' key as it is obsolete in newer Docker Compose versions.
-
 networks:
   app-tier:
     driver: bridge
@@ -26,8 +24,7 @@ services:
       - KAFKA_CFG_AUTO_CREATE_TOPICS_ENABLE=true
       - KAFKA_CFG_OFFSETS_TOPIC_REPLICATION_FACTOR=1
     ports:
-      - "9092:9092"  # Expose only the PLAINTEXT listener externally
-      # Note: CONTROLLER listener (9093) is not exposed externally
+      - "9092:9092"
     volumes:
       - kafka_data:/bitnami/kafka
     restart: unless-stopped
@@ -42,8 +39,8 @@ services:
       - MINIO_ROOT_PASSWORD=minioadmin
     command: server /data --console-address ":9001"
     ports:
-      - "9000:9000"  # API access
-      - "9001:9001"  # Web Console
+      - "9000:9000"
+      - "9001:9001"
     volumes:
       - minio_data:/data
     restart: unless-stopped
@@ -60,8 +57,11 @@ services:
       - MINIO_BUCKET=mybucket
       - KAFKA_BOOTSTRAP_SERVERS=kafka:9092
       - KAFKA_TOPIC=test-topic
+      - LOG_FILE_PATH=/logs/myapp.log    # Unique log file for myapp
     ports:
       - "8000:8000"
+    volumes:
+      - logs:/logs                      # Mount the shared logs volume
     depends_on:
       - kafka
       - minio
@@ -80,9 +80,12 @@ services:
       - TARGET_BUCKET=processed-bucket
       - KAFKA_BOOTSTRAP_SERVERS=kafka:9092
       - KAFKA_TOPIC=test-topic
-      - CHUNK_SIZE=1000  # Adjust based on your requirements
+      - CHUNK_SIZE=1000
+      - LOG_FILE_PATH=/logs/processor.log  # Unique log file for processor
     ports:
-      - "8001:8001"  # Expose metrics endpoint
+      - "8001:8001"
+    volumes:
+      - logs:/logs                         # Mount the shared logs volume
     depends_on:
       - kafka
       - minio
@@ -94,7 +97,7 @@ services:
     networks:
       - app-tier
     ports:
-      - "9090:9090"  # Prometheus web UI
+      - "9090:9090"
     volumes:
       - ./prometheus.yml:/etc/prometheus/prometheus.yml
       - prometheus_data:/prometheus
@@ -109,9 +112,9 @@ services:
     networks:
       - app-tier
     ports:
-      - "3000:3000"  # Grafana web UI
+      - "3000:3000"
     environment:
-      - GF_SECURITY_ADMIN_PASSWORD=admin  # Change this to a strong password in production
+      - GF_SECURITY_ADMIN_PASSWORD=admin
     volumes:
       - grafana_data:/var/lib/grafana
     depends_on:
@@ -120,10 +123,12 @@ services:
 
 volumes:
   minio_data:
-    driver: local
   kafka_data:
-    driver: local
   prometheus_data:
-    driver: local
   grafana_data:
+  logs:
     driver: local
+    driver_opts:
+      o: bind
+      type: none
+      device: ${PWD}/logs  # Map the logs volume to the 'logs' directory in your project

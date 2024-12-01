@@ -4,22 +4,12 @@ import os
 import json
 import io
 import logging
+import logging.handlers
 from minio import Minio
 from kafka import KafkaConsumer
 from kafka.errors import KafkaError
 from minio.error import S3Error
-from prometheus_client import start_http_server, Summary, Counter  # Added for Prometheus
-
-# Configure Logging
-logging.basicConfig(
-    level=logging.INFO,  # Set to DEBUG for more verbose output
-    format="%(asctime)s - %(name)s - %(levelname)s - %(message)s",
-)
-logger = logging.getLogger("processor")
-
-# Define Prometheus metrics
-PROCESS_TIME = Summary('process_time_seconds', 'Time spent processing files') #process_time_seconds_count, process_time_seconds_sum
-FILES_PROCESSED = Counter('files_processed_total', 'Total number of files processed')
+from prometheus_client import start_http_server, Summary, Counter
 
 # Environment Variables
 MINIO_ENDPOINT = os.getenv("MINIO_ENDPOINT", "minio:9000")
@@ -30,6 +20,32 @@ TARGET_BUCKET = os.getenv("TARGET_BUCKET", "processed-bucket")
 KAFKA_BOOTSTRAP_SERVERS = os.getenv("KAFKA_BOOTSTRAP_SERVERS", "kafka:9092")
 KAFKA_TOPIC = os.getenv("KAFKA_TOPIC", "test-topic")
 CHUNK_SIZE = int(os.getenv("CHUNK_SIZE", 1000))  # Number of lines per chunk
+LOG_FILE_PATH = os.getenv("LOG_FILE_PATH", "/logs/processor.log")
+
+# Configure Logging
+logger = logging.getLogger("processor")
+logger.setLevel(logging.INFO)
+
+# Create a handler to write logs to the shared file
+file_handler = logging.handlers.WatchedFileHandler(LOG_FILE_PATH)
+file_handler.setLevel(logging.INFO)
+
+# Create formatter and add it to the handler
+formatter = logging.Formatter("%(asctime)s - %(name)s - %(levelname)s - %(message)s")
+file_handler.setFormatter(formatter)
+
+# Add the handler to the logger
+logger.addHandler(file_handler)
+
+# Optionally, add a console handler
+console_handler = logging.StreamHandler()
+console_handler.setLevel(logging.INFO)
+console_handler.setFormatter(formatter)
+logger.addHandler(console_handler)
+
+# Define Prometheus metrics
+PROCESS_TIME = Summary('process_time_seconds', 'Time spent processing files')
+FILES_PROCESSED = Counter('files_processed_total', 'Total number of files processed')
 
 def init_minio_client():
     try:

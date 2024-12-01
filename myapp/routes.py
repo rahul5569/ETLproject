@@ -4,7 +4,7 @@ from fastapi import APIRouter, HTTPException, UploadFile, File
 import io
 from minio.error import S3Error
 from kafka.errors import KafkaError
-import config  # Import the config module instead of individual variables
+import config  # Import the config module
 
 router = APIRouter()
 
